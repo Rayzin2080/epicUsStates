@@ -1,0 +1,33 @@
+state={
+	id=799
+	name="STATE_799"
+	history={
+		owner = MAS
+		buildings = {
+		infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 8
+			dockyard = 5
+			air_base = 9
+			6732 = {
+				naval_base = 6
+
+			}
+		}
+		add_core_of = MAS
+		victory_points = {
+			6732 20.0
+		}
+		victory_points = {
+			905 5.0
+		}
+		victory_points = {
+			3710 10.0
+		}
+	}
+	provinces={
+		715 718 905 908 3710 3906 6732 
+	}
+	manpower=4355525
+	buildings_max_level_factor=1.000
+}

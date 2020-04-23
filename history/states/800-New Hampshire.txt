@@ -1,0 +1,23 @@
+state={
+	id=800
+	name="STATE_800"
+	history={
+		owner = NWH
+		buildings = {
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 5
+		}
+		add_core_of = NWH
+		victory_points = {
+			3712 5.0
+		}
+	}
+	provinces={
+		733 3712 3715 10481 
+	}
+	manpower=481425
+	buildings_max_level_factor=1.000
+}

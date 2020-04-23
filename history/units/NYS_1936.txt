@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "New York Infantry"	
+
+	division_names_group = NYS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	##### New York First Infantry #####
+	division = {
+		name = "New York First Infantry"
+		location = 3878
+		division_template = "New York Infantry"		
+		start_equipment_factor = 0.7
+	}
+	##### New York Second Infantry #####
+	division = {
+		name = "Buffalo Infantry"
+		location = 11654
+		division_template = "New York Infantry"		
+		start_equipment_factor = 0.7
+	}
+}
+
+##### No air force #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NYS"
+		}
+		requested_factories = 1
+		progress = 0.31
+		efficiency = 100
+	}
+}

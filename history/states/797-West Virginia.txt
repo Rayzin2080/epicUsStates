@@ -1,0 +1,22 @@
+state={
+	id=797
+	name="STATE_797"
+	history={
+		owner = WVA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 5
+		}
+		add_core_of = WVA
+		victory_points = {
+			10441 5.0
+		}
+	}
+	provinces={
+		801 3975 4627 6823 6850 6971 7588 9923 10441 
+	}
+	manpower=1808432
+	buildings_max_level_factor=1.000
+}
