@@ -739,3 +739,7 @@ NWJ = {
 	color = rgb { 13 224 77 }
 	color_ui = rgb { 13 224 77 }
 }
+OHO = {
+	color = rgb { 12  35  15 }
+	color_ui = rgb { 12  35  15 }
+}
