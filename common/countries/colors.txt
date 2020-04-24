@@ -768,8 +768,8 @@ LOU = {
 	color_ui = rgb { 0 80 107 }
 }
 MIS = {
-	color = rgb { 171 0 214 }
-	color_ui = rgb { 171 0 214 }
+	color = rgb { 33 26 163 }
+	color_ui = rgb { 33 26 163 }
 }
 KNT = {
 	color = rgb { 0 196 59 }
@@ -778,4 +778,36 @@ KNT = {
 OKL = {
 	color = rgb { 69 133 0 }
 	color_ui = rgb { 69 133 0 }
+}
+IND = {
+	color = rgb { 217 79 0 }
+	color_ui = rgb { 217 79 0 }
+}
+MSP = {
+	color = rgb { 171 0 214 }
+	color_ui = rgb { 171 0 214 }
+}
+MIG = {
+	color = rgb { 0 134 217 }
+	color_ui = rgb { 0 134 217 }
+}
+WIS = {
+	color = rgb { 76 168 0 }
+	color_ui = rgb { 76 168 0 }
+}
+ILI = {
+	color = rgb { 201 185 2 }
+	color_ui = rgb { 201 185 2 }
+}
+IOA = {
+	color = rgb { 161 0 0 }
+	color_ui = rgb { 161 0 0 }
+}
+MNS = {
+	color = rgb { 29 0 161 }
+	color_ui = rgb { 29 0 161 }
+}
+NDK = {
+	color = rgb { 128 106 68 }
+	color_ui = rgb { 128 106 68 }
 }

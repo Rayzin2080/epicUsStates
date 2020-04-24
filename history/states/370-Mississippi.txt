@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = MIS
+		owner = MSP
 		victory_points = {
 			4464 1 
 		}
@@ -20,7 +20,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = MIS
+		add_core_of = MSP
 	}
 
 	provinces={
