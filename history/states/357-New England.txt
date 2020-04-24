@@ -1,6 +1,7 @@
 state={
 	id=357
 	name="STATE_357"
+	state_category = town
 	history={
 		owner = MNE
 		buildings = {

@@ -1,6 +1,7 @@
 state={
 	id=801
 	name="STATE_801"
+	state_category = rural
 	history={
 		owner=VMT
 		buildings = {

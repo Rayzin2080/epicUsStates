@@ -369,7 +369,7 @@
  STATE_368:0 "Tennessee"
  STATE_369:0 "Kentucky"
  STATE_370:0 "Mississippi"
- STATE_371:0 "Louisiana"
+ STATE_371:0 "Upper Louisiana"
  STATE_372:0 "Arkansas"
  STATE_373:0 "Missouri"
  STATE_374:0 "Oklahoma"
@@ -807,3 +807,4 @@
  STATE_806:0 "Coastal Virginia"
  STATE_807:0 "Rio Grande"
  STATE_808:0 "Panhandle"
+ STATE_809:0 "Cajun Louisina"

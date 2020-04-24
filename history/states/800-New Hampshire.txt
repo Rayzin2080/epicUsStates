@@ -1,6 +1,7 @@
 state={
 	id=800
 	name="STATE_800"
+	state_category = rural
 	history={
 		owner = NWH
 		buildings = {

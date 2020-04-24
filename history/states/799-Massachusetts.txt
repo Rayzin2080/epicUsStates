@@ -1,6 +1,7 @@
 state={
 	id=799
 	name="STATE_799"
+	state_category = large_city
 	history={
 		owner = MAS
 		buildings = {

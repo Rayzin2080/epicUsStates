@@ -1,6 +1,7 @@
 state={
 	id=807
 	name="STATE_807"
+	state_category = large_city
 	history={
 		owner = TEX
 		buildings = {

@@ -1,6 +1,7 @@
 state={
 	id=803
 	name="STATE_803"
+	state_category = rural
 	history={
 		owner = NYS
 		buildings = {
@@ -16,6 +17,6 @@ state={
 	provinces={
 		598 3602 6778 6795 6916 9754 10381 11662 
 	}
-	manpower=0
+	manpower=356362
 	buildings_max_level_factor=1.000
 }

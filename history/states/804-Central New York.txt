@@ -1,6 +1,7 @@
 state={
 	id=804
 	name="STATE_804"
+	state_category = large_town
 	history={
 		owner = NYS
 		buildings = {
@@ -16,6 +17,6 @@ state={
 	provinces={
 		1436 3806 6717 9673 9693 9708 9721 11665 11722 
 	}
-	manpower=563024
+	manpower=1563024
 	buildings_max_level_factor=1.000
 }
