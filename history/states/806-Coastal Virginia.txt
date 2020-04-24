@@ -1,0 +1,26 @@
+state={
+	id=806
+	name="STATE_806"
+	history={
+		owner = VIR
+		buildings = {
+			arms_factory = 5
+			industrial_complex = 5
+			dockyard = 4
+			air_base = 6
+			788 = {
+				naval_base = 10
+
+			}
+		}
+		add_core_of = VIR
+		victory_points = {
+			788 10 
+		}
+	}
+	provinces={
+		788 865 873 951 3823 3925 6846 11738 11841 
+	}
+	manpower=4253642
+	buildings_max_level_factor=1.000
+}

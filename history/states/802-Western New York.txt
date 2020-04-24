@@ -1,0 +1,25 @@
+state={
+	id=802
+	name="STATE_802"
+	history={
+		owner = NYS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 5
+			air_base = 3
+		}
+		add_core_of = NYS
+		victory_points = {
+			11654 15
+		}
+		victory_points = {
+			3733 10
+		}
+	}
+	provinces={
+		734 3702 3733 3747 6707 9664 11650 11654 11680 
+	}
+	manpower=3803253
+	buildings_max_level_factor=1.000
+}

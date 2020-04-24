@@ -1,0 +1,37 @@
+
+state={
+	id=375
+	name="STATE_375"
+	resources={
+		oil=320.000
+		aluminium=50.000
+	}
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 9
+			air_base = 3
+			10337 = {
+				naval_base = 3
+
+			}
+		}
+		add_core_of = TEX
+		victory_points = {
+			10337 10 
+		}
+		victory_points = {
+			3960 10 
+		}
+
+	}
+
+	provinces={
+		805 1500 3960 4577 5001 5022 6968 7628 9829 10337 10504 10778 10861 12341 12410 12486 
+	}
+	manpower=5824712
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -707,7 +707,7 @@ NYS = {
 	color = rgb { 0  35  150 }
 	color_ui = rgb { 0  35  150 }
 }
-VER = {
+VMT = {
 	color = rgb { 53  35  120 }
 	color_ui = rgb { 53  35  120 }
 }
@@ -742,4 +742,24 @@ NWJ = {
 OHO = {
 	color = rgb { 12  35  15 }
 	color_ui = rgb { 12  35  15 }
+}
+VIR = {
+	color = rgb { 235 148 9 }
+	color_ui = rgb { 235 148 9 }
+}
+NCA = {
+	color = rgb { 126 9 235 }
+	color_ui = rgb { 126 9 235 }
+}
+SCA = {
+	color = rgb { 235 32 9 }
+	color_ui = rgb { 235 32 9 }
+}
+FLO = {
+	color = rgb { 255 221 0 }
+	color_ui = rgb { 255 221 0 }
+}
+TEX = {
+	color = rgb { 199 0 0 }
+	color_ui = rgb { 199 0 0 }
 }

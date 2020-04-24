@@ -1,6 +1,6 @@
-capital = 799
+capital = 362
 
-oob = "MAS_1936"
+oob = "VIR_1936"
 
 # Starting tech
 set_technology = {
@@ -27,7 +27,7 @@ add_ideas = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "MAS_1939"
+	oob = "VIR_1939"
 	set_technology = {
 		infantry_weapons = 1
 
@@ -52,13 +52,6 @@ add_ideas = {
 	}
 }
 
-create_faction = New_England_Confederation
-add_to_faction = MAS
-add_to_faction = MNE
-add_to_faction = VMT
-add_to_faction = CRI
-add_to_faction = NWH
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -72,9 +65,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Charles Hurley"
-	desc = "POLITICS_CHARLES_HURLEY_DESC"
-	picture = "gfx/leaders/NYS/portrait_mas_charles_hurley.dds"
+	name = "Thomas Randolph"
+	desc = "POLITICS_THOMAS_RANDOLPH_DESC"
+	picture = "gfx/leaders/statesLeaders/portrait_vir_thomas_randolph.dds"
 	expire = "1940.11.3"
 	ideology = democratic
 	traits = {

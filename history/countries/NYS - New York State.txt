@@ -1,4 +1,4 @@
-capital = 358
+capital = 804
 
 oob = "NYS_1936"
 
