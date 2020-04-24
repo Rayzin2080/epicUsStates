@@ -7,11 +7,12 @@ focus_tree = {
 			tag = NYS
 		}
 	}
+
 	#Focus for A New Governor
 	focus = {
 		id = NYS_new_governor
-		icon = GFX_goal_generic_political_pressure
-		x = 9
+		icon = NYS_blank_leader
+		x = 3
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -28,11 +29,13 @@ focus_tree = {
 	#Focus for Invite FDR
 	focus = {
 		id = NYS_invite_fdr
-		icon = GFX_goal_generic_political_pressure
-		x = 9
-		y = 0
+		icon = NYS_democratic
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_governor }
+		mutually_exclusive { focus = NYS_empower_the_workers OR = NYS_call_upon_the_aristocrats OR = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -46,11 +49,13 @@ focus_tree = {
 	#Focus for Call Upon the Aristocrats
 	focus = {
 		id = NYS_call_upon_the_aristocrats
-		icon = GFX_goal_generic_political_pressure
-		x = 9
-		y = 0
+		icon = NYS_non_aligned
+		x = 2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_governor }
+		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_empower_the_workers OR = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -64,11 +69,13 @@ focus_tree = {
 	#Focus for Empower the Workers
 	focus = {
 		id = NYS_empower_the_workers
-		icon = GFX_goal_generic_political_pressure
-		x = 9
-		y = 0
+		icon = NYS_communist
+		x = 4
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_governor }
+		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -82,11 +89,13 @@ focus_tree = {
 	#Focus for The Empire State
 	focus = {
 		id = NYS_the_empire_state
-		icon = GFX_goal_generic_political_pressure
-		x = 9
-		y = 0
+		icon = NYS_fascist
+		x = 6
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_governor }
+		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_empower_the_workers }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
