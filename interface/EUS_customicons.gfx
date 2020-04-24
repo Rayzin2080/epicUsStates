@@ -1,16 +1,16 @@
 spriteTypes = { 
  	
 	SpriteType = {
-	name = "NYS_blank_leader"
-	texturefile = "gfx/modded/newYork/nationalFocus/New_Gov_NY_Focus.dds"			
+	name = "EUS_blank_leader"
+	texturefile = "gfx/modded/generic/nationalFocus/Blank_Leader.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_blank_leader_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/New_Gov_NY_Focus.dds"
+		name = "EUS_blank_leader_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/Blank_Leader.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/New_Gov_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Blank_Leader.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23,7 +23,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/New_Gov_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Blank_Leader.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -38,16 +38,16 @@ spriteTypes = {
 	}
  	 	
 	SpriteType = {
-	name = "NYS_democratic"
-	texturefile = "gfx/modded/newYork/nationalFocus/FDR_NY_Focus.dds"			
+	name = "EUS_democratic"
+	texturefile = "gfx/modded/generic/nationalFocus/Democracy_Generic_Focus.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_democratic_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/FDR_NY_Focus.dds"
+		name = "EUS_democratic_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/Democracy_Generic_Focus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/FDR_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/FDR_NY_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -60,7 +60,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/FDR_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Democracy_Generic_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -75,16 +75,16 @@ spriteTypes = {
 	}
  	
 	SpriteType = {
-	name = "NYS_non_aligned"
-	texturefile = "gfx/modded/newYork/nationalFocus/Aristocrat_NY_Focus.dds"			
+	name = "EUS_neutrality"
+	texturefile = "gfx/modded/generic/nationalFocus/Aristocratic_Focus.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_non_aligned_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/Aristocrat_NY_Focus.dds"
+		name = "EUS_neutrality_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/Aristocratic_Focus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/FDR_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Aristocratic_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -97,7 +97,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/Aristocrat_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Aristocratic_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -112,16 +112,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "NYS_communist"
-	texturefile = "gfx/modded/newYork/nationalFocus/Communist_NY_Focus.dds"			
+	name = "EUS_communist"
+	texturefile = "gfx/modded/generic/nationalFocus/Generic_Communist_Focus.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_communist_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/Communist_NY_Focus.dds"
+		name = "EUS_communist_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/Generic_Communist_Focus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/Communist_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Generic_Communist_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -134,7 +134,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/Communist_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Generic_Communist_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -149,16 +149,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "NYS_fascist"
-	texturefile = "gfx/modded/newYork/nationalFocus/Fascist_NY_Focus.dds"			
+	name = "EUS_fascist"
+	texturefile = "gfx/modded/generic/nationalFocus/Fascist_Focus.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_fascist_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/Fascist_NY_Focus.dds"
+		name = "EUS_fascist_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/Fascist_Focus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/Fascist_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Fascist_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -171,7 +171,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/Fascist_NY_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/Fascist_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -186,16 +186,16 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "NYS_crossing"
-	texturefile = "gfx/modded/newYork/nationalFocus/NY_Crossing_Focus.dds"			
+	name = "EUS_split"
+	texturefile = "gfx/modded/generic/nationalFocus/US_Breaks_Focus.dds"			
 	}
 
 	SpriteType = {
-		name = "NYS_crossing_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/NY_Crossing_Focus.dds"
+		name = "EUS_split_shine"
+		texturefile = "gfx/modded/generic/nationalFocus/US_Breaks_Focus.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/NY_Crossing_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/US_Breaks_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -208,44 +208,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/NY_Crossing_Focus.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	SpriteType = {
-	name = "NYS_bread"
-	texturefile = "gfx/modded/newYork/nationalFocus/NY_Bread_Focus.dds"			
-	}
-
-	SpriteType = {
-		name = "NYS_bread_shine"
-		texturefile = "gfx/modded/newYork/nationalFocus/NY_Bread_Focus.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/NY_Bread_Focus.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-
-		animation = {
-			animationmaskfile = "gfx/modded/newYork/nationalFocus/NY_Bread_Focus.dds"
+			animationmaskfile = "gfx/modded/generic/nationalFocus/US_Breaks_Focus.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

@@ -105,7 +105,7 @@ focus_tree = {
 	#Focus for Cross the Niagara
 	focus = {
 		id = NYS_cross_the_niagara
-		icon = NYS_fascist
+		icon = NYS_crossing
 		x = 6
 		y = 2
 		cost = 1
@@ -123,7 +123,7 @@ focus_tree = {
 	#Focus for Unify the Bread Basket
 	focus = {
 		id = NYS_unify_the_bread_basket
-		icon = NYS_fascist
+		icon = NYS_bread
 		x = 8
 		y = 2
 		cost = 1
