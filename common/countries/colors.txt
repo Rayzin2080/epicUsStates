@@ -771,7 +771,7 @@ MIS = {
 	color = rgb { 171 0 214 }
 	color_ui = rgb { 171 0 214 }
 }
-KENT = {
+KNT = {
 	color = rgb { 0 196 59 }
 	color_ui = rgb { 0 196 59 }
 }
