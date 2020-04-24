@@ -775,3 +775,7 @@ KNT = {
 	color = rgb { 0 196 59 }
 	color_ui = rgb { 0 196 59 }
 }
+OKL = {
+	color = rgb { 69 133 0 }
+	color_ui = rgb { 69 133 0 }
+}
