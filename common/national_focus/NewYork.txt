@@ -14,7 +14,7 @@ focus_tree = {
 		icon = NYS_blank_leader
 		x = 3
 		y = 0
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -41,8 +41,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
-			add_political_power= 120
+			add_timed_idea = { idea = EUS_democratic_influence  days = 320 }
 		}
 	}
 
@@ -61,8 +60,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
-			add_political_power= 120
+			add_timed_idea = { idea = EUS_neutrality_influence  days = 320 }
 		}
 	}
 
@@ -81,8 +79,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
-			add_political_power= 120
+			add_timed_idea = { idea = EUS_communist_influence  days = 320 }
 		}
 	}
 
@@ -92,7 +89,7 @@ focus_tree = {
 		icon = NYS_fascist
 		x = 6
 		y = 1
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
 		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_empower_the_workers }
@@ -101,7 +98,67 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
-			add_political_power= 120
+			add_timed_idea = { idea = EUS_fascist_influence  days = 320 }
 		}
 	}
+
+	#Focus for Cross the Niagara
+	focus = {
+		id = NYS_cross_the_niagara
+		icon = NYS_fascist
+		x = 6
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+		prerequisite = { focus = NYS_the_empire_state }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim = 276
+		}
+	}
+
+	#Focus for Unify the Bread Basket
+	focus = {
+		id = NYS_unify_the_bread_basket
+		icon = NYS_fascist
+		x = 8
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+		prerequisite = { focus = NYS_the_empire_state }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim = 360
+			add_state_claim = 805
+			add_state_claim = 359
+		}
+	}
+
+	#Focus for Claim New England
+	focus = {
+		id = NYS_claim_new_england
+		icon = NYS_fascist
+		x = 10
+		y = 2
+		cost = 1
+		available_if_capitulated = no
+		prerequisite = { focus = NYS_the_empire_state }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim = 798
+			add_state_claim = 799
+			add_state_claim = 801
+			add_state_claim = 800
+			add_state_claim = 357
+		}
+	}
+}
