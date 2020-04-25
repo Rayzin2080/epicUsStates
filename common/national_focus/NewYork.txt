@@ -14,7 +14,7 @@ focus_tree = {
 		icon = NYS_blank_leader
 		x = 3
 		y = 0
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -89,7 +89,7 @@ focus_tree = {
 		icon = NYS_fascist
 		x = 6
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
 		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_empower_the_workers }
@@ -108,7 +108,7 @@ focus_tree = {
 		icon = NYS_crossing
 		x = 6
 		y = 2
-		cost = 1
+		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -126,7 +126,7 @@ focus_tree = {
 		icon = NYS_bread
 		x = 8
 		y = 2
-		cost = 1
+		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -146,7 +146,7 @@ focus_tree = {
 		icon = NYS_fascist
 		x = 10
 		y = 2
-		cost = 1
+		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = NYS_the_empire_state }
 		search_filters = { FOCUS_FILTER_POLITICAL } 

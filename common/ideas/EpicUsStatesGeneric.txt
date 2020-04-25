@@ -75,5 +75,26 @@ ideas = {
 				neutrality_drift = 1.0
 			}
 		}
+		EUS_birthplace_of_america = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_birthplace_of_america
+			
+			modifier = {
+				drift_defence_factor = 0.2
+				partisan_effect = 0.5
+				surrender_limit = 0.9
+				ai_call_ally_desire_factor = 1.0
+			}
+		}
 	}
 }

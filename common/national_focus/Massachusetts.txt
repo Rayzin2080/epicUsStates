@@ -1,0 +1,106 @@
+focus_tree = {
+	id = epic_states_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAS
+		}
+	}
+
+	#Focus for Aftermath
+	focus = {
+		id = MAS_aftermath
+		icon = NYS_blank_leader
+		x = 6
+		y = 0
+		cost = 20
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	#Focus for Birthplace of America (Democratic Path)
+	focus = {
+		id = MAS_birthplace
+		icon = NYS_blank_leader
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAS_aftermath }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		#Add nation spirit Birthplace of America (Stability bonus, ideology change resistance, daily democratic points)
+		add_ideas = EUS_birthplace_of_america
+		}
+	
+	}
+	#New England Confederation
+	focus = {
+		id = MAS_new_england_confederation
+		icon = NYS_blank_leader
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_birthplace }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#possibly add event to give new england nations a choice
+			create_faction = New_England_Confederation
+			add_to_faction = CRI
+		}
+	
+	}
+	#New England Confederation (Add New Hampshire / Vermont)
+	focus = {
+		id = MAS_new_england_confederation_nwh_vmt
+		icon = NYS_blank_leader
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_new_england_confederation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#possibly add event to give new england nations a choice
+			add_to_faction = VMT
+			add_to_faction = NWH
+		}
+	
+	}
+	#New England Confederation (Add maine)
+	focus = {
+		id = MAS_new_england_confederation_maine
+		icon = NYS_blank_leader
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_new_england_confederation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#possibly add event to give new england nations a choice
+			add_to_faction = MNE
+		}
+	
+	}
+}

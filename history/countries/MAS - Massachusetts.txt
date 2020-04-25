@@ -52,12 +52,6 @@ add_ideas = {
 	}
 }
 
-create_faction = New_England_Confederation
-add_to_faction = MAS
-add_to_faction = MNE
-add_to_faction = VMT
-add_to_faction = CRI
-add_to_faction = NWH
 
 set_politics = {
 	ruling_party = democratic
