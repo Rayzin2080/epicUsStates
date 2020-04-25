@@ -74,8 +74,6 @@ focus_tree = {
 			set_politics = { ruling_party = neutrality }
 			}
 		}
-		}
-	}
 
 	#Focus for Every man a King
 	focus = {
