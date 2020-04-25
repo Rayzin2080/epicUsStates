@@ -10,7 +10,7 @@ focus_tree = {
 	#Focus for Aftermath
 	focus = {
 		id = LOU_aftermath
-		icon = GFX_goal_generic_territory_or_war ##use aftermath icon instead
+		icon = GFX_goal_generic_territory_or_war
 		x = 8
 		y = 0
 		cost = 10
@@ -34,6 +34,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_aftermath }
+		mutually_exclusive = { focus = LOU_every_man_a_king }
 		ai_will_do = {
 			factor = 1
 		}
@@ -83,6 +84,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_aftermath }
+		mutually_exclusive = { focus = LOU_cajun_heritage }
 		ai_will_do = {
 			factor = 1
 		}
@@ -171,10 +173,6 @@ create_wargoal= {
 type = annex_everything 
 target = KAN
 }
-create_wargoal= { 
-type = annex_everything 
-target = ARK
-}
 		}
 	}
 
@@ -222,6 +220,7 @@ target = FRA
 		}
 
 set_cosmetic_tag = FRA
+## switch focus tree to france down the legitimist path
 		}
 	}
 
@@ -242,11 +241,14 @@ set_cosmetic_tag = FRA
 		prerequisite = { 
 			focus = LOU_haiti 
 		}
+		prerequisite = { 
+			focus = LOU_ohio_valley 
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			##completion of previous goals in focuses
+			##owns acadia, ohio valley, quebec, haiti, and greater louisiana
 		}
 		completion_reward = {
 			##new cosmetic tag and political power wargoals on the rest of the american and canadian tags
@@ -306,8 +308,11 @@ target = DOM
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			##owns quebec
+		}
 		completion_reward = {
-			##cores on northern new brunswick and wargoals on all the maritimes
+			##cores on northern new brunswick and wargoals on all the maritimes and maine
 		}
 	}
 
@@ -324,25 +329,7 @@ target = DOM
 			factor = 1
 		}
 		completion_reward = {
-			#add dockyards to new orlea
-			navy_experience = 50
-			add_ideas = bureau_of_ships_focus
-			random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
+			#add dockyards to new orleans and give a naval spirit
 		}
 	}
 
@@ -350,7 +337,7 @@ target = DOM
 	focus = {
 		id = LOU_reintegration
 		icon = GFX_focus_generic_industry_3
-		x = 8
+		x = 7
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -432,6 +419,59 @@ target = DOM
 		}
 		completion_reward = {
 			##democracy
+		}
+	}
+
+	#Focus for Reparations for slavery
+	focus = {
+		id = LOU_reparations_for_slavery
+		icon = GFX_focus_mex_privatisation
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_haiti }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state= 318
+		}
+		completion_reward = {
+			add_state_core= 318
+add_state_core= 319
+		}
+	}
+
+	#Focus for Ohio Valley
+	focus = {
+		id = LOU_ohio_valley
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_louisiana_purchase_reconquest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = IND
+}
+create_wargoal= { 
+type = annex_everything 
+target = TEN
+}
+create_wargoal= { 
+type = annex_everything 
+target = KNT
+}
+create_wargoal= { 
+type = annex_everything 
+target = WVA
+}
 		}
 	}
 
