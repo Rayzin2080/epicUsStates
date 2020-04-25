@@ -347,7 +347,8 @@ target = DOM
 						instant_build = yes
 					}
 		}
-	}
+		}
+		}
 
 	#Focus for Reintegration
 	focus = {
