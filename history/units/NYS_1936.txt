@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "New York Infantry"	
+	name = "New York Reorganized Infantry"	
 
 	division_names_group = NYS_INF_01
 
@@ -17,15 +17,27 @@ units = {
 	division = {
 		name = "New York First Infantry"
 		location = 3878
-		division_template = "New York Infantry"		
+		division_template = "New York Reorganized Infantry"		
 		start_equipment_factor = 0.7
 	}
 	##### New York Second Infantry #####
 	division = {
 		name = "Buffalo Infantry"
 		location = 11654
-		division_template = "New York Infantry"		
+		division_template = "New York Reorganized Infantry"		
 		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Rochester Infantry"
+		location = 3733
+		division_template = "New York Reorganized Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Albany Infantry"
+		location = 9693
+		division_template = "New York Reorganized Infantry"		
+		start_equipment_factor = 0.6
 	}
 }
 

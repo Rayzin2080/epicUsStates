@@ -1,0 +1,35 @@
+division_template = {
+	name = "US Infantry"
+	
+	division_names_group = MNE_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "First US Infantry"
+		location = 3957
+		division_template = "US Infantry"		
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Second US Infantry"
+		location = 6984
+		division_template = "US Infantry"		
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Third US Infantry"
+		location = 6892
+		division_template = "US Infantry"		
+		start_equipment_factor = 0.9
+	}
+}

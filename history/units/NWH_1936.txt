@@ -1,0 +1,40 @@
+division_template = {
+	name = "Minutemen"
+	
+	division_names_group = MAS_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "New England Infantry"
+	
+	division_names_group = NWH_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "New Hampshire First Infantry"
+		location = 3712
+		division_template = "Minutemen"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "New Hampshire Second Infantry"
+		location = 10481
+		division_template = "Minutemen"		
+		start_equipment_factor = 0.6
+	}
+}
