@@ -1,0 +1,46 @@
+division_template = {
+	name = "Minutemen"
+	
+	division_names_group = MNE_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "New England Infantry"
+	
+	division_names_group = MNE_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "Maine First Infantry"
+		location = 7462
+		division_template = "Minutemen"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Maine Second Infantry"
+		location = 3732
+		division_template = "Minutemen"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Maine Third Infantry"
+		location = 12459
+		division_template = "Minutemen"		
+		start_equipment_factor = 0.7
+	}
+}
