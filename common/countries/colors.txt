@@ -811,3 +811,63 @@ NDK = {
 	color = rgb { 128 106 68 }
 	color_ui = rgb { 128 106 68 }
 }
+SDK = {
+	color = rgb { 128 146 158 }
+	color_ui = rgb { 128 146 158 }
+}
+NEB = {
+	color = rgb { 230 195 0 }
+	color_ui = rgb { 230 195 0 }
+}
+KAN = {
+	color = rgb { 219 87 15 }
+	color_ui = rgb { 219 87 15 }
+}
+WMG = {
+	color = rgb { 0 153 13 }
+	color_ui = rgb { 0 153 13 }
+}
+MTA = {
+	color = rgb { 0 153 145 }
+	color_ui = rgb { 0 153 145 }
+}
+CRD = {
+	color = rgb { 135 0 68 }
+	color_ui = rgb { 135 0 68 }
+}
+ARI = {
+	color = rgb { 235 200 26 }
+	color_ui = rgb { 235 200 26 }
+}
+NMX = {
+	color = rgb { 128 144 25 }
+	color_ui = rgb { 128 144 26 }
+}
+IDH = {
+	color = rgb { 105 196 0 }
+	color_ui = rgb { 105 196 0 }
+}
+UTH = {
+	color = rgb { 0 196 111 }
+	color_ui = rgb { 0 196 111 }
+}
+ALA = {
+	color = rgb { 232 208 53 }
+	color_ui = rgb { 232 208 53 }
+}
+CLF = {
+	color = rgb { 219 0 0 }
+	color_ui = rgb { 219 0  0 }
+}
+NVD = {
+	color = rgb { 219 99 0 }
+	color_ui = rgb { 219 99 0 }
+}
+ORG = {
+	color = rgb { 0 80 219 }
+	color_ui = rgb { 0 80 219 }
+}
+WSH = {
+	color = rgb { 224 52 126 }
+	color_ui = rgb { 224 52 126 }
+}
