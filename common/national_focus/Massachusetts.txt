@@ -11,7 +11,7 @@ focus_tree = {
 	#Focus for Aftermath
 	focus = {
 		id = MAS_aftermath
-		icon = NYS_blank_leader
+		icon = EUS_split
 		x = 6
 		y = 0
 		cost = 20
@@ -100,6 +100,98 @@ focus_tree = {
 		completion_reward = {
 			#possibly add event to give new england nations a choice
 			add_to_faction = MNE
+		}
+	
+	}
+	#Forge a New Path focus (Fascism and Communism)
+	focus = {
+		id = MAS_forge_new_path
+		icon = NYS_blank_leader
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_aftermath }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#TODO Fascism and communism
+		}
+	
+	}
+	#Fascist Coup in Massachusetts government
+	focus = {
+		id = MAS_fascist_coup
+		icon = NYS_blank_leader
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_forge_new_path }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#TODO Fascist coup
+			set_poitics = fascism
+		}
+	
+	}
+	
+	#Get the support of the people
+	focus = {
+		id = MAS_fascist_people_support
+		icon = NYS_fascist
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_fascist_coup }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#add anti-fascist dissidents
+		}
+	}
+	
+	#Get the support of the people
+	focus = {
+		id = MAS_fascist_people_support
+		icon = NYS_fascist
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_fascist_coup }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#add anti-fascist dissidents
+		}
+	}
+	
+	#People Rise up focus (Communism)
+	focus = {
+		id = MAS_rise of the people
+		icon = NYS_blank_leader
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = MAS_forge_new_path }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#TODO Fascism and communism
 		}
 	
 	}
