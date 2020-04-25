@@ -25,13 +25,9 @@ ideas = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_democratic_drift_bonus
 			
 			modifier = {
 				democratic_drift = 1.0
@@ -45,12 +41,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = communism
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_communism_drift_bonus
 			
 			modifier = {
 				communism_drift = 1.0
@@ -64,12 +60,12 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = neutrality
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_neutrality_drift_bonus
 			
 			modifier = {
 				neutrality_drift = 1.0
