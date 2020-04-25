@@ -171,6 +171,10 @@ create_wargoal= {
 type = annex_everything 
 target = KAN
 }
+create_wargoal= { 
+type = annex_everything 
+target = ARK
+}
 		}
 	}
 
