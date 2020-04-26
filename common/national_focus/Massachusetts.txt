@@ -25,6 +25,7 @@ focus_tree = {
 			add_political_power= 120
 		}
 	}
+	#################Democratic Path#######################
 	#Focus for Birthplace of America (Democratic Path)
 	focus = {
 		id = MAS_birthplace
@@ -102,7 +103,7 @@ focus_tree = {
 			#possibly add event to give new england nations a choice
 			add_to_faction = MNE
 		}
-	
+	##New Path##########
 	}
 	#Forge a New Path focus (Fascism and Communism)
 	focus = {
@@ -121,7 +122,7 @@ focus_tree = {
 		completion_reward = {
 			#TODO Fascism and communism
 		}
-	
+	###########Fascism Tree#####################################
 	}
 	#Fascist Coup in Massachusetts government
 	focus = {
@@ -162,24 +163,24 @@ focus_tree = {
 		}
 	}
 	
-	#Get the support of the people
+	#Step up recruitment
 	focus = {
-		id = MAS_fascist_people_support
+		id = MAS_fascist_increase_recruitment
 		icon = NYS_fascist
 		x = 7
-		y = 3
+		y = 4
 		cost = 10
 		available_if_capitulated = no
-		prerequisite = { focus = MAS_fascist_coup }
+		prerequisite = { focus = MAS_fascist_people_support }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			#add anti-fascist dissidents
+			add_idea = limited_conscription
 		}
 	}
-	
+	###################Communism Tree#####################################
 	#People Rise up focus (Communism)
 	focus = {
 		id = MAS_workers_rise
