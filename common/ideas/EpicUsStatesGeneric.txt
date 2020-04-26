@@ -110,5 +110,21 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		EUS_birthplace_of_america = {
+			picture = mas_birthplace
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.01
+				drift_defence_factor = 0.2
+				partisan_effect = 1.5
+				
+			}
+		}
 	}
 }

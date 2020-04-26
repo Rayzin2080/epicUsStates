@@ -76,3 +76,4 @@ create_country_leader = {
 		#
 	}
 }
+ai_get_ally_desire_factor = 0.01
