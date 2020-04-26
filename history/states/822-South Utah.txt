@@ -1,0 +1,16 @@
+state={
+	id=822
+	name="STATE_822"
+	history = {
+		owner = UTH
+		buildings = {
+		
+		}
+		add_core_of = UTH
+	}
+	provinces={
+		1740 1756 4742 7764 7818 12699 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

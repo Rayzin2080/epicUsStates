@@ -1,0 +1,16 @@
+state={
+	id=821
+	name="STATE_821"
+	history = {
+		owner = WMG
+		buildings = {
+		
+		}
+		add_core_of = WMG
+	}
+	provinces={
+		4610 4723 4794 4820 7814 10640 10711 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

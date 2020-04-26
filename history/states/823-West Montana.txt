@@ -1,0 +1,16 @@
+state={
+	id=823
+	name="STATE_823"
+	history = {
+		owner = MTA
+		buildings = {
+		
+		}
+		add_core_of = MTA
+	}
+	provinces={
+		1736 1854 4838 6742 7779 12676 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

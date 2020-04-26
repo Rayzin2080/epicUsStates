@@ -1,0 +1,16 @@
+state={
+	id=826
+	name="STATE_826"
+	history = {
+		owner = IOA
+		buildings = {
+		
+		}
+		add_core_of = IOA
+	}
+	provinces={
+		1586 1678 1770 9892 10666 11788 12646 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

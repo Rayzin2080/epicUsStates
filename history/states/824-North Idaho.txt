@@ -1,0 +1,16 @@
+state={
+	id=824
+	name="STATE_824"
+	history = {
+		owner = IDH
+		buildings = {
+		
+		}
+		add_core_of = IDH
+	}
+	provinces={
+		1832 3781 4778 7845 10602 12124 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

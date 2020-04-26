@@ -1,0 +1,16 @@
+state={
+	id=810
+	name="STATE_810"
+	history = {
+		owner = MNS
+		buildings = {
+		
+		add_core_of = MNS
+		}
+	}
+	provinces={
+		1866 1867 4664 4807 6752 7536 9880 10618 10719 12577 12597 12693 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

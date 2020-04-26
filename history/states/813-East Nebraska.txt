@@ -1,0 +1,16 @@
+state={
+	id=813
+	name="STATE_813"
+	history = {
+		owner = NEB
+		buildings = {
+		
+		}
+		add_core_of = NEB
+	}
+	provinces={
+		1683 3708 7852 10676 12516 12586 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

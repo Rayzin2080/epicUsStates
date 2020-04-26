@@ -1,0 +1,16 @@
+state={
+	id=811
+	name="STATE_811"
+	history = {
+		owner = NDK
+		buildings = {
+		
+		}
+		add_core_of = NDK
+	}
+	provinces={
+		1836 4772 6722 7877 10685 12566 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

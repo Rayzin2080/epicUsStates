@@ -1,0 +1,16 @@
+state={
+	id=819
+	name="STATE_819"
+	history = {
+		owner = ORG
+		buildings = {
+		
+		}
+		add_core_of = ORG
+	}
+	provinces={
+		4826 7721 7865 10305 10625 12553 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,16 @@
+state={
+	id=820
+	name="STATE_820"
+	history = {
+		owner = WSH
+		buildings = {
+		
+		}
+		add_core_of = WSH
+	}
+	provinces={
+		1690 4747 10198 10327 10687 10693 12673 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

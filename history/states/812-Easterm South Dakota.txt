@@ -1,0 +1,16 @@
+state={
+	id=812
+	name="STATE_812"
+	history = {
+		owner = SDK
+		buildings = {
+		
+		}
+		add_core_of = SDK
+	}
+	provinces={
+		4880 7862 10569 10595 12620 12667 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
