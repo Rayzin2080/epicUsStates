@@ -401,7 +401,7 @@ target = DOM
 			set_politics = { ruling_party = fascism }
 			add_popularity = {
     				ideology = fascism
-    				popularity = -0.5
+    				popularity = 0.5
 			}
 		}
 	}
