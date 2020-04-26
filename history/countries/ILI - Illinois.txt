@@ -8,7 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
-	limited_conscription
+	EUS_great_depression
 }
 
 1939.1.1 = {

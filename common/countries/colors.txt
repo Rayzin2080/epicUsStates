@@ -871,3 +871,7 @@ WSH = {
 	color = rgb { 224 52 126 }
 	color_ui = rgb { 224 52 126 }
 }
+PEI = {
+	color = rgb{ 23 53 156 }
+	color_ui = rgb{ 23 53 156 }
+}
