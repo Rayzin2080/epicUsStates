@@ -1,0 +1,53 @@
+division_template = {
+	name = "Texas Infantry"	
+
+	division_names_group = TEX_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "Texan First Infantry"
+		location = 3960
+		division_template = "Texas Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Texan Second Infantry"
+		location = 10337
+		division_template = "Texas Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Texan Third Infantry"
+		location = 12782
+		division_template = "Texas Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Texan Fourth Infantry"
+		location = 6785
+		division_template = "Texas Infantry"		
+		start_equipment_factor = 0.6
+	}
+}
+
+##### No air force #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NYS"
+		}
+		requested_factories = 1
+		progress = 0.31
+		efficiency = 100
+	}
+}

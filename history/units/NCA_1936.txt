@@ -1,0 +1,42 @@
+division_template = {
+	name = "North Carolina Infantry"	
+
+	division_names_group = NCA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "North Carolina First Infantry"
+		location = 7138
+		division_template = "North Carolina Infantry"		
+		start_equipment_factor = 0.8
+	}
+
+	division = {
+		name = "North Carolina Second Infantry"
+		location = 1132
+		division_template = "North Carolina Infantry"		
+		start_equipment_factor = 0.8
+	}
+}
+
+##### No air force #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NYS"
+		}
+		requested_factories = 1
+		progress = 0.31
+		efficiency = 100
+	}
+}

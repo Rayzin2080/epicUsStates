@@ -1,0 +1,48 @@
+division_template = {
+	name = "Alabama Regional Infantry"	
+
+	division_names_group = ALA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "Alabama First Infantry"
+		location = 7480
+		division_template = "Alabama Regional Infantry"		
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		name = "Alabama Second Infantry"
+		location = 12735
+		division_template = "Alabama Regional Infantry"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Alabama Third Infantry"
+		location = 7640
+		division_template = "Alabama Regional Infantry"		
+		start_equipment_factor = 0.6
+	}
+}
+
+##### No air force #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NYS"
+		}
+		requested_factories = 1
+		progress = 0.31
+		efficiency = 100
+	}
+}

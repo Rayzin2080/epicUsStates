@@ -1,6 +1,6 @@
 capital = 373
 
-oob = "MSP_1936"
+oob = "MIS_1936"
 
 # Starting tech
 set_technology = {

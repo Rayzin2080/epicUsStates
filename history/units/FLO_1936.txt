@@ -1,0 +1,47 @@
+division_template = {
+	name = "Florida Infantry"	
+
+	division_names_group = FLO_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "Floridian First Infantry"
+		location = 10407
+		division_template = "Florida Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Floridian Second Infantry"
+		location = 1843
+		division_template = "Florida Infantry"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Floridian Third Infantry"
+		location = 7388
+		division_template = "Florida Infantry"		
+		start_equipment_factor = 0.6
+	}
+}
+
+##### No air force #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NYS"
+		}
+		requested_factories = 1
+		progress = 0.31
+		efficiency = 100
+	}
+}

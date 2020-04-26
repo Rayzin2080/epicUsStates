@@ -30,6 +30,9 @@ focus_tree = {
 			tag = IND
 			tag = OHO
 			tag = MIS
+			tag = GRG
+			tag = SCA
+			tag = NCA
 			}
 		}
 	}
