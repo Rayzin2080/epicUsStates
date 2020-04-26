@@ -34,7 +34,8 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MAS_aftermath }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
+		mutually_exclusive { focus = MAS_forge_new_path }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 1
 		}
@@ -112,6 +113,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = MAS_aftermath }
+		mutually_exclusive { focus = MAS_birthplace }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -130,6 +132,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = MAS_forge_new_path }
+		mutually_exclusive { focus = MAS_workers_rise }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -179,7 +182,7 @@ focus_tree = {
 	
 	#People Rise up focus (Communism)
 	focus = {
-		id = MAS_rise of the people
+		id = MAS_workers_rise
 		icon = NYS_blank_leader
 		x = 11
 		y = 2
