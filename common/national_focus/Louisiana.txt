@@ -172,6 +172,18 @@ create_wargoal= {
 type = annex_everything 
 target = KAN
 }
+create_wargoal= { 
+type = annex_everything 
+target = ARK
+}
+create_wargoal= { 
+type = annex_everything 
+target = ILI
+}
+create_wargoal= { 
+type = annex_everything 
+target = MNS
+}
 		}
 	}
 
@@ -487,6 +499,18 @@ target = KNT
 create_wargoal= { 
 type = annex_everything 
 target = WVA
+}
+create_wargoal= { 
+type = annex_everything 
+target = OHO
+}
+create_wargoal= { 
+type = annex_everything 
+target = MIG
+}
+create_wargoal= { 
+type = annex_everything 
+target = WIS
 }
 		}
 	}
