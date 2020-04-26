@@ -4,7 +4,33 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = Generic_US
+			OR = {
+			tag = NEB
+			tag = KAN
+			tag = OKL
+			tag = WSH
+			tag = ORG
+			tag = NVD
+			tag = NMX
+			tag = PEN
+			tag = VIR
+			tag = KNT
+			tag = TEN
+			tag = ARK
+			tag = ARI
+			tag = NDK
+			tag	= SDK
+			tag = CRD
+			tag = MTA
+			tag = IDH
+			tag = MNS
+			tag = MIG
+			tag = WIS
+			tag = ILI
+			tag = IND
+			tag = OHO
+			tag = MIS
+			}
 		}
 	}
 	#Focus for Volunteer Forces
@@ -194,6 +220,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EUS_radical_change
+				days = 210
+			}
+		}
 	}
 
 	#Focus for Old Ways
@@ -210,6 +242,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EUS_old_ways
+				days = 210
+			}
+		}
 	}
 
 	#Focus for Internationalism Focus
@@ -224,6 +262,22 @@ focus_tree = {
 		mutually_exclusive = { focus = Generic_US_nationalism_focus }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			start_civil_war = {
+					ideology = democratic
+					size = 0.5
+				}
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.5
+				}
+				set_politics = {
+				ruling_party = communism
+				allow_elections = no
+			}
+			}
 		}
 	}
 
@@ -283,6 +337,22 @@ focus_tree = {
 		mutually_exclusive = { focus = Generic_US_internationalism_focus }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			start_civil_war = {
+					ideology = democratic
+					size = 0.5
+				}
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+				set_politics = {
+				ruling_party = fascism
+				allow_elections = no
+			}
+			}
 		}
 	}
 

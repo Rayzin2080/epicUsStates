@@ -126,5 +126,35 @@ ideas = {
 				
 			}
 		}
+		EUS_radical_change = {
+			picture = mas_birthplace
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+				
+			}
+		}
+		EUS_old_ways = {
+			picture = mas_birthplace
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.02
+				communism_drift = -0.02
+				
+			}
+		}
 	}
 }
