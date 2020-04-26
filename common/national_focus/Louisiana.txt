@@ -398,6 +398,11 @@ target = DOM
 		}
 		completion_reward = {
 			#nationalism
+			set_politics = { ruling_party = fascism }
+			add_popularity = {
+    				ideology = fascism
+    				popularity = -0.5
+			}
 		}
 	}
 
