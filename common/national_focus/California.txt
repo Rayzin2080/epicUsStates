@@ -1,0 +1,83 @@
+focus_tree = {
+	id = epic_states_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CLF
+		}
+	}
+#################IDEOLOGY/CONQUEST#################
+	#Aftermath
+	focus = {
+		id = CLF_aftermath
+		icon = EUS_split
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	#Pick capital location
+	focus = {
+		id = CLF_matter_of_cap
+		icon = CLF_capital_pick
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CLF_aftermath }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.10
+			custom_effect_tooltip = CLF_pick_a_cap_tooltip
+		}
+	}
+	
+	focus = {
+		id = CLF_pick_north
+		icon = CLF_pick_north_cap
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CLF_matter_of_cap }
+		mutually_exclusive = { focus = CLF_pick_south }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_capital = 818
+			custom_effect_tooltip = CLF_pick_north_tooltip
+		}
+	}
+	focus = {
+		id = CLF_pick_south
+		icon = CLF_pick_south_cap
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CLF_matter_of_cap }
+		mutually_exclusive = { focus = CLF_pick_north }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = CLF_pick_south_tooltip
+		}
+	}
+	
+}

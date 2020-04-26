@@ -1,0 +1,13 @@
+﻿##############FOCUSES##############
+l_english: 
+CLF_aftermath:0 "Aftermath"
+CLF_aftermath_desc:0 "Our new California republic is born and already there are those who would strike our newborn republic where it sits. We must move to protect our republic and eliminate those who would see it die!"
+CLF_matter_of_cap:0 "A Matter of Capital"
+CLF_matter_of_cap_desc:0 "A civil war brews and we will soon need to pick a side! Will we stay true to our democratic ideals or will we take radical action to secure California's future?"
+CLF_pick_north:0 "Move Our Capital to San Fransisco"
+CLF_pick_north_desc:0 "A civil war brews and we must be ready to stand strong! Our new capital in San Fransisco will be very important to preserving the security of our new state." #Fascist/Communist aggressive stance
+CLF_pick_south:0 "Keep Our Capital in Los Angeles"
+CLF_pick_south_desc:0 "We will stay where we are and let our enemies come to us. They will not break our will to survive!" #Democratic/fortification stance\
+CLF_pick_a_cap_tooltip:0 "§YYour upcoming decision will affect your path"
+CLF_pick_north_tooltip:0 "§YBegins a path of Fascism/Communism"
+CLF_pick_south_tooltip:0 "§YStays down the path of forging a Republic"
