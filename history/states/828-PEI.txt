@@ -2,14 +2,14 @@ state={
 	id=828
 	name="STATE_828"
 	history = {
-		owner = CAN
+		owner = PEI
 		buildings = {
 		infrastructure = 3
 		industrial_complex = 2
 		arms_factory = 1
 		dockyard = 2
 		}
-		add_core_of = CAN
+		add_core_of = PEI
 		
 	}
 	provinces={

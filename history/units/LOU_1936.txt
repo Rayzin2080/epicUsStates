@@ -1,0 +1,47 @@
+division_template = {
+	name = "Louisiana Infantry"
+	
+	division_names_group = LOU_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Cajun Warrior"
+	
+	division_names_group = LOU_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "First Cajun Infantry"
+		location = 12313
+		division_template = "Cajun Warrior"		
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "First Louisiana Infantry"
+		location = 7552
+		division_template = "Louisiana Infantry"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Maine Third Infantry"
+		location = 7555
+		division_template = "Louisiana Infantry"		
+		start_equipment_factor = 0.7
+	}
+}

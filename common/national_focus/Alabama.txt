@@ -1,0 +1,153 @@
+focus_tree = {
+	id = epic_states_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALA
+		}
+	}
+#################IDEOLOGY/CONQUEST#################
+	#Aftermath
+	focus = {
+		id = ALA_aftermath
+		icon = EUS_split
+		x = 11
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	
+	#CSA by force
+	focus = {
+		id = ALA_csa_by_force
+		icon = NYS_fascist
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_aftermath }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			367 = {
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		}
+		
+		#CSA seize Florida and George
+		focus = {
+		id = ALA_invade_georgia
+		icon = NYS_fascist
+		x = 8
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_csa_by_force }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRG
+				generator = { 365 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = FLO
+				generator = { 366 }
+			}
+		}
+	}
+	#CSA seize Florida and George
+		focus = {
+		id = ALA_invade_mississippi
+		icon = NYS_fascist
+		x = 10
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_csa_by_force }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MSP
+				generator = { 370 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = TEN
+				generator = { 368 }
+			}
+		}
+	}
+		#CSA seize Carolinas
+		focus = {
+		id = ALA_invade_carolina
+		icon = NYS_fascist
+		x = 9
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_invade_mississippi OR = ALA_invade_georgia }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MSP
+				generator = { 370 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = TEN
+				generator = { 368 }
+			}
+		}
+	}
+	
+	#CSA reclaim Virgina
+		focus = {
+		id = ALA_invade_virginia
+		icon = NYS_fascist
+		x = 9
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_invade_carolina }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = VIR
+				generator = { 362 806 }
+			}
+		}
+	}
+}
