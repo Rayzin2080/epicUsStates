@@ -10,7 +10,7 @@ focus_tree = {
 	#Focus for Aftermath
 	focus = {
 		id = LOU_aftermath
-		icon = GFX_goal_generic_territory_or_war
+		icon = EUS_split
 		x = 8
 		y = 0
 		cost = 10
