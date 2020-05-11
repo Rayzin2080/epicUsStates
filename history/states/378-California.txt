@@ -3,8 +3,8 @@ state={
 	id=378
 	name="STATE_378"
 	resources={
-		oil=180.000
-		aluminium=8.000
+		oil=130.000
+		aluminium=3.000
 	}
 
 	history={
@@ -12,8 +12,8 @@ state={
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 2
+			industrial_complex = 3
+			dockyard = 1
 			air_base = 10
 			1562 = {
 				naval_base = 10
