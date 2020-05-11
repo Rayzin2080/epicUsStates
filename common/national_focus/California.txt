@@ -63,6 +63,22 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = CLF_prepare_north_war
+		icon = CLF_prepare_war
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CLF_pick_north }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = CLF_pick_north_tooltip
+		}
+	}
+	focus = {
 		id = CLF_pick_south
 		icon = CLF_pick_south_cap
 		x = 9

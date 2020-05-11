@@ -12,11 +12,20 @@ state={
 			arms_factory = 1
 			dockyard = 1
 		}
+		9671 = {
+				naval_base = 4
+
+			}
 		add_core_of = CLF
+		
+		victory_points = {
+			9671 25 
+		}
 	}
 	provinces={
 		610 677 710 766 768 781 1601 3588 3644 3677 3678 4331 6482 6665 6681 6699 6745 6757 6772 9637 9671 9697 9713 9730 10159 11658 11698 
 	}
 	manpower=1232634
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

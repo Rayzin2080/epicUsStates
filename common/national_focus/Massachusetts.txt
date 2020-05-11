@@ -60,9 +60,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			#possibly add event to give new england nations a choice
+			#possibly add event to give new england nations a choice  CRI done
 			create_faction = New_England_Confederation
-			add_to_faction = CRI
+			CRI = { country_event = { id = conn.0 } }
 		}
 	
 	}
