@@ -231,7 +231,14 @@ target = FRA
 		}
 
 set_cosmetic_tag = FRA
-## switch focus tree to france down the legitimist path
+load_focus_tree = french_focus
+unlock_national_focus = FRA_revive_the_national_bloc
+unlock_national_focus = FRA_utilize_the_leagues
+unlock_national_focus = FRA_the_council_of_rambouillet
+unlock_national_focus = FRA_revise_the_constitution
+unlock_national_focus = FRA_repeal_the_law_of_exile
+unlock_national_focus = FRA_the_legitimate_heir
+
 		}
 	}
 
