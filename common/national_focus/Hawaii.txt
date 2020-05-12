@@ -1,0 +1,272 @@
+focus_tree = {
+	id = Hawaii
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HAW
+		}
+	}
+	#Focus for Militarism
+	focus = {
+		id = HAW_qPfaELFQ
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HAW_hawaiian_workers_revolution 
+			focus = HAW_restore_the_republic 
+			focus = HAW_let_fascist_ministers_into_government 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ##militarism
+		}
+	}
+
+	#Focus for Hawaiian Workers Revolution
+	focus = {
+		id = HAW_hawaiian_workers_revolution
+		icon = GFX_goal_support_communism
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_freedom_for_hawaii }
+		mutually_exclusive = { 
+			focus = HAW_restore_the_republic 
+			focus = HAW_let_fascist_ministers_into_government 
+			focus = HAW_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 50
+}
+set_politics= {
+ ruling_party = communism
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Restore the Republic
+	focus = {
+		id = HAW_restore_the_republic
+		icon = GFX_goal_support_democracy
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_freedom_for_hawaii }
+		mutually_exclusive = { 
+			focus = HAW_hawaiian_workers_revolution 
+		}
+		mutually_exclusive = { 
+			focus = HAW_let_fascist_ministers_into_government 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democracy
+popularity = 50 
+}
+set_politics= {
+ ruling_party = democracy
+elections_allowed = yes
+}
+		}
+	}
+
+	#Focus for let Fascist ministers into government
+	focus = {
+		id = HAW_let_fascist_ministers_into_government
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_freedom_for_hawaii }
+		mutually_exclusive = { 
+			focus = HAW_hawaiian_workers_revolution 
+			focus = HAW_restore_the_republic 
+			focus = HAW_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 50
+}
+set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+		}
+	}
+
+	#Focus for Britain
+	focus = {
+		id = HAW_britain
+		icon = GFX_focus_chi_british_cooperation
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_foreign_policy }
+		mutually_exclusive = { 
+			focus = HAW_the_comintern 
+			focus = HAW_coprosperity_sphere 
+			focus = HAW_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= democracy
+		}
+	}
+
+	#Focus for The Comintern
+	focus = {
+		id = HAW_the_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_foreign_policy }
+		mutually_exclusive = { 
+			focus = HAW_britain 
+			focus = HAW_coprosperity_sphere 
+			focus = HAW_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= communism
+		}
+		completion_reward = {
+			##join comintern
+		}
+	}
+
+	#Focus for British Tech Sharing
+	focus = {
+		id = HAW_british_tech_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_britain }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Co-Prosperity Sphere
+	focus = {
+		id = HAW_coprosperity_sphere
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_foreign_policy }
+		mutually_exclusive = { 
+			focus = HAW_the_comintern 
+		}
+		mutually_exclusive = { 
+			focus = HAW_britain 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= fascism
+		}
+		completion_reward = {
+			##alliance with Japan
+		}
+	}
+
+	#Focus for Foreign Policy
+	focus = {
+		id = HAW_foreign_policy
+		icon = GFX_goal_tripartite_pact
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_freedom_for_hawaii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	#Focus for Freedom for Hawaii
+	focus = {
+		id = HAW_freedom_for_hawaii
+		icon = GFX_goal_continuous_boost_freedom
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 200
+## event that lets you choose a new government
+		}
+	}
+
+	#Focus for Japanese Tech Sharing
+	focus = {
+		id = HAW_japanese_tech_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_coprosperity_sphere }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			## join japan tech sharing
+		}
+	}
+
+	#Focus for Comintern Tech Sharing
+	focus = {
+		id = HAW_comintern_tech_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_the_comintern }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
