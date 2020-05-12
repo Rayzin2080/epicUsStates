@@ -81,8 +81,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			#possibly add event to give new england nations a choice
-			add_to_faction = VMT
-			add_to_faction = NWH
+			VMT = { country_event = { id = vermont.0 } }
+			NWH = { country_event = { id = newHampshire.0 } }
 		}
 	
 	}

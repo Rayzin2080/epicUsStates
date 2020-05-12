@@ -1,0 +1,38 @@
+add_namespace = newHampshire
+
+#New Hampshire join the New England Confederation
+country_event = {
+	id = newHampshire.0
+	title = newHampshire.0.t
+	desc = newHampshire.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = newHampshireJoinOption.a  #join the new england confederation
+		add_opinion_modifier = { target = MAS modifier = large_increase }
+		MAS = {
+			country_event = { id = massachusetts.accept2 }
+			
+			add_to_faction = NWH
+		}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = {
+		name = newHampshireJoinOption.b  #dont join the new england confederation
+		add_opinion_modifier = { target = MAS modifier = medium_decrease }
+		MAS = {
+		country_event = { id = massachusetts.decline2 }
+		}
+		ai_chance = {		
+			base = 1
+		}
+	}
+	
+}

@@ -13,19 +13,20 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = connJoinOption0  #join the new england confederation
+		name = connJoinOption.a  #join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = large_increase }
-		MAS {
+		MAS = {
 			add_to_faction = CRI
+			country_event = { id = massachusetts.accept0 }
 		}
 		ai_chance = {
 			base = 4
 		}
 	}
 	option = {
-		name = connJoinOption1  #dont join the new england confederation
+		name = connJoinOption.b  #dont join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = medium_decrease }
-		
+		country_event = { id = massachusetts.decline0 }
 		ai_chance = {
 			base = 1
 		}

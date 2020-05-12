@@ -1,0 +1,35 @@
+add_namespace = vermont
+
+#Vermont join the New England Confederation
+country_event = {
+	id = vermont.0
+	title = vermont.0.t
+	desc = vermont.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = vermontJoinOption.a  #join the new england confederation
+		add_opinion_modifier = { target = MAS modifier = large_increase }
+		MAS = {
+			add_to_faction = VMT
+			country_event = { id = massachusetts.accept1 }
+		}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = {
+		name = vermontJoinOption.b  #dont join the new england confederation
+		add_opinion_modifier = { target = MAS modifier = medium_decrease }
+		country_event = { id = massachusetts.decline1 }
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+}
