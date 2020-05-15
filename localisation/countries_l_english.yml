@@ -3163,3 +3163,7 @@
  RHI_neutrality:0 "Rhode Island"
  RHI_communism:0 "Peoples Republic of Rhode Island"
  RHI_fascism:0 "Integralist Rhode Island"
+ DLW_democratic:0 "Delaware"
+ DLW_neutrality:0 "Aristocracy of Delaware"
+ DLW_communism:0 "Socialist Republic of Delaware"
+ DLW_fascism:0 "Populist Delaware"
