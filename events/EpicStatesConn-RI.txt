@@ -17,7 +17,7 @@ country_event = {
 		add_opinion_modifier = { target = MAS modifier = large_increase }
 		MAS = {
 			add_to_faction = CRI
-			country_event = { id = massachusetts.accept0 }
+			country_event = { id = massachusetts.riaccept }
 		}
 		ai_chance = {
 			base = 4
@@ -26,7 +26,7 @@ country_event = {
 	option = {
 		name = connJoinOption.b  #dont join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = medium_decrease }
-		country_event = { id = massachusetts.decline0 }
+		country_event = { id = massachusetts.ridecline }
 		ai_chance = {
 			base = 1
 		}

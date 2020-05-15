@@ -1,9 +1,9 @@
 add_namespace = massachusetts
 
 country_event = { #Rhode Island Accepts
-	id = massachusetts.accept0
-	title = massachusetts.accept0.t
-	desc = massachusetts.accept0.d
+	id = massachusetts.riaccept
+	title = massachusetts.riaccept.t
+	desc = massachusetts.riaccept.d
 	
 	is_triggered_only = yes
 	hidden = no
@@ -15,9 +15,9 @@ country_event = { #Rhode Island Accepts
 }
 
 country_event = { #Vermont Accepts
-	id = massachusetts.accept1
-	title = massachusetts.accept1.t
-	desc = massachusetts.accept1.d
+	id = massachusetts.veraccept
+	title = massachusetts.veraccept.t
+	desc = massachusetts.veraccept.d
 	
 	is_triggered_only = yes
 	hidden = no
@@ -29,9 +29,9 @@ country_event = { #Vermont Accepts
 }
 
 country_event = { #New Hampshire Accepts
-	id = massachusetts.accept2
-	title = massachusetts.accept2.t
-	desc = massachusetts.accept2.d
+	id = massachusetts.accept
+	title = massachusetts.nhaccept.t
+	desc = massachusetts.nhaccept.d
 	
 	is_triggered_only = yes
 	hidden = no
@@ -57,9 +57,9 @@ country_event = { #Maine Accepts
 }
 
 country_event = { #Rhode Island Declines
-	id = massachusetts.decline0
-	title = massachusetts.decline0.t
-	desc = massachusetts.decline0.d
+	id = massachusetts.ridecline
+	title = massachusetts.ridecline.t
+	desc = massachusetts.ridecline.d
 	
 	is_triggered_only = yes
 	hidden = no
@@ -71,9 +71,9 @@ country_event = { #Rhode Island Declines
 }
 
 country_event = { #Vermont Declines
-	id = massachusetts.decline1
-	title = massachusetts.decline1.t
-	desc = massachusetts.decline1.d
+	id = massachusetts.verdecline
+	title = massachusetts.verdecline.t
+	desc = massachusetts.verdecline.d
 	
 	is_triggered_only = yes
 	hidden = no
@@ -85,9 +85,9 @@ country_event = { #Vermont Declines
 }
 
 country_event = { #New Hampshire Declines
-	id = massachusetts.decline2
-	title = massachusetts.decline2.t
-	desc = massachusetts.decline2.d
+	id = massachusetts.nhdecline
+	title = massachusetts.nhdecline.t
+	desc = massachusetts.nhdecline.d
 	
 	is_triggered_only = yes
 	hidden = no

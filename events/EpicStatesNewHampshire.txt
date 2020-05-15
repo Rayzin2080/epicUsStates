@@ -16,7 +16,7 @@ country_event = {
 		name = newHampshireJoinOption.a  #join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = large_increase }
 		MAS = {
-			country_event = { id = massachusetts.accept2 }
+			country_event = { id = massachusetts.nhaccept }
 			
 			add_to_faction = NWH
 		}
@@ -28,7 +28,7 @@ country_event = {
 		name = newHampshireJoinOption.b  #dont join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = medium_decrease }
 		MAS = {
-		country_event = { id = massachusetts.decline2 }
+		country_event = { id = massachusetts.nhdecline }
 		}
 		ai_chance = {		
 			base = 1
