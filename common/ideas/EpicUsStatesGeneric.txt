@@ -111,7 +111,7 @@ ideas = {
 			}
 		}
 		EUS_birthplace_of_america = {
-			picture = mas_birthplace
+			picture = MAS_birthplace
 			
 			allowed = {
 				always = no

@@ -29,7 +29,7 @@ focus_tree = {
 	#Focus for Birthplace of America (Democratic Path)
 	focus = {
 		id = MAS_birthplace
-		icon = NYS_blank_leader
+		icon = MAS_birthplace
 		x = 4
 		y = 1
 		cost = 10
