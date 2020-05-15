@@ -875,3 +875,7 @@ PEI = {
 	color = rgb{ 23 53 156 }
 	color_ui = rgb{ 23 53 156 }
 }
+RHI = {
+	color = rgb{ 0 102 0 }
+	color_ui = rgb{ 0 102 0 }
+}

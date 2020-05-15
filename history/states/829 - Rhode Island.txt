@@ -1,0 +1,28 @@
+state={
+	id=829
+	name="STATE_829"
+	state_category = large_town
+	history={
+		owner=RHI
+		buildings={
+			infrastructure = 7
+			arms_factory = 4
+			industrial_complex = 5
+			dockyard = 4
+			air_base = 7
+			9832 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = RHI
+		victory_points = {
+			13234 12.0
+		}
+	}
+	provinces={
+		13234 13235
+	}
+	manpower=2358331
+	buildings_max_level_factor=1.000
+}

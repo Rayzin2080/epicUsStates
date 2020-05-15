@@ -1,0 +1,28 @@
+state={
+	id=798
+	name="STATE_798"
+	state_category = large_town
+	history={
+		owner=CRI
+		buildings={
+			infrastructure = 7
+			arms_factory = 4
+			industrial_complex = 5
+			dockyard = 4
+			air_base = 7
+			9832 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = CRI
+		victory_points = {
+			9832 5.0
+		}
+	}
+	provinces={
+		6909 9832 9847 9850 11830
+	}
+	manpower=2358331
+	buildings_max_level_factor=1.000
+}
