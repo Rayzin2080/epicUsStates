@@ -202,10 +202,13 @@ elections_allowed = no
 			factor = 1
 		}
 		available = {
+			NOT = { JAP = { has_war_with = HAW } }
+			JAP = { is_faction_leader = yes }
 			has_government= fascism
 		}
 		completion_reward = {
 			##alliance with Japan
+			JAP = { country_event = { id = hawaii.0 } }
 		}
 	}
 

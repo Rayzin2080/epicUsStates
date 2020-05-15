@@ -1,0 +1,71 @@
+add_namespace = hawaii
+
+#Hawaii join Japan
+country_event = {
+	id = hawaii.0
+	title = hawaii.0.t
+	desc = hawaii.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = hawaiiJoinJapOption.a  #join Japan
+		add_opinion_modifier = { target = JAP modifier = large_increase }
+		HAW = {
+			country_event = { id = hawaii.accept }
+			}
+			
+			JAP = { add_to_faction = HAW }
+		ai_chance = {
+			base = 6
+		}
+	}
+	
+	option = {
+		name = hawaiiJoinJapOption.b  #dont join Japan
+		add_opinion_modifier = { target = JAP modifier = medium_decrease }
+		HAW = {
+			country_event = { id = hawaii.decline }
+		}
+		ai_chance = {		
+			base = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = hawaii.accept
+	title = hawaii.accept.t
+	desc = hawaii.accept.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = hawaii.japanAccepts
+	}
+}
+
+country_event = {
+	id = hawaii.decline
+	title = hawaii.decline.t
+	desc = hawaii.decline.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = hawaii.japanDeclines
+	}
+}
