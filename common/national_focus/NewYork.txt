@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = NYS_new_governor
 		icon = NYS_blank_leader
-		x = 11
+		x = 10
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -35,7 +35,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
-		mutually_exclusive { focus = NYS_empower_the_workers OR = NYS_call_upon_the_aristocrats OR = NYS_the_empire_state }
+		mutually_exclusive { focus = NYS_empower_the_workers OR = NYS_call_upon_the_aristocrats OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -49,12 +49,12 @@ focus_tree = {
 	focus = {
 		id = NYS_call_upon_the_aristocrats
 		icon = NYS_non_aligned
-		x = 9
+		x = 8
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
-		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_empower_the_workers OR = NYS_the_empire_state }
+		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_empower_the_workers OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -72,12 +72,12 @@ focus_tree = {
 	focus = {
 		id = NYS_empower_the_workers
 		icon = NYS_communist
-		x = 13
+		x = 12
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
-		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_the_empire_state }
+		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -105,12 +105,12 @@ focus_tree = {
 			}
 		}
 	}
-
-	#Focus for The Empire State
+	
+	#Focus for Turn to Fascism
 	focus = {
-		id = NYS_the_empire_state
+		id = NYS_turn_to_fascism
 		icon = NYS_fascist
-		x = 17
+		x = 15
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -121,8 +121,29 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			custom_effect_tooltip = EUS_democratic_civil_war
 			add_timed_idea = { idea = EUS_fascist_influence  days = 320 }
+			
+		}
+	}
+###########################Fascist tree###################################
+	#Focus for The Empire State
+	focus = {
+		id = NYS_the_empire_state
+		icon = NYS_fascist
+		x = 27
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			ruling_party = fascism
+		}
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = EUS_democratic_civil_war
 			hidden_effect = {
 				add_popularity = {
 					ideology = communism
@@ -142,102 +163,28 @@ focus_tree = {
 				}
 				start_civil_war = {
 					ideology = democratic
-					size = 0.3
+					size = 0.5
 				}
-			}
-			set_politics = {
+				set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
+				}
 			}
+			
+			
 		}
 	}
+	
+	#Focus for Invest in Arms industries
 
-	#Focus for Cross the Niagara
-	focus = {
-		id = NYS_cross_the_niagara
-		icon = NYS_crossing
-		x = 21
-		y = 3
-		cost = 10
-		available_if_capitulated = no
-		prerequisite = { focus = NYS_claim_new_england }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_claim = 276
-		}
-	}
 
-	#Focus for Unify the Bread Basket
-	focus = {
-		id = NYS_unify_the_bread_basket
-		icon = NYS_bread
-		x = 19
-		y = 2
-		cost = 10
-		available_if_capitulated = no
-		prerequisite = { focus = NYS_the_empire_state }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_claim = 360
-			add_state_claim = 805
-			add_state_claim = 359
-		}
-	}
-
-	#Focus for Claim New England
-	focus = {
-		id = NYS_claim_new_england
-		icon = NYS_fascist
-		x = 21
-		y = 2
-		cost = 10
-		available_if_capitulated = no
-		prerequisite = { focus = NYS_the_empire_state }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_state_claim = 798
-			add_state_claim = 799
-			add_state_claim = 801
-			add_state_claim = 800
-			add_state_claim = 357
-		}
-	}
-
-	#Focus for The Empire State
-	focus = {
-		id = NYS_the_empire_state2
-		icon = NYS_fascist
-		x = 17
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = NYS_the_empire_state }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = EUS_fascist_influence
-				days = 320
-			}
-		}
-	}
+	
 #################INFRASTRUCTURE#################
 	#Focus for Upstate Developments
 	focus = {
 		id = NYS_upstate_developments
 		icon = NYS_fascist
-		x = 25
+		x = 20
 		y = 0
 		cost = 10
 		available_if_capitulated = no
@@ -265,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = NYS_develop_upstate_new_york
 		icon = NYS_fascist
-		x = 24
+		x = 19
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -298,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = NYS_develop_new_york
 		icon = NYS_fascist
-		x = 26
+		x = 21
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -331,7 +278,7 @@ focus_tree = {
 	focus = {
 		id = NYS_arms_industry
 		icon = NYS_fascist
-		x = 26
+		x = 21
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -364,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = NYS_upstate_arms_industries
 		icon = NYS_fascist
-		x = 24
+		x = 19
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -397,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = NYS_thruway_project
 		icon = NYS_fascist
-		x = 25 
+		x = 20
 		y = 3
 		cost = 10
 		available_if_capitulated = no
@@ -417,16 +364,6 @@ focus_tree = {
 					}
 				}
 			}
-			803 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
 			804 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -437,6 +374,76 @@ focus_tree = {
 					}
 				}
 			}
+			803 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
+	
+######################Improve Industries Focuses###############################
+
+#Focus for improve Civilian industries
+
+focus = {
+		id = NYS_economic_development
+		icon = NYS_fascist
+		x = 38
+		y = 0
+		cost = 10
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			802 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = idustrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			804 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = idustrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			803 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = idustrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			358 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = idustrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
 }
