@@ -63,7 +63,7 @@ focus_tree = {
 			add_timed_idea = { idea = EUS_neutrality_influence  days = 320 }
 			set_politics = {
 				ruling_party = neutrality
-				allow_elections = no
+				elections_allowed = no
 			}
 		}
 	}
@@ -88,7 +88,7 @@ focus_tree = {
 			hidden_effect = {
 				add_popularity = {
 				ideology = democratic
-				popularity = 1
+				popularity = 1.0
 				}
 				add_popularity = {
 				ideology = communism
@@ -101,7 +101,7 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = communism
-				allow_elections = no
+				elections_allowed = no
 			}
 		}
 	}
@@ -147,7 +147,7 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = fascism
-				allow_elections = no
+				elections_allowed = no
 			}
 		}
 	}

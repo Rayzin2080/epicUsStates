@@ -1,6 +1,7 @@
 state={
 	id=816
 	name="STATE_816"
+	state_category = rural
 	history = {
 		owner = NMX
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		2102 3867 3883 4975 8070 10642 10867 12684 12720 12791 
 	}
-	manpower=0
+	manpower=215648
 	buildings_max_level_factor=1.000
 }

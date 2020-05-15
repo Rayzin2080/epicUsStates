@@ -1,6 +1,7 @@
 state={
 	id=815
 	name="STATE_815"
+	state_category = rural
 	history = {
 		owner = OKL
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		4919 6803 7945 8025 9822 10702 11743 
 	}
-	manpower=0
+	manpower=62451
 	buildings_max_level_factor=1.000
 }

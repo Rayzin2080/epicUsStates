@@ -1,6 +1,7 @@
 state={
 	id=828
 	name="STATE_828"
+	state_category = small_island
 	history = {
 		owner = PEI
 		buildings = {
@@ -15,6 +16,6 @@ state={
 	provinces={
 		4360 
 	}
-	manpower=0
+	manpower=115687
 	buildings_max_level_factor=1.000
 }

@@ -124,8 +124,8 @@ focus_tree = {
 		completion_reward = {
 			#TODO Fascism and communism
 		}
-	###########Fascism Tree#####################################
 	}
+	###########Fascism Tree#####################################
 	#Fascist Coup in Massachusetts government
 	focus = {
 		id = MAS_fascist_coup
@@ -142,11 +142,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			#TODO Fascist coup
-			set_poitics = fascism
+			set_politics = fascism
 		}
 	
 	}
-	
 	#Get the support of the people
 	focus = {
 		id = MAS_fascist_people_support
@@ -179,7 +178,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = limited_conscription
+			add_ideas = limited_conscription
 		}
 	}
 	###################Communism Tree#####################################

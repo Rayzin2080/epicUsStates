@@ -1,6 +1,7 @@
 state={
 	id=825
 	name="STATE_825"
+	state_category = rural
 	history = {
 		owner = WIS
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1560 1760 3699 4029 10341 10526 12357 12456 
 	}
-	manpower=0
+	manpower=138459
 	buildings_max_level_factor=1.000
 }

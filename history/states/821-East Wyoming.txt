@@ -1,6 +1,7 @@
 state={
 	id=821
 	name="STATE_821"
+	state_category = rural
 	history = {
 		owner = WMG
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		4610 4723 4794 4820 7814 10640 10711 
 	}
-	manpower=0
+	manpower=164359
 	buildings_max_level_factor=1.000
 }

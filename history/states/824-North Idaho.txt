@@ -1,6 +1,7 @@
 state={
 	id=824
 	name="STATE_824"
+	state_category = rural
 	history = {
 		owner = IDH
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1832 3781 4778 7845 10602 12124 
 	}
-	manpower=0
+	manpower=67845
 	buildings_max_level_factor=1.000
 }

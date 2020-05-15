@@ -88,7 +88,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 50add_stability= 20
+			add_political_power = 50
+			add_stability = 20
 		}
 	}
 

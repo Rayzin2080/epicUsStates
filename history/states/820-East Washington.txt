@@ -1,6 +1,7 @@
 state={
 	id=820
 	name="STATE_820"
+	state_category = city
 	history = {
 		owner = WSH
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1690 4747 10198 10327 10687 10693 12673 
 	}
-	manpower=0
+	manpower=356845
 	buildings_max_level_factor=1.000
 }

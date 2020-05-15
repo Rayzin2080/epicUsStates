@@ -1,6 +1,7 @@
 state={
 	id=813
 	name="STATE_813"
+	state_category = rural
 	history = {
 		owner = NEB
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1683 3708 7852 10676 12516 12586 
 	}
-	manpower=0
+	manpower=984562
 	buildings_max_level_factor=1.000
 }

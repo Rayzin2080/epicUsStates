@@ -1,6 +1,7 @@
 state={
 	id=811
 	name="STATE_811"
+	state_category = rural
 	history = {
 		owner = NDK
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1836 4772 6722 7877 10685 12566 
 	}
-	manpower=0
+	manpower=115623
 	buildings_max_level_factor=1.000
 }

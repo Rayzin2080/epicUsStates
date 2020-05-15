@@ -19,7 +19,7 @@ focus_tree = {
 			tag = ARK
 			tag = ARI
 			tag = NDK
-			tag	= SDK
+			tag = SDK
 			tag = CRD
 			tag = MTA
 			tag = IDH
@@ -278,7 +278,7 @@ focus_tree = {
 				}
 				set_politics = {
 				ruling_party = communism
-				allow_elections = no
+				elections_allowed = no
 			}
 			}
 		}
@@ -353,7 +353,7 @@ focus_tree = {
 				}
 				set_politics = {
 				ruling_party = fascism
-				allow_elections = no
+				elections_allowed = no
 			}
 			}
 		}

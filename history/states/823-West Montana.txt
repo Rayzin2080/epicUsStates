@@ -1,6 +1,7 @@
 state={
 	id=823
 	name="STATE_823"
+	state_category = rural
 	history = {
 		owner = MTA
 		buildings = {
@@ -11,6 +12,6 @@ state={
 	provinces={
 		1736 1854 4838 6742 7779 12676 
 	}
-	manpower=0
+	manpower=25648
 	buildings_max_level_factor=1.000
 }
