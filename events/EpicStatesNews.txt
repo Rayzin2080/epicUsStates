@@ -44,9 +44,27 @@ news_event = {
 	
 	trigger = {
 		NOT = {
-			MAS = {
-				owns_state = 799
-			}
+			799 = { is_controlled_by = MAS }
 		}
+		799 = { is_owned_by = MAS }
+}
+
+#Creation of the New England Confederation
+
+news_event = {
+	id = epicNews.3
+	title = epicNews.3.t
+	desc = epicNews.3.d
+	picture = EUS_new_england
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = epicNews.3.a
 	}
+
 }

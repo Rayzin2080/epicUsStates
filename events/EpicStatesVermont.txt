@@ -17,7 +17,7 @@ country_event = {
 		add_opinion_modifier = { target = MAS modifier = large_increase }
 		MAS = {
 			add_to_faction = VMT
-			country_event = { id = massachusetts.veraccept }
+			country_event = { id = massachusetts.accept }
 		}
 		ai_chance = {
 			base = 4
@@ -26,7 +26,10 @@ country_event = {
 	option = {
 		name = vermontJoinOption.b  #dont join the new england confederation
 		add_opinion_modifier = { target = MAS modifier = medium_decrease }
-		country_event = { id = massachusetts.verdecline }
+		MAS = {
+			create_wargoal = { type = puppet_wargoal_focus target = VMT } 
+			country_event = { id = massachusetts.decline }
+			}
 		ai_chance = {
 			base = 1
 		}

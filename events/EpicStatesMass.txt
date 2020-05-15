@@ -1,40 +1,15 @@
 add_namespace = massachusetts
 
-country_event = { #Rhode Island Accepts
-	id = massachusetts.riaccept
-	title = massachusetts.riaccept.t
-	desc = massachusetts.riaccept.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.accept.a
-		add_political_power = 50
-	}
-}
-
-country_event = { #Vermont Accepts
-	id = massachusetts.veraccept
-	title = massachusetts.veraccept.t
-	desc = massachusetts.veraccept.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.accept.a
-		add_political_power = 50
-	}
-}
-
-country_event = { #New Hampshire Accepts
+country_event = { # Accept Invitation to New England Confed
 	id = massachusetts.accept
-	title = massachusetts.nhaccept.t
-	desc = massachusetts.nhaccept.d
+	title = massachusetts.accept.t
+	desc = massachusetts.accept.d
 	
 	is_triggered_only = yes
+	
 	hidden = no
+	
+	fire_only_once = no
 	
 	option = {
 		name = massachusetts.accept.a
@@ -42,66 +17,10 @@ country_event = { #New Hampshire Accepts
 	}
 }
 
-country_event = { #Maine Accepts
-	id = massachusetts.accept3
-	title = massachusetts.accept3.t
-	desc = massachusetts.accept3.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.accept.a
-		add_political_power = 50
-	}
-}
-
-country_event = { #Rhode Island Declines
-	id = massachusetts.ridecline
-	title = massachusetts.ridecline.t
-	desc = massachusetts.ridecline.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.decline.a
-		
-	}
-}
-
-country_event = { #Vermont Declines
-	id = massachusetts.verdecline
-	title = massachusetts.verdecline.t
-	desc = massachusetts.verdecline.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.decline.a
-		
-	}
-}
-
-country_event = { #New Hampshire Declines
-	id = massachusetts.nhdecline
-	title = massachusetts.nhdecline.t
-	desc = massachusetts.nhdecline.d
-	
-	is_triggered_only = yes
-	hidden = no
-	
-	option = {
-		name = massachusetts.decline.a
-		
-	}
-}
-
-country_event = { #Maine Declines
-	id = massachusetts.decline3
-	title = massachusetts.decline3.t
-	desc = massachusetts.decline3.d
+country_event = { # Decline Invitation to New England Confed
+	id = massachusetts.decline
+	title = massachusetts.decline.t
+	desc = massachusetts.decline.d
 	
 	is_triggered_only = yes
 	hidden = no
