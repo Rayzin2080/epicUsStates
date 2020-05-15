@@ -879,3 +879,7 @@ RHI = {
 	color = rgb{ 0 102 0 }
 	color_ui = rgb{ 0 102 0 }
 }
+DLW = {
+	color = rgb{ 241 49 70 }
+	color_ui = rgb{ 241 49 70 }
+}
