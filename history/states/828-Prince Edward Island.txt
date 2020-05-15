@@ -11,6 +11,9 @@ state={
 		dockyard = 2
 		}
 		add_core_of = PEI
+		victory_points = {
+			4360 5.0
+		}
 		
 	}
 	provinces={

@@ -3167,3 +3167,7 @@
  DLW_neutrality:0 "Aristocracy of Delaware"
  DLW_communism:0 "Socialist Republic of Delaware"
  DLW_fascism:0 "Populist Delaware"
+ PEI_democratic:0 "Prince Edward Island"
+ PEI_neutrality:0 "Prince Edward Island"
+ PEI_communism:0 "Commune of Prince Edward Island"
+ PEI_fascism:0 "Dictatorial Prince Edward Island"
