@@ -173,7 +173,7 @@ focus_tree = {
 			
 			
 		}
-	}
+	}`
 	
 	#Focus for Invest in Arms industries
 
@@ -445,5 +445,19 @@ focus = {
 			}
 		}
 	}
-
+	
+	focus = {
+		id = NYS_general_electric_focus
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = { focus = NYS_economic_development }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = NYS_general_electric_tooltip
+	}
 }
