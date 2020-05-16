@@ -1,14 +1,18 @@
 ideas = {
 	industrial_concern = {
+		
+		
 		NYS_general_electric = {
-			
+			cost = 200
+			removal_cost = 100
+			picture = NYS_general_electric_icon
 			visible = {
 				always = yes
 			}
 			available = {
 				controls_state = 804
 				NYS = {
-					has_completed_focus = NYS_general_electric
+					has_completed_focus = NYS_general_electric_focus
 				}
 			}
 			cancel = {
@@ -17,17 +21,12 @@ ideas = {
 				}
 			}
 			
-			picture = new_york_general_electric
-			
 			modifier = {
 			}
 			traits = { electronics_concern }
 			research_bonus = { electronics = 0.15 }
-			
-			cost = 200
-			removal_cost = 100
 		}
-	
-	
+		
+		
 	}
 }

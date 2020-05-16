@@ -1,0 +1,6 @@
+spriteTypes = {	
+    spriteType = {
+        name = "GFX_idea_NYS_general_electric_icon"
+        texturefile = "gfx/modded/designCompanies/new_york_general_electric_icon.dds"
+    }
+}
