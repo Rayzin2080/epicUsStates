@@ -9,6 +9,7 @@ set_technology = {
 
 add_ideas = {
 	EUS_great_depression
+	NYS_suny_system
 }
 
 1939.1.1 = {

@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		NYS_suny_system = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = NYS_suny
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		
+	}
+}

@@ -258,4 +258,9 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	
+	SpriteType = {
+	name = "GFX_idea_NYS_suny"
+	texturefile = "gfx/modded/newYork/NYS_suny_logo.tga"
+	}
  }
