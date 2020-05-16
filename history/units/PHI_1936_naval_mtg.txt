@@ -1,0 +1,41 @@
+units= {
+
+fleet = {
+		name = "Asiatic Fleet"			
+		naval_base = 10265 # Manilla
+		task_force = {					
+			name = "Asiatic Fleet"				
+			location = 10265 # Manilla
+			ship = { name = "USS Augusta" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Pensacola Class" } } }				
+			ship = { name = "USS Marblehead" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
+			### Destroyer Squadron 5 ###				
+			ship = { name = "USS Paul Jones" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			# 13th Destroyer Division				
+			ship = { name = "USS Alden" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Barker" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS John D Edwards" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Whipple" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			# 14th Destroyer Division				
+			ship = { name = "USS Edsall" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Parrott" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Bulmer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Stewart" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			# 15th Destroyer Division				
+			ship = { name = "USS Pope" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Peary" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS Pillsbury" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+			ship = { name = "USS John D Ford" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
+		}					
+		task_force = {					
+			name = "5th Submarine Squadron"				
+			location = 10265 # Manilla
+			# 10th Submarine Division				
+			ship = { name = "USS S-36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "USS S-37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "USS S-38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "USS S-39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "USS S-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
+		}					
+	}
+	}
