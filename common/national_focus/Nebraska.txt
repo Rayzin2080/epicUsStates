@@ -1,0 +1,46 @@
+focus_tree = {
+	id = epic_states_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = NEB
+		}
+	}
+#################IDEOLOGY/CONQUEST#################
+	#Aftermath
+	focus = {
+		id = NEB_aftermath
+		icon = EUS_split
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	
+	#Nebraska's situation
+	focus = {
+		id = NEB_situation
+		icon = NEB_outline
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NEB_aftermath }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+}
