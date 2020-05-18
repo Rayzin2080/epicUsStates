@@ -448,7 +448,7 @@ focus = {
 	
 	focus = {
 		id = NYS_general_electric_focus
-		icon = NYS_focus_general_electric
+		icon = NYS_general_electic_focus_icon
 		x = 36
 		y = 1
 		cost = 10

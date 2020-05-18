@@ -154,5 +154,39 @@ ideas = {
 				
 			}
 		}
+		EUS_dust_bowl_major = {
+			picture = EUS_dustbowl_major_icon
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+				communism_drift = 0.01
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.65
+				
+			}
+		}
+		EUS_dust_bowl = {
+			picture = EUS_dustbowl_normal_icon
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+				communism_drift = 0.01
+				consumer_goods_factor = 0.30
+				local_resources_factor = -0.30
+				
+			}
+		}
 	}
 }
