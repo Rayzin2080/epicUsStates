@@ -49,8 +49,8 @@ bookmarks = {
 			
 			}
 		}
-		"CAL"={
-			history = "CAL_GATHERING_STORM_DESC"
+		"CLF"={
+			history = "CLF_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
