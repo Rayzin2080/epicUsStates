@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_THEODORE_GREEN_DESC"
 	picture = "gfx/leaders/NYS/portrait_RHI_theodore_green.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_HOMER_HOLT_DESC"
 	picture = "gfx/leaders/statesLeaders/portrait_wva_homer_holt.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

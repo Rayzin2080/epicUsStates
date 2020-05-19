@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_HERBERT_LEHMAN_DESC"
 	picture = "gfx/leaders/statesLeaders/portrait_nys_herbert_lehman.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

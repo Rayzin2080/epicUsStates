@@ -74,7 +74,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_EHRINGHAUS_DESC"
 	picture = "gfx/leaders/statesLeaders/portrait_nca_john_ehringhaus.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

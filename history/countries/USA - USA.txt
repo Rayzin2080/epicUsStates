@@ -276,7 +276,7 @@ create_country_leader = {
 	desc = "POLITICS_HERBERT_HOOVER_DESC"
 	picture = "gfx/leaders/statesLeaders/portrait_usa_herbert_hoover.dds"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = ideology = liberalism
 	traits = {
 	
 	}

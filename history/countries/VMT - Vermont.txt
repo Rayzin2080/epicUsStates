@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_SMITH_DESC"
 	picture = "gfx/leaders/NYS/portrait_ver_charles_smith.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

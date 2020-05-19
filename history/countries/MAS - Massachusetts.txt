@@ -32,7 +32,7 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_HURLEY_DESC"
 	picture = "gfx/leaders/NYS/portrait_mas_charles_hurley.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}

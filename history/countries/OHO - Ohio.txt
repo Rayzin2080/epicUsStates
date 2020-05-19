@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_MARTIN_DAVEY_DESC"
 	picture = "gfx/leaders/statesLeaders/portrait_oho_martin_davey.dds"
 	expire = "1940.11.3"
-	ideology = democratic
+	ideology = liberalism
 	traits = {
 		#
 	}
