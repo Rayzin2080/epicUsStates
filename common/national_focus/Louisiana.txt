@@ -310,7 +310,8 @@ unlock_national_focus = FRA_the_legitimate_heir
 			##owns acadia, ohio valley, quebec, haiti, and greater louisiana
 		}
 		completion_reward = {
-			##new cosmetic tag and political power wargoals on the rest of the american and canadian tags
+			set_cosmetic_tag = LOU_America
+			##political power wargoals on the rest of the american and canadian tags
 		}
 	}
 
