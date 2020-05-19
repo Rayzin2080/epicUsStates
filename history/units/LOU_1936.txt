@@ -39,7 +39,7 @@ units = {
 		start_equipment_factor = 0.7
 	}
 	division = {
-		name = "Maine Third Infantry"
+		name = "Second Louisiana Infantry"
 		location = 7555
 		division_template = "Louisiana Infantry"		
 		start_equipment_factor = 0.7
