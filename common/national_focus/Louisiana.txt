@@ -7,6 +7,45 @@ focus_tree = {
 			tag = LOU
 		}
 	}
+	#Focus for Pledge Allegiance
+	focus = {
+		id = LOU_pledge_allegiance
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_french_america }
+		mutually_exclusive = { focus = LOU_the_old_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			##france has completed their bourbon focus
+		}
+		completion_reward = {
+			##makes louisiana a subject of France
+		}
+	}
+
+	#Focus for Royal Commision on Technology
+	focus = {
+		id = LOU_royal_commision_on_technology
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_pledge_allegiance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_to_tech_sharing_group = FRA_legitimist_tech_sharing
+		FRA = { add_to_tech_sharing_group = FRA_legitimist_tech_sharing }
+		}
+	}
+
 	#Focus for Aftermath
 	focus = {
 		id = LOU_aftermath
@@ -197,6 +236,7 @@ target = MNS
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_french_america }
+		mutually_exclusive = { focus = LOU_pledge_allegiance }
 		ai_will_do = {
 			factor = 1
 		}
@@ -480,7 +520,7 @@ target = DOM
 		}
 		completion_reward = {
 			add_state_core= 318
-add_state_core= 319
+			add_state_core= 319
 		}
 	}
 

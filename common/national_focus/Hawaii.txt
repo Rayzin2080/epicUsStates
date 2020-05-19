@@ -7,9 +7,63 @@ focus_tree = {
 			tag = HAW
 		}
 	}
+	#Focus for License the Long Lance
+	focus = {
+		id = HAW_license_the_long_lance
+		icon = GFX_goal_generic_occupy_start_war
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_japanese_tech_sharing }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			##check if japan has finished long lance
+		}
+		completion_reward = {
+			add_ideas= the_long_lance
+		}
+	}
+
+	#Focus for Encourage British Investment
+	focus = {
+		id = HAW_encourage_british_investment
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_britain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			##add civilian factories and a consumer goods bonus and access to several british companies
+		}
+	}
+
+	#Focus for MiG Hawaii
+	focus = {
+		id = HAW_mig_hawaii
+		icon = GFX_goal_generic_build_airforce
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_comintern_tech_sharing }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			## access to MiG Hawaii
+		}
+	}
+
 	#Focus for Militarism
 	focus = {
-		id = HAW_lotNHVwd
+		id = HAW_aeHUvpCM
 		icon = GFX_goal_generic_political_pressure
 		x = 10
 		y = 3
@@ -48,7 +102,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity= { 
 ideology = communism
-popularity = 50
+popularity = 0.5
 }
 set_politics= {
  ruling_party = communism
@@ -78,7 +132,7 @@ elections_allowed = no
 		completion_reward = {
 			add_popularity= { 
 ideology = democratic
-popularity = 50 
+popularity = 0.5
 }
 set_politics= {
  ruling_party = democratic
@@ -107,7 +161,7 @@ elections_allowed = yes
 		completion_reward = {
 			add_popularity= { 
 ideology = fascism 
-popularity = 50
+popularity = 0.5
 }
 set_politics= {
  ruling_party = fascism 
@@ -142,7 +196,7 @@ elections_allowed = no
 	focus = {
 		id = HAW_the_comintern
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		x = 6
+		x = 7
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -175,13 +229,8 @@ elections_allowed = no
 		ai_will_do = {
 			factor = 1
 		}
-	available = {
-			is_in_faction_with = ENG
-		}
-		completion_reward = {
-			add_to_tech_sharing_group = commonwealth_research
-		}
 	}
+
 
 	#Focus for Co-Prosperity Sphere
 	focus = {
@@ -211,6 +260,7 @@ elections_allowed = no
 			JAP = { country_event = { id = hawaii.0 } }
 		}
 	}
+
 
 	#Focus for Foreign Policy
 	focus = {
@@ -250,7 +300,7 @@ elections_allowed = no
 	focus = {
 		id = HAW_japanese_tech_sharing
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 2
+		x = 0
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -258,12 +308,8 @@ elections_allowed = no
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			is_in_faction_with = JAP
-		}
 		completion_reward = {
-			add_to_tech_sharing_group = japanese_research
-			JAP = { add_to_tech_sharing_group = japanese_research }
+			## join japan tech sharing
 		}
 	}
 
@@ -271,20 +317,13 @@ elections_allowed = no
 	focus = {
 		id = HAW_comintern_tech_sharing
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 6
+		x = 7
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = HAW_the_comintern }
 		ai_will_do = {
 			factor = 1
-		}
-		available = {
-			is_in_faction_with = SOV
-		}
-		completion_reward = {
-			SOV = { add_to_tech_sharing_group = comintern_research }
-			add_to_tech_sharing_group = comintern_research
 		}
 	}
 
@@ -375,6 +414,44 @@ elections_allowed = no
 		}
 		completion_reward = {
 			##remove great depression
+		}
+	}
+
+	#Focus for Armor Purchase
+	focus = {
+		id = HAW_armor_purchase
+		icon = GFX_goal_generic_army_tanks
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HAW_britain 
+			focus = HAW_the_comintern 
+			focus = HAW_coprosperity_sphere 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			##purchase armor, something similar to the yugoslavian aircraft purchase
+		}
+	}
+
+	#Focus for Hawaiian Zaibatsus
+	focus = {
+		id = HAW_hawaiian_zaibatsus
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HAW_coprosperity_sphere }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			## civilian military and naval industry and access to japanese design companies
 		}
 	}
 
