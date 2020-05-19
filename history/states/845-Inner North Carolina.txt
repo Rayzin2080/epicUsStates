@@ -1,0 +1,21 @@
+state={
+	id=845
+	name="STATE_845"
+	state_category = rural
+	history={
+		owner=NCA
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = NCA
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		9967 7643 10495 10468 10096 7138
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

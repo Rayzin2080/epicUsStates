@@ -1,0 +1,21 @@
+state={
+	id=836
+	name="STATE_836"
+	state_category = rural
+	history={
+		owner=ALA
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = ALA
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		10520 11942 7640 492 860 11509 4594
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

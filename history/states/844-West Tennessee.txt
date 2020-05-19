@@ -1,0 +1,21 @@
+state={
+	id=844
+	name="STATE_844"
+	state_category = rural
+	history={
+		owner=TEN
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = TEN
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		7615 1987 12670 12501 10824 10615 7797
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=840
+	name="STATE_840"
+	state_category = rural
+	history={
+		owner=ILI
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = ILI
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		12365 4590 1527 10393 10339 6737 11589 12312 9450 12368
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

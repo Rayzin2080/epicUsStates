@@ -1,0 +1,21 @@
+state={
+	id=847
+	name="STATE_847"
+	state_category = rural
+	history={
+		owner=ARI
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = ARI
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		7920 3834 10783 8115 853 7747 4796
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

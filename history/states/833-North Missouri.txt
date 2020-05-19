@@ -1,0 +1,21 @@
+state={
+	id=833
+	name="STATE_833"
+	state_category = rural
+	history={
+		owner=MIS
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = MIS
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		10333 10516 7449 10391 7607 1523
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

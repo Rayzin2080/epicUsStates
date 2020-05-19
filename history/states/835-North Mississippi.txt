@@ -1,0 +1,21 @@
+state={
+	id=835
+	name="STATE_835"
+	state_category = rural
+	history={
+		owner=MSP
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = MSP
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		10410 12328 4510 7464 10753 11717
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

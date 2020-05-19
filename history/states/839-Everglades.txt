@@ -1,0 +1,21 @@
+state={
+	id=839
+	name="STATE_839"
+	state_category = rural
+	history={
+		owner=FLO
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = FLO
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		1584 12439 7388 866 12752 10489 1913 9834 1843
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

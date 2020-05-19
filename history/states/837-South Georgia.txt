@@ -1,0 +1,21 @@
+state={
+	id=837
+	name="STATE_837"
+	state_category = rural
+	history={
+		owner=GRG
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = GRG
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		1480 1433 12325 12498 12470 10492 7583 7612
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

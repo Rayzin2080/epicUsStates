@@ -1,0 +1,21 @@
+state={
+	id=832
+	name="STATE_832"
+	state_category = rural
+	history={
+		owner=MIG
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = MIG
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		11641 695 691 11685 9684
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}
