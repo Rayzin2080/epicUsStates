@@ -1,0 +1,21 @@
+state={
+	id=842
+	name="STATE_842"
+	state_category = rural
+	history={
+		owner=OHO
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = OHO
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		11791 11760 831 11776 9775 11890 4601
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

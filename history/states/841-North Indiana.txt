@@ -1,0 +1,21 @@
+state={
+	id=841
+	name="STATE_841"
+	state_category = rural
+	history={
+		owner=IND
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = IND
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		6713 9654 11637 4437 9653 870
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

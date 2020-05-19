@@ -1,0 +1,21 @@
+state={
+	id=843
+	name="STATE_843"
+	state_category = rural
+	history={
+		owner=KNT
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = KNT
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		10586 4402 10727 6974 4988 12709 6696
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}
