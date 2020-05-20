@@ -312,7 +312,10 @@ unlock_national_focus = FRA_the_legitimate_heir
 			factor = 1
 		}
 		available = {
-			##owns acadia, ohio valley, quebec, haiti, and greater louisiana
+			owns_state= 318
+			owns_state= 373
+			owns_state= 468
+			owns_state= 465
 		}
 		completion_reward = {
 			set_cosmetic_tag = LOU_America
@@ -480,9 +483,13 @@ target = DOM
 		}
 		completion_reward = {
 			##communism
+			set_politics = { ruling_party = communism }
+			add_popularity = {
+    				ideology = communism
+    				popularity = 0.5
 		}
 	}
-
+}
 	#Focus for Liberty Prevails
 	focus = {
 		id = LOU_liberty_prevails
@@ -502,10 +509,13 @@ target = DOM
 			factor = 1
 		}
 		completion_reward = {
-			##democracy
+			set_politics = { ruling_party = democratic }
+			add_popularity = {
+    				ideology = democratic
+    				popularity = 0.5
 		}
 	}
-
+}
 	#Focus for Reparations for slavery
 	focus = {
 		id = LOU_reparations_for_slavery
@@ -539,6 +549,8 @@ target = DOM
 		ai_will_do = {
 			factor = 1
 		}
+		available{
+		owns_state= 373}
 		completion_reward = {
 			create_wargoal= { 
 type = annex_everything 
