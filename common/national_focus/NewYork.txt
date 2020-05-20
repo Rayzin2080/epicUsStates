@@ -135,7 +135,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			ruling_party = fascism
+			has_government = fascism
 		}
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -185,7 +185,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_the_empire_state }
 		available = {
-			ruling_party = fascism
+			has_government = fascism
 		}
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -205,7 +205,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			ruling_party = fascism
+			has_government = fascism
 		}
 		prerequisite = { focus = NYS_fascist_arms_investment }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -225,7 +225,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			ruling_party = fascism
+			has_government = fascism
 		}
 		prerequisite = { focus = NYS_fascist_arms_investment }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
