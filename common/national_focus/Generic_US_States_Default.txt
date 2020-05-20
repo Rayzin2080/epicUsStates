@@ -269,20 +269,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			start_civil_war = {
-					ideology = democratic
-					size = 0.5
-				}
-			hidden_effect = {
-				add_popularity = {
-					ideology = communism
-					popularity = 0.5
-				}
-				set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			}
+		
 		}
 	}
 
@@ -344,20 +331,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			start_civil_war = {
-					ideology = democratic
-					size = 0.5
-				}
-			hidden_effect = {
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.5
-				}
-				set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
-			}
+			
 		}
 	}
 
