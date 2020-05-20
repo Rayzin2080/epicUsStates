@@ -269,7 +269,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_timed_idea = {
+				idea = EUS_communist_influence
+				days = 360
+			}
 		}
 	}
 
@@ -331,7 +334,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = EUS_fascist_influence
+				days = 360
+			}
 		}
 	}
 
