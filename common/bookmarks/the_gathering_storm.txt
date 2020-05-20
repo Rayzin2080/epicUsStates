@@ -88,6 +88,16 @@ bookmarks = {
 				LOU_louisiana_purchase_reconquest
 			}
 		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { always = yes }
+			ideas = {
+				EUS_great_depression
+			}
+			focuses = {
+			}
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
