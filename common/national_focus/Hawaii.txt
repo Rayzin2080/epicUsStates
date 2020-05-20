@@ -94,7 +94,6 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = HAW_restore_the_republic 
 			focus = HAW_let_fascist_ministers_into_government 
-			focus = HAW_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -153,7 +152,6 @@ elections_allowed = yes
 		mutually_exclusive = { 
 			focus = HAW_hawaiian_workers_revolution 
 			focus = HAW_restore_the_republic 
-			focus = HAW_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -182,7 +180,6 @@ elections_allowed = no
 		mutually_exclusive = { 
 			focus = HAW_the_comintern 
 			focus = HAW_coprosperity_sphere 
-			focus = HAW_ 
 		}
 		ai_will_do = {
 			factor = 1
