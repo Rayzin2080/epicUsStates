@@ -9,6 +9,7 @@ set_technology = {
 
 add_ideas = {
 	EUS_great_depression
+	EUS_isolationism
 }
 
 set_politics = {
