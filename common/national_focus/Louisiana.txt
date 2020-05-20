@@ -110,7 +110,12 @@ focus_tree = {
 				name = FRA_legitimist_party
 			}
 			set_politics = { ruling_party = neutrality }
+					add_popularity = {
+    				ideology = neutrality
+    				popularity = 0.5
 			}
+			}
+
 		}
 
 	#Focus for Every man a King
