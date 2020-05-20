@@ -498,9 +498,6 @@ target = DOM
 		mutually_exclusive = { 
 			focus = LOU_take_every_man_a_king_to_its_extreme 
 		}
-		mutually_exclusive = { 
-			focus = LOU_ 
-		}
 		ai_will_do = {
 			factor = 1
 		}
