@@ -1,0 +1,62 @@
+LOU_French =  {
+	LOU_French_integration = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = LOU
+		}
+
+		available = {
+			FROM = {
+				compliance > 60
+			}
+			has_stability > 0.5
+		}
+
+		state_target = yes
+
+		targets = { 372 834 375 373 833 392 826 810 391 808 815 374 816 814 383 817 821 388 389 811 812 390 813 384 }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = LOU_reintegration
+			}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cost = 60
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		ai_will_do = {
+			base = 200
+		}
+
+		modifier = {
+			weekly_manpower = -300
+		}
+
+		visible = {
+			
+				has_completed_focus = LOU_reintegration
+			
+		}
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
