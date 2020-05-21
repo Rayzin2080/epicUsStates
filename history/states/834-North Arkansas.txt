@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = ARK
 		victory_points = {
-		
+		4567 1
 		}
 	}
 	provinces={

@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = FLO
 		victory_points = {
-		
+		10352 1
 		}
 	}
 	provinces={
