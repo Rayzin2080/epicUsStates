@@ -4,17 +4,17 @@ state={
 	name="STATE_472"
 
 	history={
-		owner = CAN
+		owner = NWT
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = CAN
+		add_core_of = NWT
 
 	}
 
 	provinces={
-		2407 2976 4272 7696 7830 7901 8653 10527 10703 13075 13167 13189 13192 
+		2407 2976 4272 7696 7901 8653 10527 10703 13075 13189 2947 10721 13190 13188 8962 13191 
 	}
 	manpower=27681
 	buildings_max_level_factor=1.000

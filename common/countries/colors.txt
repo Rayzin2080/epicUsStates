@@ -883,3 +883,43 @@ DLW = {
 	color = rgb{ 241 49 70 }
 	color_ui = rgb{ 241 49 70 }
 }
+SAS = {
+	color = rgb{ 148 32 186 }
+	color_ui = rgb{ 148 32 186 }
+}
+MTB = {
+	color = rgb{ 4 157 255 }
+	color_ui = rgb{ 4 157 255 }
+}
+ABA = {
+	color = rgb{ 245 45 23 }
+	color_ui = rgb{ 245 45 23 }
+}
+BCA = {
+	color = rgb{ 255 93 0 }
+	color_ui = rgb{ 255 93 0 }
+}
+NFL = {
+	color = rgb{ 119 200 90 }
+	color_ui = rgb{ 119 200 90 }
+}
+OTR = {
+	color = rgb{ 136 20 236 }
+	color_ui = rgb{ 136 20 236 }
+}
+NBW = {
+	color = rgb{ 245 57 90 }
+	color_ui = rgb{ 245 57 90 }
+}
+NVS = {
+	color = rgb{ 238 121 214 }
+	color_ui = rgb{ 238 121 214 }
+}
+QBC = {
+	color = rgb{ 102 219 239 }
+	color_ui = rgb{ 102 219 239 }
+}
+NWT = {
+	color = rgb{ 118 246 23 }
+	color_ui = rgb{ 118 246 23 }
+}
