@@ -16,6 +16,8 @@ state={
 			}
 		}
 		add_core_of = NBW
+		victory_points={ 4285 1 }	
+		victory_points={ 12289 2 }
 	}
 
 	provinces={

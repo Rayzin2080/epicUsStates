@@ -606,6 +606,25 @@ target = WIS
 }
 		}
 	}
+	#Focus for Secure Mexico
+	focus = {
+		id = LOU_secure_mexico
+		icon = GFX_focus_mex_jefe_maximo
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_french_america }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = puppet_wargoal_focus 
+target = MEX
+}
+		}
+	}
 
 #End of focuses 
  }
