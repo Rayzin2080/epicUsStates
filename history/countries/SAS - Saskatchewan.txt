@@ -1,6 +1,6 @@
-capital = 801
+capital = 469
 
-oob = "VMT_1936"
+oob = "SAS_1936"`
 
 # Starting tech
 set_technology = {
