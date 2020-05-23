@@ -184,6 +184,12 @@ add_state_claim = 812
 add_state_claim = 390
 add_state_claim = 813
 add_state_claim = 384
+add_state_claim = 848
+add_state_claim = 849
+add_state_claim = 851
+add_state_claim = 850
+add_state_claim = 395
+add_state_claim = 840
 			create_wargoal= { 
 type = annex_everything 
 target = MTA
@@ -413,6 +419,9 @@ target = DOM
 		}
 		completion_reward = {
 465 ={add_core_of=LOU}
+add_state_claim = 357
+add_state_claim = 464
+add_state_claim = 828
 create_wargoal= { 
 type = annex_everything 
 target = PEI
