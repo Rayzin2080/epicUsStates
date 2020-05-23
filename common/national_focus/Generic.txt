@@ -40,13 +40,13 @@ focus_tree = {
 	}
 	#Focus for Volunteer Forces
 	focus = {
-		id = Generic_US_volunteer_forces
+		id = EUS_volunteer_forces
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 28
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_interventionism_focus }
+		prerequisite = { focus = EUS_interventionism_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -54,13 +54,13 @@ focus_tree = {
 
 	#Focus for Business Plan
 	focus = {
-		id = Generic_US_business_plan
+		id = EUS_business_plan
 		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 26
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_aristocratic_focus }
+		prerequisite = { focus = EUS_aristocratic_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -68,13 +68,13 @@ focus_tree = {
 
 	#Focus for militarized Unions
 	focus = {
-		id = Generic_US_militarized_unions
+		id = EUS_militarized_unions
 		icon = GFX_goal_generic_soviet_construction
 		x = 24
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_political_correctness }
+		prerequisite = { focus = EUS_political_correctness }
 		ai_will_do = {
 			factor = 1
 		}
@@ -82,13 +82,13 @@ focus_tree = {
 
 	#Focus for Paramilitarism
 	focus = {
-		id = Generic_US_paramilitarism
+		id = EUS_paramilitarism
 		icon = GFX_goal_generic_military_sphere
 		x = 22
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_american_boy_scouts }
+		prerequisite = { focus = EUS_american_boy_scouts }
 		ai_will_do = {
 			factor = 1
 		}
@@ -96,15 +96,15 @@ focus_tree = {
 
 	#Focus for Why We Fight
 	focus = {
-		id = Generic_US_why_we_fight
+		id = EUS_why_we_fight
 		icon = GFX_goal_generic_propaganda
 		x = 27
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = Generic_US_volunteer_forces 
-			focus = Generic_US_persuasive_politicians 
+			focus = EUS_volunteer_forces 
+			focus = EUS_persuasive_politicians 
 		}
 		ai_will_do = {
 			factor = 1
@@ -113,15 +113,15 @@ focus_tree = {
 
 	#Focus for Ideological Fanaticism
 	focus = {
-		id = Generic_US_ideological_fanaticism
+		id = EUS_ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
 		x = 23
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = Generic_US_paramilitarism 
-			focus = Generic_US_political_commissars 
+			focus = EUS_paramilitarism 
+			focus = EUS_political_commissars 
 		}
 		ai_will_do = {
 			factor = 1
@@ -130,13 +130,13 @@ focus_tree = {
 
 	#Focus for Interventionism Focus
 	focus = {
-		id = Generic_US_interventionism_focus
+		id = EUS_interventionism_focus
 		icon = GFX_goal_generic_political_pressure
 		x = 28
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_unity_focus }
+		prerequisite = { focus = EUS_unity_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -144,13 +144,13 @@ focus_tree = {
 
 	#Focus for Political Commissars
 	focus = {
-		id = Generic_US_political_commissars
+		id = EUS_political_commissars
 		icon = GFX_focus_generic_military_mission
 		x = 24
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_militarized_unions }
+		prerequisite = { focus = EUS_militarized_unions }
 		ai_will_do = {
 			factor = 1
 		}
@@ -158,13 +158,13 @@ focus_tree = {
 
 	#Focus for Political Correctness
 	focus = {
-		id = Generic_US_political_correctness
+		id = EUS_political_correctness
 		icon = GFX_goal_generic_dangerous_deal
 		x = 24
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_internationalism_focus }
+		prerequisite = { focus = EUS_internationalism_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -172,13 +172,13 @@ focus_tree = {
 
 	#Focus for Persuasive Politicians
 	focus = {
-		id = Generic_US_persuasive_politicians
+		id = EUS_persuasive_politicians
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 26
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_business_plan }
+		prerequisite = { focus = EUS_business_plan }
 		ai_will_do = {
 			factor = 1
 		}
@@ -186,13 +186,13 @@ focus_tree = {
 
 	#Focus for American Boy Scouts
 	focus = {
-		id = Generic_US_american_boy_scouts
+		id = EUS_american_boy_scouts
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 22
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_militarism }
+		prerequisite = { focus = EUS_militarism }
 		ai_will_do = {
 			factor = 1
 		}
@@ -200,13 +200,13 @@ focus_tree = {
 
 	#Focus for Militarism
 	focus = {
-		id = Generic_US_militarism
+		id = EUS_militarism
 		icon = GFX_goal_generic_political_pressure
 		x = 22
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_nationalism_focus }
+		prerequisite = { focus = EUS_nationalism_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -214,14 +214,14 @@ focus_tree = {
 
 	#Focus for Radical Change
 	focus = {
-		id = Generic_US_radical_change
+		id = EUS_radical_change
 		icon = GFX_goal_generic_forceful_treaty
 		x = 24
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_MuPqHUoc }
-		mutually_exclusive = { focus = Generic_US_old_ways }
+		prerequisite = { focus = EUS_MuPqHUoc }
+		mutually_exclusive = { focus = EUS_old_ways }
 		ai_will_do = {
 			factor = 1
 		}
@@ -235,14 +235,14 @@ focus_tree = {
 
 	#Focus for Old Ways
 	focus = {
-		id = Generic_US_old_ways
+		id = EUS_old_ways
 		icon = GFX_goal_support_democracy
 		x = 26
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_MuPqHUoc }
-		mutually_exclusive = { focus = Generic_US_radical_change }
+		prerequisite = { focus = EUS_MuPqHUoc }
+		mutually_exclusive = { focus = EUS_radical_change }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -257,14 +257,14 @@ focus_tree = {
 
 	#Focus for Internationalism Focus
 	focus = {
-		id = Generic_US_internationalism_focus
+		id = EUS_internationalism_focus
 		icon = GFX_goal_support_communism
 		x = 24
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_radical_change }
-		mutually_exclusive = { focus = Generic_US_nationalism_focus }
+		prerequisite = { focus = EUS_radical_change }
+		mutually_exclusive = { focus = EUS_nationalism_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -278,14 +278,14 @@ focus_tree = {
 
 	#Focus for Aristocratic Focus
 	focus = {
-		id = Generic_US_aristocratic_focus
+		id = EUS_aristocratic_focus
 		icon = GFX_focus_rom_parties_end
 		x = 26
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_old_ways }
-		mutually_exclusive = { focus = Generic_US_unity_focus }
+		prerequisite = { focus = EUS_old_ways }
+		mutually_exclusive = { focus = EUS_unity_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -293,14 +293,14 @@ focus_tree = {
 
 	#Focus for Unity Focus
 	focus = {
-		id = Generic_US_unity_focus
+		id = EUS_unity_focus
 		icon = GFX_goal_support_democracy
 		x = 28
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_old_ways }
-		mutually_exclusive = { focus = Generic_US_aristocratic_focus }
+		prerequisite = { focus = EUS_old_ways }
+		mutually_exclusive = { focus = EUS_aristocratic_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -308,7 +308,7 @@ focus_tree = {
 
 	#Focus for Aftermath
 	focus = {
-		id = Generic_US_MuPqHUoc
+		id = EUS_MuPqHUoc
 		icon = GFX_goal_generic_territory_or_war
 		x = 25
 		y = 0
@@ -322,14 +322,14 @@ focus_tree = {
 
 	#Focus for Nationalism Focus
 	focus = {
-		id = Generic_US_nationalism_focus
+		id = EUS_nationalism_focus
 		icon = GFX_goal_support_fascism
 		x = 22
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = Generic_US_radical_change }
-		mutually_exclusive = { focus = Generic_US_internationalism_focus }
+		prerequisite = { focus = EUS_radical_change }
+		mutually_exclusive = { focus = EUS_internationalism_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -343,15 +343,15 @@ focus_tree = {
 
 	#Focus for Technology Sharing
 	focus = {
-		id = Generic_US_technology_sharing
+		id = EUS_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
 		x = 27
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = Generic_US_ideological_fanaticism 
-			focus = Generic_US_why_we_fight 
+			focus = EUS_ideological_fanaticism 
+			focus = EUS_why_we_fight 
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		ai_will_do = {
