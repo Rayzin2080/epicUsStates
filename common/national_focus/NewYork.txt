@@ -41,7 +41,21 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			remove_ideas = EUS_power_vacuum
 			add_timed_idea = { idea = EUS_democratic_influence  days = 320 }
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Franklin Roosevelt"
+				desc = "EUS_FDR_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_Franklin_Roosevelt.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					dealbroker
+					railroad_enthusiast
+					first_lady
+				}
+			} 
 		}
 	}
 
@@ -60,6 +74,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			remove_ideas = EUS_power_vacuum
 			add_timed_idea = { idea = EUS_neutrality_influence  days = 320 }
 			set_politics = {
 				ruling_party = neutrality
@@ -84,6 +99,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = EUS_democratic_civil_war
+			remove_ideas = EUS_power_vacuum
 			add_timed_idea = { idea = EUS_communist_influence  days = 320 }
 			hidden_effect = {
 				add_popularity = {
@@ -121,6 +137,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			remove_ideas = EUS_power_vacuum
 			add_timed_idea = { idea = EUS_fascist_influence  days = 320 }
 			
 		}
@@ -234,6 +251,169 @@ focus_tree = {
 		}
 		completion_reward = {
 			
+		}
+	}
+###########################Democratic Tree###################################
+	#Focus for FDR's Grand New Deal
+	focus = {
+		id = NYS_grand_new_deal
+		icon = NYS_fascist
+		x = 36
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_country_leader = { ruling_only = yes name = "Franklin Roosevelt" }
+		}
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IF = {
+				limit = { has_idea = EUS_great_depression_2}
+				remove_ideas = EUS_great_depression_2
+			}
+			IF = {
+				limit = { has_idea = EUS_great_depression}
+				swap_ideas = {
+					remove_idea = EUS_great_depression
+					add_idea = EUS_great_depression_2
+				}
+			}
+			IF = {
+				limit = { NOT = { has_idea = EUS_great_depression AND = { has_idea = EUS_great_depression_2 } } }
+				add_political_power = 150
+			}
+			
+		}
+	}
+	focus = {
+		id = NYS_invest_in_the_future
+		icon = NYS_fascist
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_grand_new_deal }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = NYS_suny_system
+		}
+	}
+	focus = {
+		id = NYS_corning_glassworks
+		icon = NYS_fascist
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_invest_in_the_future }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			802 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NYS_bank_bailout
+		icon = NYS_fascist
+		x = 38
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_grand_new_deal }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { idea = NYS_bank_bailouts  days = 140 }
+		}
+	}
+	focus = {
+		id = NYS_establish_fdic
+		icon = NYS_fascist
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_bank_bailout }
+		available = {
+			not = { has_idea = NYS_bank_bailouts }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IF = {
+				limit = { has_idea = EUS_great_depression_2 }
+				remove_ideas = EUS_great_depression_2
+			}
+			IF = {
+				limit = { NOT = { has_idea = EUS_great_depression_2 } }
+				add_political_power = 150
+			}
+		}
+	}
+	focus = {
+		id = NYS_northern_economic_sphere
+		icon = NYS_fascist
+		x = 40
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_establish_fdic }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_faction = "New York Economic Protection Sphere"
+			PEN = { country_event = { id = pennsylvania.0 } }
+		}
+	}
+	focus = {
+		id = NYS_reverse_prohibition
+		icon = NYS_fascist
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_grand_new_deal }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IF = {
+				limit = { has_idea = EUS_prohibition }
+				remove_ideas = EUS_prohibition
+			}
+			IF = {
+				limit = { NOT = { has_idea = EUS_prohibition } }
+				add_political_power = 150
+			}
 		}
 	}
 	
@@ -452,7 +632,7 @@ focus_tree = {
 focus = {
 		id = NYS_economic_development
 		icon = NYS_fascist
-		x = 38
+		x = 44
 		y = 0
 		cost = 10
 		available_if_capitulated = no
@@ -507,7 +687,7 @@ focus = {
 	focus = {
 		id = NYS_general_electric_focus
 		icon = NYS_general_electic_focus_icon
-		x = 37
+		x = 43
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -523,7 +703,7 @@ focus = {
 	focus = {
 		id = NYS_economic2_focus
 		icon = NYS_bruh_icon
-		x = 37
+		x = 43
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -540,7 +720,7 @@ focus = {
 	focus = {
 		id = NYS_economic3_focus
 		icon = NYS_bruh_icon
-		x = 39
+		x = 45
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -556,7 +736,7 @@ focus = {
 	focus = {
 		id = NYS_economic4_focus
 		icon = NYS_bruh_icon
-		x = 39
+		x = 45
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -573,7 +753,7 @@ focus = {
 	focus = {
 		id = NYS_economic5_focus
 		icon = NYS_bruh_icon
-		x = 37
+		x = 43
 		y = 3
 		cost = 10
 		available_if_capitulated = no
@@ -590,7 +770,7 @@ focus = {
 	focus = {
 		id = NYS_economic6_focus
 		icon = NYS_bruh_icon
-		x = 39
+		x = 45
 		y = 3
 		cost = 10
 		available_if_capitulated = no

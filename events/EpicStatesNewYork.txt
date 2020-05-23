@@ -1,0 +1,31 @@
+add_namespace = newYork
+
+country_event = { # Accept Invitation to New England Confed
+	id = newYork.accept
+	title = newYork.accept.t
+	desc = newYork.accept.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = no
+	
+	option = {
+		name = newYork.accept.a
+		add_political_power = 50
+	}
+}
+country_event = { # Decline Invitation to New York Economic Protection Sphere
+	id = newYork.decline
+	title = newYork.decline.t
+	desc = newYork.decline.d
+	
+	is_triggered_only = yes
+	hidden = no
+	
+	option = {
+		name = newYork.decline.a
+		
+	}
+}
