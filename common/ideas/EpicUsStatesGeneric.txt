@@ -91,6 +91,26 @@ ideas = {
 				local_resources_factor = -0.4
 			}
 		}
+		EUS_great_depression_2 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.1
+				join_faction_tension = 0.05
+				local_resources_factor = -0.2
+			}
+		}
 		EUS_power_vacuum = {
 			picture = generic_purge
 			
@@ -206,8 +226,22 @@ ideas = {
 							limit = { is_major = yes }
 							add_opinion_modifier = { target = @PREV modifier = large_decrease }
 						}
-
+					}
 				}
+			}
+		}
+		EUS_prohibition = {
+			picture = EUS_prohibition.dds
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
 			}
 		}
 	}

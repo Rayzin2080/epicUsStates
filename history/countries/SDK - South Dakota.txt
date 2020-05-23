@@ -10,6 +10,8 @@ set_technology = {
 add_ideas = {
 	EUS_great_depression
 	EUS_dust_bowl_major
+	EUS_power_vacuum
+	EUS_prohibition
 }
 
 
