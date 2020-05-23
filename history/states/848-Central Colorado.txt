@@ -1,0 +1,21 @@
+state={
+	id=848
+	name="STATE_848"
+	state_category = rural
+	history={
+		owner=CRD
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = CRD
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		12627 1738 10588 1827 3869 1658 868 9792
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

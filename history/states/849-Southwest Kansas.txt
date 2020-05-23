@@ -1,0 +1,21 @@
+state={
+	id=849
+	name="STATE_849"
+	state_category = rural
+	history={
+		owner=KAN
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = KAN
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		4586
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}

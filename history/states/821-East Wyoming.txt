@@ -10,7 +10,7 @@ state={
 		add_core_of = WMG
 	}
 	provinces={
-		4610 4723 4794 4820 7814 10640 10711 
+		4610 4794 4820 7814 10711 
 	}
 	manpower=164359
 	buildings_max_level_factor=1.000

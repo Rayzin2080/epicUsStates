@@ -1,0 +1,21 @@
+state={
+	id=850
+	name="STATE_850"
+	state_category = rural
+	history={
+		owner=WMG
+		buildings={
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = WMG
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		10640 4723
+	}
+	manpower=152648
+	buildings_max_level_factor=1.000
+}
