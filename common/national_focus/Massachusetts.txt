@@ -105,8 +105,8 @@ focus_tree = {
 		completion_reward = {
 			MNE = { country_event = { id = maine.0 } }
 		}
-	##New Path##########
 	}
+	##New Path##########
 	#Forge a New Path focus (Fascism and Communism)
 	focus = {
 		id = MAS_forge_new_path
@@ -135,16 +135,17 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = MAS_forge_new_path }
-		mutually_exclusive { focus = MAS_workers_rise }
+		mutually_exclusive { focus = MAS_birthplace }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			#TODO Fascist coup
-			set_politics = fascism
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
-	
 	}
 	#Get the support of the people
 	focus = {
