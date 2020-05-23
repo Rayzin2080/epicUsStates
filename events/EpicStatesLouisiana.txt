@@ -29,6 +29,7 @@ is_triggered_only = yes
 hidden = no
 fire_only_once = yes
 option = {
+		name = LOU.1.accept
 		QBC = {
 			every_unit_leader = {
 				set_nationality = LOU
@@ -53,6 +54,7 @@ is_triggered_only = yes
 hidden = no
 fire_only_once = yes
 option = {
+		name = LOU.2.decline
 		466 = {
 				add_core_of = LOU
 			}

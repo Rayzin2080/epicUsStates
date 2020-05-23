@@ -26,4 +26,13 @@
  hawaiiJoinJapOption.b:0 "We do not need them"
  hawaii.accept:0 "Japan Accepts"
  hawaii.decline:0 "Japan Declines"
- 
+ LOU.0.t:0 "Louisiana Demands Union"
+ LOU.0.d:0 "Louisiana has demanded the union of our two countries and our loyalty to their king"
+ LOU.0.quebecaccept:0 "We will join them, Vive le Roi!"'
+ LOU.0.quebecdecline:0 "We will never join the likes of them! Vive le Quebec Libre!"
+ LOU.1.t:0 "Quebec has accepted"
+ LOU.1.d:0 "Quebec has accepted our demands, they now pledge allegiance to [LOU.GetLeader]"
+ LOU.1.accept:0 "Vive le Roi!"
+ LOU.2.t:0 "Quebec has declined"
+ LOU.2.d:0 "Quebec has declined our generous offer of union"
+ LOU.2.decline:0 "Then we will have to make them reconsider"
