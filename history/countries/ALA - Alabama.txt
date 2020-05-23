@@ -9,7 +9,8 @@ set_technology = {
 
 add_ideas = {
 	EUS_great_depression
-	EUS_isolationism
+	EUS_power_vacuum
+	EUS_prohibition
 }
 
 set_politics = {
@@ -28,9 +29,9 @@ create_country_leader = {
 	name = "Bruh Bruhman"
 	desc = "POLITICS_BRUH_DESC"
 	picture = "gfx/leaders/statesLeaders/bruh.tga"
-	expire = "1940.11.3"
-	ideology = liberalism
+	ideology = fascist_ideology
 	traits = {
-		#
+		the_gentleman_president
+		conservative_nationalist
 	}
 }
