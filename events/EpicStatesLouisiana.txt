@@ -1,0 +1,65 @@
+add_namespace = LOU
+
+#Quebec union
+country_event ={
+id = LOU.0
+title = LOU.0.t
+desc = LOU.0.d
+
+is_triggered_only = yes
+hidden = no
+fire_only_once = yes
+
+option = {
+name = LOU.0.quebecaccept
+LOU ={country_event = {id =LOU.1}		}
+		ai_chance = { factor = 10 }	
+}
+option = {`
+name = LOU.0.quebecdecline
+LOU = {country_event = {id = LOU.2}}
+}
+}
+country_event ={
+id = LOU.1
+title = LOU.1.t
+desc = LOU.1.d
+
+is_triggered_only = yes
+hidden = no
+fire_only_once = yes
+option = {
+		QBC = {
+			every_unit_leader = {
+				set_nationality = LOU
+			}
+		}
+		annex_country = { target = QBC transfer_troops = yes }
+		466 = {
+				add_core_of = LOU
+			}
+		
+		468 = {
+
+				add_core_of = LOU
+			}
+		}
+		}
+country_event ={
+id =LOU.2
+title = LOU.2.t
+desc = LOU.2.d
+is_triggered_only = yes
+hidden = no
+fire_only_once = yes
+option = {
+		466 = {
+				add_core_of = LOU
+			}
+		
+		468 = {
+
+				add_core_of = LOU
+			}
+}
+}

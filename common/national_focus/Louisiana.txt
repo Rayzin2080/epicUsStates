@@ -21,11 +21,18 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			##france has completed their bourbon focus
+		FRA ={has_completed_focus=FRA_the_legitimate_heir }
 		}
 		completion_reward = {
-			##makes louisiana a subject of France
-		}
+			FRA ={
+	set_autonomy = {
+		target = LOU
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+}
+ }
+		
 	}
 
 	#Focus for Royal Commision on Technology
@@ -260,6 +267,7 @@ target = MNS
 	focus = {
 		id = LOU_the_old_homeland
 		icon = GFX_focus_attack_france
+		available ={ NOT={FRA ={has_completed_focus=FRA_the_legitimate_heir }}}
 		x = 12
 		y = 6
 		cost = 10
@@ -384,7 +392,7 @@ target = DOM
 			factor = 1
 		}
 		completion_reward = {
-			##anschluss style event with quebec
+			QBC = { country_event = {id = LOU.0}}
 		}
 	}
 
@@ -401,10 +409,26 @@ target = DOM
 			factor = 1
 		}
 		available = {
-			##owns quebec
+			owns_state = 468
 		}
 		completion_reward = {
-			##cores on northern new brunswick and wargoals on all the maritimes and maine
+465 ={add_core_of=LOU}
+create_wargoal= { 
+type = annex_everything 
+target = PEI
+}
+create_wargoal= { 
+type = annex_everything 
+target = NVS
+}
+create_wargoal= { 
+type = annex_everything 
+target = NBW
+}
+create_wargoal= { 
+type = annex_everything 
+target = MNE
+}
 		}
 	}
 
