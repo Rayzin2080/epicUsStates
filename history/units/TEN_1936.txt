@@ -1,0 +1,46 @@
+division_template = {
+	name = "Militia Men"
+	
+	division_names_group = EUS_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "National Guard"
+	
+	division_names_group = EUS_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "Tennessee First Infantry"
+		location = 12501
+		division_template = "National Guard"		
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Tennessee Second Infantry"
+		location = 1758
+		division_template = "Militia Men"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Tennessee Third Infantry"
+		location = 8014
+		division_template = "Militia Men"		
+		start_equipment_factor = 0.7
+	}
+}

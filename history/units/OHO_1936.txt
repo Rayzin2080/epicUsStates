@@ -1,0 +1,46 @@
+division_template = {
+	name = "Militia Men"
+	
+	division_names_group = EUS_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "National Guard"
+	
+	division_names_group = EUS_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "Ohio First Infantry"
+		location = 6890
+		division_template = "National Guard"		
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Ohio Second Infantry"
+		location = 3872
+		division_template = "Militia Men"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Ohio Third Infantry"
+		location = 4601
+		division_template = "Militia Men"		
+		start_equipment_factor = 0.7
+	}
+}
