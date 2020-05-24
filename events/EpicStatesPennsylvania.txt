@@ -1,6 +1,6 @@
 add_namespace = pennsylvania
 
-#Pennsylvania join the New England Confederation
+#Pennsylvania join
 country_event = {
 	id = pennsylvania.0
 	title = pennsylvania.0.t
