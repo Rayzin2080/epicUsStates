@@ -1,6 +1,6 @@
 add_namespace = newYork
 
-country_event = { # Accept Invitation to New England Confed
+country_event = { # Accept Invitation
 	id = newYork.accept
 	title = newYork.accept.t
 	desc = newYork.accept.d
