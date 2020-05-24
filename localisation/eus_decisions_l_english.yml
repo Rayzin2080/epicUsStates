@@ -3,5 +3,6 @@
     LOU_French_desc:0 "if we can increase the amount of people speaking french we can govern them more effectively"
     LOU_French_integration:0 "Integration of [From.GetName]"
     LOU_French_integration_desc:0 "Compliance is high enough that we can integrate [From.GetName] into our nation"
+    LOU_foreign:0 "Foreign Influence"
     LOU_mexico:0 "Restore the Mexican Monarchy"
     LOU_mexico_desc:0 "With Mexico under our influence we can restore the monarchy there and secure a stalwart ally to the south"
