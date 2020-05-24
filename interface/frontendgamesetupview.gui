@@ -637,8 +637,8 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "select_button"
-			position = { x = -180 y = -52 }
-			quadTextureSprite ="GFX_button_359x34"
+			position = { x = -131 y = -52 }
+			quadTextureSprite ="GFX_button_261x34"
 			buttonText = "FE_SELECT_COUNTRY"
 			buttonFont = "hoi_18mbs"
 			Orientation = "CENTER_DOWN"
