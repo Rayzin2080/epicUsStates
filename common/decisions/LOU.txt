@@ -60,3 +60,35 @@ LOU_French =  {
 			}
 		}
 	}
+	}
+LOU_foreign = {
+	LOU_mexico = {
+	allowed={
+		original_tag = LOU
+	}
+		available = {
+		MEX = {
+		is_subject_of = LOU
+		}
+		}
+		visible = {
+		has_completed_focus = LOU_secure_mexico
+		}
+	complete_effect = {
+	MEX = {create_country_leader = {
+	name = "María Josepha Sophia de Iturbide"
+	desc = "POLITICS_MARIAJOSEPHA_DESC"
+	picture = "gfx/leaders/statesLeaders/mariajosefa_portrait.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {constitutional_monarch
+		
+	}
+}
+set_party_name = { ideology = neutrality long_name = iturbide name = iturbide }
+}
+	}
+	
+	}
+
+}
