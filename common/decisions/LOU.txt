@@ -86,6 +86,7 @@ LOU_foreign = {
 	}
 }
 set_party_name = { ideology = neutrality long_name = iturbide name = iturbide }
+set_cosmetic_tag = MEX_cristero
 }
 	}
 	
