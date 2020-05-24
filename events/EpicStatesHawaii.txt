@@ -32,7 +32,7 @@ country_event = {
 			country_event = { id = hawaii.decline }
 		}
 		ai_chance = {		
-			base = 1
+			base = 0
 		}
 	}
 }
@@ -67,5 +67,40 @@ country_event = {
 	
 	option = {
 		name = hawaii.japanDeclines
+	}
+}
+country_event = {
+	id = hawaii.1
+	title = hawaii.1.t
+	desc = hawaii.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = hawaiiJoinEngOption.a  #join Britain
+		add_opinion_modifier = { target = ENG modifier = large_increase }
+		HAW = {
+			country_event = { id = hawaii.accept }
+			}
+			
+			ENG = { add_to_faction = HAW }
+		ai_chance = {
+			base = 6
+		}
+	}
+	
+	option = {
+		name = hawaiiJoinENGOption.b  #dont join Britain
+		add_opinion_modifier = { target = ENG modifier = medium_decrease }
+		HAW = {
+			country_event = { id = hawaii.decline }
+		}
+		ai_chance = {		
+			base = 0 #ai declining alliance offers is no fun!
+		}
 	}
 }

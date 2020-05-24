@@ -63,7 +63,7 @@ focus_tree = {
 
 	#Focus for Militarism
 	focus = {
-		id = HAW_aeHUvpCM
+		id = HAW_militarism
 		icon = GFX_goal_generic_political_pressure
 		x = 10
 		y = 3
@@ -78,7 +78,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			##militarism
+			add_ideas = militarism_focus
 		}
 	}
 
@@ -187,6 +187,7 @@ elections_allowed = no
 		available = {
 			has_government= democratic
 		}
+		completion_reward ={ ENG = {country_event=hawaii.1}}
 	}
 
 	#Focus for The Comintern
@@ -210,7 +211,7 @@ elections_allowed = no
 			has_government= communism
 		}
 		completion_reward = {
-			##join comintern
+		#join comintern
 		}
 	}
 
@@ -306,7 +307,8 @@ elections_allowed = no
 			factor = 1
 		}
 		completion_reward = {
-			## join japan tech sharing
+			add_to_tech_sharing_group = japanese_research
+			JAP = { add_to_tech_sharing_group = japanese_research }
 		}
 	}
 
@@ -322,6 +324,10 @@ elections_allowed = no
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward ={	
+			add_to_tech_sharing_group = comintern_research
+			SOV = { add_to_tech_sharing_group = comintern_research }
+			}
 	}
 
 	#Focus for Dealing with the Great Depression
