@@ -366,7 +366,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = { idea = NYS_academic_fund days = 140 }
+			add_timed_idea = { idea = NYS_academic_fund days = 1 }
 		}
 	}
 	focus = {
@@ -644,7 +644,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_cleveland_tool_manufaturies
+		id = NYS_cleveland_tool_manufacturies
 		icon = NYS_fascist
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 1
