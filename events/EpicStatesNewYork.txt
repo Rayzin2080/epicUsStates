@@ -29,3 +29,141 @@ country_event = { # Decline Invitation to New York Economic Protection Sphere
 		
 	}
 }
+
+#Faction full integration, partial integration, no decision event
+country_event = {
+	id = newYork.1
+	title = newYork.1.t
+	desc = newYork.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name =newYork.1.a  #Full integration TO BE REPLACED WITH EVENT SYSTEM
+		NYS = {
+		if = {
+		limit = { is_in_faction_with = MIG }
+		annex_country = {
+			target = MIG
+			transfer_troops = yes
+		}
+		#MIG = { country_event = { id = newYork.2} }
+		}
+		
+		if = {
+		limit = {
+		PEN = { is_in_faction_with = NYS }
+		}
+		annex_country = {
+			target = PEN
+			transfer_troops = yes
+		}
+		#PEN = { country_event = { id = newYork.1} }
+		}
+		
+		if = {
+		limit = {
+		NWJ = { is_in_faction_with = NYS }
+		}
+		annex_country = {
+			target = NWJ
+			transfer_troops = yes
+		}
+		#NWJ = { country_event = { id = newYork.1} }
+		}
+			
+		if = {
+		limit = {
+		OHO = { is_in_faction_with = NYS }
+		}
+		annex_country = {
+			target = OHO
+			transfer_troops = yes
+		}
+		#OHO = { country_event = { id = newYork.1} }
+		}
+		
+		if = {
+		limit = {
+		OTR = { is_in_faction_with = NYS }
+		}
+		annex_country = {
+			target = OTR
+			transfer_troops = yes
+		}
+		#OTR = { country_event = { id = newYork.1} }
+		}
+		
+		}
+	}
+	option = {
+		name =newYork.1.b  #Partial integration  TO BE REPLACED WITH EVENT SYSTEM
+		NYS = {
+		if = {
+		limit = { is_in_faction_with = MIG }
+		puppet = MIG
+		#MIG = { country_event = { id = newYork.2} }
+		}
+		
+		if = {
+		limit = {
+		PEN = { is_in_faction_with = NYS }
+		}
+		puppet = PEN
+		#PEN = { country_event = { id = newYork.1} }
+		}
+		
+		if = {
+		limit = {
+		NWJ = { is_in_faction_with = NYS }
+		}
+		puppet = NWJ
+		#NWJ = { country_event = { id = newYork.1} }
+		}
+			
+		if = {
+		limit = {
+		OHO = { is_in_faction_with = NYS }
+		}
+		puppet = OHO
+		#OHO = { country_event = { id = newYork.1} }
+		}
+		
+		if = {
+		limit = {
+		OTR = { is_in_faction_with = NYS }
+		}
+		puppet = OTR
+		#OTR = { country_event = { id = newYork.1} }
+		}
+		
+		}
+	}
+	option = {
+		name =newYork.1.c  #Do nothing
+		#BRUH
+	}
+}
+
+#Full anexation message
+country_event = {
+	id = newYork.2
+	title = newYork.2.t
+	desc = newYork.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+	ai_will_do = 5
+	name = newYork.2.a
+	NYS = { annex_country = { target = ROOT transfer_troops = yes } }
+	
+	}
+	
+	option = {
+	ai_will_do = 1
+	name= newYork.2.b
+	}
+}

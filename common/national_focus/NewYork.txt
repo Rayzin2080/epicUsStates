@@ -720,7 +720,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = { id = newYork
+			country_event = { id = newYork.1 }
 		}
 	}
 	focus = {
