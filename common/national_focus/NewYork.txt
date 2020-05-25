@@ -292,12 +292,12 @@ focus_tree = {
 	focus = {
 		id = NYS_income_recovery_act
 		icon = NYS_fascist
-		x = 36
+		relative_position_id = NYS_grand_new_deal
+		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_grand_new_deal }
-	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -310,8 +310,9 @@ focus_tree = {
 	focus = {
 		id = NYS_public_works_administration
 		icon = NYS_fascist
-		x = 36
-		y = 2
+		relative_position_id = NYS_income_recovery_act
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_income_recovery_act }
@@ -328,8 +329,9 @@ focus_tree = {
 	focus = {
 		id = NYS_corning_glassworks
 		icon = NYS_fascist
-		x = 35
-		y = 3
+		relative_position_id = NYS_public_works_administration
+		x = -1
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_public_works_administration }
@@ -350,15 +352,36 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_invest_in_the_future
+		id = NYS_academic_funding
 		icon = NYS_fascist
-		x = 35
-		y = 4
+		relative_position_id = NYS_public_works_administration
+		x = 1
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NYS_corning_glassworks }
-	
+		prerequisite = { focus = NYS_public_works_administration }
+		prerequisite = { focus = NYS_establish_fdic }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { idea = NYS_academic_fund days = 140 }
+		}
+	}
+	focus = {
+		id = NYS_invest_in_the_future
+		icon = NYS_fascist
+		relative_position_id = NYS_academic_funding
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_academic_funding }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		available = {
+			not = { has_idea = NYS_academic_fund }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -368,9 +391,48 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = NYS_suny_research_commercialization
+		icon = NYS_fascist
+		relative_position_id = NYS_invest_in_the_future
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_invest_in_the_future }
+		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = NYS_economic_protection_sphere_research
+			IF = {
+				limit = { PEN = {is_in_faction_with = NYS } }
+				PEN = { add_to_tech_sharing_group = NYS_economic_protection_sphere_research }
+			}
+			IF = {
+				limit = { NWJ = {is_in_faction_with = NYS } }
+				NWJ = { add_to_tech_sharing_group = NYS_economic_protection_sphere_research }
+			}
+			IF = {
+				limit = { OHO = {is_in_faction_with = NYS } }
+				OHO = { add_to_tech_sharing_group = NYS_economic_protection_sphere_research }
+			}
+			IF = {
+				limit = { MIG = {is_in_faction_with = NYS } }
+				MIG = { add_to_tech_sharing_group = NYS_economic_protection_sphere_research }
+			}
+			IF = {
+				limit = { OTR = {is_in_faction_with = NYS } }
+				OTR = { add_to_tech_sharing_group = NYS_economic_protection_sphere_research }
+			}
+		}
+	}
+	focus = {
 		id = NYS_bank_bailout
 		icon = NYS_fascist
-		x = 39
+		relative_position_id = NYS_grand_new_deal
+		x = 3
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -387,8 +449,9 @@ focus_tree = {
 	focus = {
 		id = NYS_establish_fdic
 		icon = NYS_fascist
-		x = 39
-		y = 2
+		relative_position_id = NYS_bank_bailout
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_bank_bailout }
@@ -413,8 +476,9 @@ focus_tree = {
 	focus = {
 		id = NYS_new_york_economic_protection_sphere
 		icon = NYS_fascist
-		x = 39
-		y = 3
+		relative_position_id = NYS_establish_fdic
+		x = 0
+		y = 1
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_establish_fdic }
@@ -432,27 +496,43 @@ focus_tree = {
 	focus = {
 		id = NYS_northumberland_coal_mines
 		icon = NYS_fascist
-		x = 40
-		y = 4
+		relative_position_id = NYS_new_york_economic_protection_sphere
+		x = 1
+		y = 1
 		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = NYS_pennsylvania_foundry }
+		available_if_capitulated = no
+		available = {
+			OR = { PEN = { is_in_faction_with = NYS } controls_state = 360 }
+		}
+		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				PEN = { country_event = { id = pennsylvania.1} }
+			}
+			360 = {
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
 		}
 	}
 	focus = {
-		id = NYS_pennsylvania_foundry
+		id = NYS_pittsburgh_foundry
 		icon = NYS_fascist
-		x = 40
-		y = 5
+		relative_position_id = NYS_northumberland_coal_mines
+		x = 0
+		y = 1
 		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
+		available_if_capitulated = no
+		available = {
+			OR = { PEN = { is_in_faction_with = NYS } controls_state = 805 }
+		}
+		prerequisite = { focus = NYS_northumberland_coal_mines }
 		available = {
 			
 		}
@@ -461,16 +541,32 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				PEN = { country_event = { id = pennsylvania.2} }
+			}
+			PEN = {
+				805 = {
+					add_extra_state_shared_building_slots = 2
+					set_building_level = {
+						type = industrial_complex
+						level = 7
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = NYS_new_jersey_dockyards
 		icon = NYS_fascist
-		x = 42
-		y = 4
+		relative_position_id = NYS_new_york_economic_protection_sphere
+		x = 3
+		y = 1
 		cost = 1
 		available_if_capitulated = yes
+		available = {
+			OR = { NWJ = { is_in_faction_with = NYS } controls_state = 359 }
+		}
 		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
 		available = {
 			
@@ -480,30 +576,59 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				NWJ = { country_event = { id = pennsylvania.1} }
+			}
+			NWJ = {
+				359 = {
+					add_extra_state_shared_building_slots = 2
+					set_building_level = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = NYS_newark_arms_factories
 		icon = NYS_fascist
-		x = 42
-		y = 5
+		relative_position_id = NYS_new_jersey_dockyards
+		x = 0
+		y = 1
 		cost = 1
 		available_if_capitulated = yes
+		available = {
+			OR = { NWJ = { is_in_faction_with = NYS } controls_state = 359 }
+		}
 		prerequisite = { focus = NYS_new_jersey_dockyards }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				NWJ = { country_event = { id = pennsylvania.2} }
+			}
+			NWJ = {
+				359 = {
+					add_extra_state_shared_building_slots = 2
+					set_building_level = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = NYS_assist_the_hearts_of_industry
 		icon = NYS_fascist
-		x = 39
-		y = 6
+		relative_position_id = NYS_new_york_economic_protection_sphere
+		x = 0
+		y = 3
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
@@ -515,15 +640,20 @@ focus_tree = {
 		completion_reward = {
 			OHO = { country_event = { id = ohio.0 } }
 			MIG = { country_event = { id = michigan.0 } }
+			OTR = { country_event = { id = ontario.0 } }
 		}
 	}
 	focus = {
-		id = NYS_assist_the_hearts_of_industry
+		id = NYS_cleveland_tool_manufaturies
 		icon = NYS_fascist
-		x = 40
-		y = 7
+		relative_position_id = NYS_assist_the_hearts_of_industry
+		x = 1
+		y = 1
 		cost = 1
 		available_if_capitulated = yes
+		available = {
+			OR = { OHO = { is_in_faction_with = NYS } controls_state = 261 }
+		}
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -535,10 +665,52 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_assist_the_hearts_of_industry
+		id = NYS_toronto
 		icon = NYS_fascist
-		x = 42
-		y = 7
+		relative_position_id = NYS_assist_the_hearts_of_industry
+		x = 2
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		available = {
+			OR = { OTR = { is_in_faction_with = NYS } controls_state = 827 }
+		}
+		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_detroit_auto_factories
+		icon = NYS_fascist
+		relative_position_id = NYS_assist_the_hearts_of_industry
+		x = 3
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		available = {
+			OR = { MIG = { is_in_faction_with = NYS } controls_state = 393 }
+		}
+		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}focus = {
+		id = NYS_strengthen_ties
+		icon = NYS_fascist
+		relative_position_id = NYS_assist_the_hearts_of_industry
+		x = 0
+		y = 2
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
@@ -548,13 +720,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = { id = newYork
 		}
 	}
 	focus = {
 		id = NYS_reverse_prohibition
 		icon = NYS_fascist
-		x = 33
+		relative_position_id = NYS_grand_new_deal
+		x = -3
 		y = 1
 		cost = 10
 		available_if_capitulated = yes

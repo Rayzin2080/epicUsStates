@@ -1,0 +1,16 @@
+
+ technology_sharing_group = {
+
+	id = NYS_economic_protection_sphere_research
+	name = NYS_economic_protection_sphere_research_name
+	desc = NYS_economic_protection_sphere_research_desc
+	picture = NYS_research_group
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = NYS
+        compare_autonomy_state > autonomy_puppet
+    }
+
+}

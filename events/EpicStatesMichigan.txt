@@ -35,3 +35,19 @@ country_event = {
 			base = 1
 		}
 	}
+}
+country_event = {
+	id = michigan.1
+	title = michigan.1.t
+	desc = michigan.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = michiganNYSaccept
+	}
+}

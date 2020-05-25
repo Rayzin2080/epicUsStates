@@ -35,3 +35,34 @@ country_event = {
 			base = 1
 		}
 	}
+}
+country_event = {
+	id = newJersey.1
+	title = newJersey.improvement.0.t
+	desc = newJersey.improvement.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = newJerseyNYSaccept
+	}
+}
+country_event = {
+	id = newJersey.2
+	title = newJersey.improvement.1.t
+	desc = newJersey.improvement.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = newJerseyNYSaccept
+	}
+}

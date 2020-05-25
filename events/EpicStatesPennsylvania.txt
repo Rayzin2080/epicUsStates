@@ -35,3 +35,34 @@ country_event = {
 			base = 1
 		}
 	}
+}
+country_event = {
+	id = pennsylvania.1
+	title = pennsylvania.improvement.0.t
+	desc = pennsylvania.improvement.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = pennsylvaniaNYSaccept
+	}
+}
+country_event = {
+	id = pennsylvania.2
+	title = pennsylvania.improvement.1.t
+	desc = pennsylvania.improvement.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = pennsylvaniaNYSaccept
+	}
+}
