@@ -78,7 +78,7 @@ LOU_foreign = {
 	MEX = {create_country_leader = {
 	name = "María Josepha Sophia de Iturbide"
 	desc = "POLITICS_MARIAJOSEPHA_DESC"
-	picture = "gfx/leaders/statesLeaders/mariajosefa_portrait.dds"
+	picture = "gfx/leaders/statesLeaders/portrait_maria_josepha.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {constitutional_monarch
