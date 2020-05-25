@@ -1,0 +1,37 @@
+add_namespace = michigan
+
+#Pennsylvania join
+country_event = {
+	id = michigan.0
+	title = michigan.0.t
+	desc = michigan.0.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	fire_only_once = yes
+	
+	option = {
+		name = michiganJoinOption.a  #join the new england confederation
+		add_opinion_modifier = { target = NYS modifier = large_increase }
+		NYS = {
+			country_event = { id = newYork.accept }
+			
+			add_to_faction = MIG
+		}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = {
+		name = michiganJoinOption.b  #dont join the new england confederation
+		add_opinion_modifier = { target = NYS modifier = medium_decrease }
+		NYS = {
+			create_wargoal = { type = puppet_wargoal_focus target = MIG } 
+			country_event = { id = newYork.decline }
+			}
+		ai_chance = {		
+			base = 1
+		}
+	}

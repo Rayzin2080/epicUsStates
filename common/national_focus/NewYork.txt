@@ -290,7 +290,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_invest_in_the_future
+		id = NYS_income_recovery_act
 		icon = NYS_fascist
 		x = 36
 		y = 1
@@ -308,13 +308,31 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_corning_glassworks
+		id = NYS_public_works_administration
 		icon = NYS_fascist
 		x = 36
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = NYS_invest_in_the_future }
+		prerequisite = { focus = NYS_income_recovery_act }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = NYS_suny_system
+		}
+	}
+	focus = {
+		id = NYS_corning_glassworks
+		icon = NYS_fascist
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_public_works_administration }
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -332,9 +350,27 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = NYS_invest_in_the_future
+		icon = NYS_fascist
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_corning_glassworks }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = NYS_suny_system
+		}
+	}
+	focus = {
 		id = NYS_bank_bailout
 		icon = NYS_fascist
-		x = 38
+		x = 39
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -345,13 +381,13 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = { idea = NYS_bank_bailouts  days = 140 }
+			add_timed_idea = { idea = NYS_bank_bailouts  days = 1 }
 		}
 	}
 	focus = {
 		id = NYS_establish_fdic
 		icon = NYS_fascist
-		x = 38
+		x = 39
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -375,14 +411,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NYS_northern_economic_sphere
+		id = NYS_new_york_economic_protection_sphere
 		icon = NYS_fascist
-		x = 40
+		x = 39
 		y = 3
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_establish_fdic }
-	
+		prerequisite = { focus = NYS_public_works_administration }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -390,12 +426,135 @@ focus_tree = {
 		completion_reward = {
 			create_faction = "New York Economic Protection Sphere"
 			PEN = { country_event = { id = pennsylvania.0 } }
+			NWJ = { country_event = { id = newJersey.0 } }
+		}
+	}
+	focus = {
+		id = NYS_northumberland_coal_mines
+		icon = NYS_fascist
+		x = 40
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_pennsylvania_foundry }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_pennsylvania_foundry
+		icon = NYS_fascist
+		x = 40
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
+		available = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_new_jersey_dockyards
+		icon = NYS_fascist
+		x = 42
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
+		available = {
+			
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_newark_arms_factories
+		icon = NYS_fascist
+		x = 42
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_jersey_dockyards }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_assist_the_hearts_of_industry
+		icon = NYS_fascist
+		x = 39
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			OHO = { country_event = { id = ohio.0 } }
+			MIG = { country_event = { id = michigan.0 } }
+		}
+	}
+	focus = {
+		id = NYS_assist_the_hearts_of_industry
+		icon = NYS_fascist
+		x = 40
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_assist_the_hearts_of_industry
+		icon = NYS_fascist
+		x = 42
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 	focus = {
 		id = NYS_reverse_prohibition
 		icon = NYS_fascist
-		x = 34
+		x = 33
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -632,7 +791,7 @@ focus_tree = {
 focus = {
 		id = NYS_economic_development
 		icon = NYS_fascist
-		x = 44
+		x = 50
 		y = 0
 		cost = 10
 		available_if_capitulated = no
@@ -687,7 +846,7 @@ focus = {
 	focus = {
 		id = NYS_general_electric_focus
 		icon = NYS_general_electic_focus_icon
-		x = 43
+		x = 49
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -703,7 +862,7 @@ focus = {
 	focus = {
 		id = NYS_economic2_focus
 		icon = NYS_bruh_icon
-		x = 43
+		x = 49
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -720,7 +879,7 @@ focus = {
 	focus = {
 		id = NYS_economic3_focus
 		icon = NYS_bruh_icon
-		x = 45
+		x = 51
 		y = 1
 		cost = 10
 		available_if_capitulated = no
@@ -736,7 +895,7 @@ focus = {
 	focus = {
 		id = NYS_economic4_focus
 		icon = NYS_bruh_icon
-		x = 45
+		x = 51
 		y = 2
 		cost = 10
 		available_if_capitulated = no
@@ -753,7 +912,7 @@ focus = {
 	focus = {
 		id = NYS_economic5_focus
 		icon = NYS_bruh_icon
-		x = 43
+		x = 49
 		y = 3
 		cost = 10
 		available_if_capitulated = no
@@ -770,7 +929,7 @@ focus = {
 	focus = {
 		id = NYS_economic6_focus
 		icon = NYS_bruh_icon
-		x = 45
+		x = 51
 		y = 3
 		cost = 10
 		available_if_capitulated = no
