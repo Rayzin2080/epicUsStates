@@ -1,1 +1,44 @@
-﻿
+﻿focus_tree = {
+	id = epic_states_focuses
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	#Aftermath
+	focus = {
+		id = USA_aftermath
+		icon = EUS_split
+		x = 4
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	
+	focus = {
+		id = USA_send_terms_vir
+		icon = bruh
+		x = 12
+		y = 1
+		cost  = 10
+		prerequisite = { focus = USA_aftermath }
+		available = {
+			has_full_control_of_state = 852
+			has_full_control_of_state = 853
+		}
+		completion_reward = {
+			VIR = { country_event = { id = usa.0 } }
+		}
+	}
+}

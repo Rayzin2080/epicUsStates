@@ -1,29 +1,38 @@
 ﻿add_namespace = usa
 
-#Treaty of Richmond
-
 country_event = {
-	id= usa. richmond
-	title = usa.richmond.t
-	desc = usa.richmond.d
+	id = usa.0
+	title = usa.0.t
+	desc = usa.0.d
 	
-	is_triggered_only = yes
 	hidden = no
 	
-	fire_only_once = yes
-	
-	trigger = {
-		usa = { controls_state = 362 }
-	}
+	is_triggered_only = yes
 	
 	option = {
-		name = usa.richmond.a
-		ai_chance = 1
-		usa = {
-			set_state_controller = 362
-			set_state_controller = 806
-			add_stability = 0.30
-			add_war_support = 0.25
+		name = usa.0.a
+		ai_will_do = 9
+		USA = {
+			annex_country = {
+				target = VIR
+				transfer_troops = no
+			}
 		}
+		
+	}
+	option = {
+		name = usa.0.b
+		ai_will_do = 1
+		USA = {
+			transfer_state = 852
+			
+			puppet = VIR
+		}
+		
+	}
+	option = {
+		name = usa.0.c
+		ai_will_do = 1
+		
 	}
 }

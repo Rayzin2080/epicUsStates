@@ -1,0 +1,10 @@
+USA_virginia_war = {
+
+	priority = 10
+
+	icon = generic_industry
+	
+	allowed = {
+		original_tag = USA
+	}
+}

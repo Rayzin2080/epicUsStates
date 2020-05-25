@@ -1,0 +1,7 @@
+USA_virginia_war = {
+	USA_summon_troops = {
+		complete_effect = {
+			load_oob = "USA_warTroops"
+		}
+	}
+}

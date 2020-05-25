@@ -1,0 +1,18 @@
+state={
+	id=852
+	name="STATE_852"
+	history = {
+		owner = VIR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = VIR
+		add_claim_by = USA
+	}
+	provinces={
+		873 951 6958 11873 11888 
+	}
+	manpower=142432
+	buildings_max_level_factor=1.000
+}

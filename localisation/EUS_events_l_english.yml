@@ -40,3 +40,8 @@
  LOU.2.t:0 "Quebec has declined"
  LOU.2.d:0 "Quebec has declined our generous offer of union"
  LOU.2.decline:0 "Then we will have to make them reconsider"
+ usa.0.t:0 "The USA sends their terms"
+ usa.0.d:0 "The American Remnant has sent terms that they deem acceptable. We can choose one and bring an end to the conflict, or we can ignore the terms and fight to the end."
+ usa.0.a:0 "§RAccept full annexation!§!"
+ usa.0.b:0 "We become their puppet"
+ usa.0.c:0 "Fight To The End!"
