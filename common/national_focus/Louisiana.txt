@@ -84,6 +84,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		remove_ideas = EUS_power_vacuum
 			if = {
 				limit = {
 					date < 1941.2.21 #TODO_GABRIEL: coordinate with Drikus for death events
@@ -140,7 +141,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 20
+			add_stability = 0.05
 		}
 	}
 
@@ -517,6 +518,7 @@ target = MNE
     				ideology = fascism
     				popularity = 0.5
 			}
+			remove_ideas = EUS_power_vacuum
 		}
 	}
 
@@ -545,6 +547,7 @@ target = MNE
     				ideology = communism
     				popularity = 0.5
 		}
+		remove_ideas = EUS_power_vacuum
 	}
 }
 	#Focus for Liberty Prevails
@@ -571,6 +574,7 @@ target = MNE
     				ideology = democratic
     				popularity = 0.5
 		}
+		remove_ideas = EUS_power_vacuum
 	}
 }
 	#Focus for Reparations for slavery
