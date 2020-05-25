@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = CRD
 		victory_points = {
-		
+		1827 5
 		}
 	}
 	provinces={

@@ -18,6 +18,9 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = NVD
+	victory_points = {
+	10422 5
+	}
 	}
 
 	provinces={

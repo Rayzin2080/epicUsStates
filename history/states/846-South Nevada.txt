@@ -10,8 +10,11 @@ state={
 		}
 		add_core_of = NVD
 		victory_points = {
-		
+		4799 4
 		}
+		victory_points = {
+		4607 5
+}
 	}
 	provinces={
 		4799 7879 12425 4521 4816 12399 4607
