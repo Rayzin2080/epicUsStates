@@ -17,19 +17,25 @@ units = {
 	division = {
 		name = "First US Infantry"
 		location = 3957
-		division_template = "US Infantry"		
+		division_template = "US Infantry"
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Second US Infantry"
-		location = 6984
-		division_template = "US Infantry"		
+		location = 6929
+		division_template = "US Infantry"
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Third US Infantry"
-		location = 6892
-		division_template = "US Infantry"		
+		location = 11892
+		division_template = "US Infantry"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Fourth US Infantry"
+		location = 3957
+		division_template = "US Infantry"
 		start_equipment_factor = 0.9
 	}
 }

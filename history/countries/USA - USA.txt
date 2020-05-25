@@ -96,8 +96,12 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
+declare_war_on = {
+	target = VIR
+	type = annex_everything
+}
 
-set_convoys = 150
+set_convoys = 76
 
 
 set_politics = {

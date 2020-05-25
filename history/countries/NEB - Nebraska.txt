@@ -28,9 +28,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Herbert Lehman"
-	desc = "POLITICS_HERBERT_LEHMAN_DESC"
-	picture = "gfx/leaders/statesLeaders/portrait_nys_herbert_lehman.dds"
+	name = "Roy Cochran"
+	desc = "POLITICS_ROY_COCHRAN_DESC"
+	picture = "gfx/leaders/statesLeaders/portrait_roy_cochran.tga"
 	expire = "1940.11.3"
 	ideology = liberalism
 	traits = {
