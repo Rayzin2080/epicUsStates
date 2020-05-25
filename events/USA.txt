@@ -1,0 +1,29 @@
+﻿add_namespace = usa
+
+#Treaty of Richmond
+
+country_event = {
+	id= usa. richmond
+	title = usa.richmond.t
+	desc = usa.richmond.d
+	
+	is_triggered_only = yes
+	hidden = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		usa = { controls_state = 362 }
+	}
+	
+	option = {
+		name = usa.richmond.a
+		ai_chance = 1
+		usa = {
+			set_state_controller = 362
+			set_state_controller = 806
+			add_stability = 0.30
+			add_war_support = 0.25
+		}
+	}
+}
