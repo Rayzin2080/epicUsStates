@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ALA_aftermath
 		icon = EUS_split
-		x = 11
+		x = 6
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -26,12 +26,12 @@ focus_tree = {
 		}
 	}
 	
-	#CSA by force
+	#Confederate Sympathizers
 	focus = {
-		id = ALA_csa_by_force
+		id = ALA_confed_simp
 		icon = NYS_fascist
-		x = 9
-		y = 1
+		x = 6
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ALA_aftermath }
@@ -40,113 +40,54 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			367 = {
-				add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-				}
-			}
-		}
-		}
-		
-		#CSA seize Florida and George
-		focus = {
-		id = ALA_invade_georgia
-		icon = NYS_fascist
-		x = 8
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ALA_csa_by_force }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = GRG
-				generator = { 365 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = FLO
-				generator = { 366 }
-			}
-		}
-	}
-	#CSA seize Florida and George
-		focus = {
-		id = ALA_invade_mississippi
-		icon = NYS_fascist
-		x = 10
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ALA_csa_by_force }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = MSP
-				generator = { 370 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = TEN
-				generator = { 368 }
-			}
-		}
-	}
-		#CSA seize Carolinas
-		focus = {
-		id = ALA_invade_carolina
-		icon = NYS_fascist
-		x = 9
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = ALA_invade_mississippi OR = ALA_invade_georgia }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = MSP
-				generator = { 370 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = TEN
-				generator = { 368 }
+			add_timed_idea = { idea = ALA_confederate_sympathizers days = 70 }
+			set_party_name = {
+			ideology = fascism
+			name = neo_confederate
+			long_name = neo_confederate_long
 			}
 		}
 	}
 	
-	#CSA reclaim Virgina
-		focus = {
-		id = ALA_invade_virginia
+	#Prepare for war
+	focus = {
+		id = ALA_prepare_for_war
 		icon = NYS_fascist
-		x = 9
-		y = 4
+		x = 6
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALA_invade_carolina }
+		prerequisite = { focus = ALA_confed_simp }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = VIR
-				generator = { 362 806 }
+			add_stability= 0.05
+			add_political_power= 120
+		}
+	}
+	
+	#Empower Neo-confederate elements
+	focus = {
+		id = 	ALA_empower_confederates
+		icon = NYS_fascist
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_confed_simp }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+			ideology = fascism
+			popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = fascism
 			}
 		}
 	}
