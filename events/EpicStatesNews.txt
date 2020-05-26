@@ -68,3 +68,33 @@ news_event = {
 	}
 
 }
+
+#Treaty of Richmond A
+news_event = {
+	id = epicNews.4
+	name = epicNews.4.t
+	desc = epicNews.4.d
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = epicNews.4.a
+	}
+}
+
+#Treaty of Richmond B
+news_event = {
+	id = epicNews.5
+	name = epicNews.5.t
+	desc = epicNews.5.d
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = epicNews.5.a
+	}
+}

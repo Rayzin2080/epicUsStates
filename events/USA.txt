@@ -12,27 +12,37 @@ country_event = {
 	option = {
 		name = usa.0.a
 		ai_will_do = 9
+		
+		white_peace = USA
 		USA = {
 			annex_country = {
 				target = VIR
 				transfer_troops = no
 			}
 		}
-		
+		news_event = {
+		id = epicNews.4
+		days = 2
+		}
 	}
 	option = {
 		name = usa.0.b
 		ai_will_do = 1
+		
+		white_peace = USA
 		USA = {
 			transfer_state = 852
 			
 			puppet = VIR
 		}
 		
+		news_event = {
+		id = epicNews.5
+		days = 2
+		}
 	}
 	option = {
 		name = usa.0.c
-		ai_will_do = 1
 		
 	}
 }
