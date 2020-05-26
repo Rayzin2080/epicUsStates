@@ -383,6 +383,8 @@ create_wargoal= {
 type = annex_everything 
 target = DOM
 }
+add_state_claim = 318
+add_state_claim = 319
 		}
 	}
 
