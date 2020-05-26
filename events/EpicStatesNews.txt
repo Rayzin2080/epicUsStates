@@ -47,8 +47,11 @@ news_event = {
 			799 = { is_controlled_by = MAS }
 		}
 		799 = { is_owned_by = MAS }
+	}
+	option = {
+		name = epicNews.2.a
+	}
 }
-
 #Creation of the New England Confederation
 
 news_event = {
