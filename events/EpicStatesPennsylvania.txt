@@ -21,7 +21,7 @@ country_event = {
 			add_to_faction = PEN
 		}
 		ai_chance = {
-			base = 4
+			base = 10
 		}
 	}
 	option = {

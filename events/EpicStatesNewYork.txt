@@ -44,60 +44,72 @@ country_event = {
 		name =newYork.1.a  #Full integration TO BE REPLACED WITH EVENT SYSTEM
 		NYS = {
 		if = {
-		limit = { is_in_faction_with = MIG }
-		annex_country = {
-			target = MIG
-			transfer_troops = yes
-		}
-		#MIG = { country_event = { id = newYork.2} }
-		}
-		
-		if = {
-		limit = {
-		PEN = { is_in_faction_with = NYS }
-		}
-		annex_country = {
-			target = PEN
-			transfer_troops = yes
-		}
-		#PEN = { country_event = { id = newYork.1} }
+			limit = { is_in_faction_with = MIG }
+			custom_effect_tooltip = "Gain cores on Michigan, and Annex Michigan"
+			annex_country = {
+				target = MIG
+				transfer_troops = yes
+			}
+			add_state_core = 393
+			add_state_core = 832
+			add_state_core = 831
+			#MIG = { country_event = { id = newYork.2} }
 		}
 		
 		if = {
-		limit = {
-		NWJ = { is_in_faction_with = NYS }
-		}
-		annex_country = {
-			target = NWJ
-			transfer_troops = yes
-		}
-		#NWJ = { country_event = { id = newYork.1} }
-		}
-			
-		if = {
-		limit = {
-		OHO = { is_in_faction_with = NYS }
-		}
-		annex_country = {
-			target = OHO
-			transfer_troops = yes
-		}
-		#OHO = { country_event = { id = newYork.1} }
+			limit = {
+			PEN = { is_in_faction_with = NYS }
+			}
+			annex_country = {
+				target = PEN
+				transfer_troops = yes
+			}
+			add_state_core = 805
+			add_state_core = 360
+			#PEN = { country_event = { id = newYork.1} }
 		}
 		
 		if = {
-		limit = {
-		OTR = { is_in_faction_with = NYS }
+			limit = {
+			NWJ = { is_in_faction_with = NYS }
+			}
+			annex_country = {
+				target = NWJ
+				transfer_troops = yes
+			}
+			add_state_core = 359
+			#NWJ = { country_event = { id = newYork.1} }
 		}
-		annex_country = {
-			target = OTR
-			transfer_troops = yes
-		}
-		#OTR = { country_event = { id = newYork.1} }
+				
+		if = {
+				limit = {
+				OHO = { is_in_faction_with = NYS }
+			}
+			annex_country = {
+				target = OHO
+				transfer_troops = yes
+			}
+			add_state_core = 842
+			add_state_core = 261
+			#OHO = { country_event = { id = newYork.1} }
 		}
 		
+		if = {
+			limit = {
+			OTR = { is_in_faction_with = NYS }
+			}
+			annex_country = {
+				target = OTR
+				transfer_troops = yes
+			}
+			add_state_core = 827
+			add_state_core = 276
+			add_state_core = 682
+			add_state_core = 683
+			#OTR = { country_event = { id = newYork.1} }
 		}
 	}
+}
 	option = {
 		name =newYork.1.b  #Partial integration  TO BE REPLACED WITH EVENT SYSTEM
 		NYS = {
