@@ -100,6 +100,26 @@ country_event = {
 
 				OTR = { country_event = { id = newYork.4 } }
 			}
+			if = {
+				limit = { IND = { is_in_faction_with = NYS AND = { country_exists = IND } } }
+
+				IND = { country_event = { id = newYork.4 } }
+			}
+			if = {
+				limit = { ILI = { is_in_faction_with = NYS AND = { country_exists = ILI } } }
+
+				ILI = { country_event = { id = newYork.4 } }
+			}
+			if = {
+				limit = { WIS = { is_in_faction_with = NYS AND = { country_exists = WIS } } }
+
+				WIS = { country_event = { id = newYork.4 } }
+			}
+			if = {
+				limit = { MNS = { is_in_faction_with = NYS AND = { country_exists = MNS } } }
+
+				MNS = { country_event = { id = newYork.4 } }
+			}
 		}
 	}
 	option = {
@@ -128,6 +148,26 @@ country_event = {
 			if = {
 				limit = { OTR = { is_in_faction_with = NYS AND = { is_puppet = OTR } } }
 				OTR = { country_event = { id = newYork.5 } }
+			}
+			if = {
+				limit = { IND = { is_in_faction_with = NYS AND = { is_puppet = IND } } }
+
+				IND = { country_event = { id = newYork.5 } }
+			}
+			if = {
+				limit = { ILI = { is_in_faction_with = NYS AND = { is_puppet = ILI } } }
+
+				ILI = { country_event = { id = newYork.5 } }
+			}
+			if = {
+				limit = { WIS = { is_in_faction_with = NYS AND = { is_puppet = WIS } } }
+
+				WIS = { country_event = { id = newYork.5 } }
+			}
+			if = {
+				limit = { MNS = { is_in_faction_with = NYS AND = { is_puppet = MNS } } }
+
+				MNS = { country_event = { id = newYork.5 } }
 			}
 		}
 	}

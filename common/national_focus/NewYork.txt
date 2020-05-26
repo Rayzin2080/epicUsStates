@@ -18,7 +18,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 		completion_reward = {
 			add_stability= 0.05
@@ -38,7 +38,7 @@ focus_tree = {
 		mutually_exclusive { focus = NYS_empower_the_workers OR = NYS_call_upon_the_aristocrats OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			remove_ideas = EUS_power_vacuum
@@ -716,8 +716,9 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}focus = {
-		id = NYS_strengthen_ties
+	}
+	focus = {
+		id = NYS_incorporate_great_lakes
 		icon = NYS_fascist
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 0
@@ -725,6 +726,34 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
+		bypass = {
+			AND = {
+				is_in_faction_with = IND
+				is_in_faction_with = ILI
+				is_in_faction_with = WIS
+				is_in_faction_with = MNS
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IND = { country_event = { id = newYork.0 } }
+			ILI = { country_event = { id = newYork.0 } }
+			MNS = { country_event = { id = newYork.0 } }
+			WIS = { country_event = { id = newYork.0 } }
+		}
+	}
+	focus = {
+		id = NYS_strengthen_ties
+		icon = NYS_fascist
+		relative_position_id = NYS_incorporate_great_lakes
+		x = 0
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = NYS_incorporate_great_lakes }
 		bypass = {
 			AND = {
 				NOT = {
