@@ -53,7 +53,6 @@ focus_tree = {
 				traits = {
 					dealbroker
 					railroad_enthusiast
-					first_lady
 				}
 			} 
 		}
@@ -101,7 +100,7 @@ focus_tree = {
 			custom_effect_tooltip = EUS_democratic_civil_war
 			remove_ideas = EUS_power_vacuum
 			add_timed_idea = { idea = EUS_communist_influence  days = 320 }
-			hidden_effect = {
+			hidden_effect = { 
 				add_popularity = {
 				ideology = democratic
 				popularity = 1.0
@@ -483,14 +482,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_establish_fdic }
 		prerequisite = { focus = NYS_public_works_administration }
+		bypass = {
+			AND = {
+				is_in_faction_with = PEN
+				is_in_faction_with = NWJ
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			create_faction = "New York Economic Protection Sphere"
-			PEN = { country_event = { id = pennsylvania.0 } }
-			NWJ = { country_event = { id = newJersey.0 } }
+			PEN = { country_event = { id = newYork.0 } }
+			NWJ = { country_event = { id = newYork.0 } }
 		}
 	}
 	focus = {
@@ -632,15 +637,21 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
-	
+		bypass = {
+			AND = {
+				is_in_faction_with = OHO
+				is_in_faction_with = MIG
+				is_in_faction_with = OTR
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			OHO = { country_event = { id = ohio.0 } }
-			MIG = { country_event = { id = michigan.0 } }
-			OTR = { country_event = { id = ontario.0 } }
+			OHO = { country_event = { id = newYork.0 } }
+			MIG = { country_event = { id = newYork.0 } }
+			OTR = { country_event = { id = newYork.0 } }
 		}
 	}
 	focus = {
@@ -714,13 +725,23 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
-	
+		bypass = {
+			AND = {
+				NOT = {
+					country_exists = MIG
+					country_exists = NWJ
+					country_exists = OHO
+					country_exists = PEN
+					country_exists = OTR
+				}
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = { id = newYork.1 }
+			country_event = { id = newYork.3 }
 		}
 	}
 	focus = {
