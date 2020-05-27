@@ -11,6 +11,8 @@ add_ideas = {
 	EUS_great_depression
 	EUS_power_vacuum
 	EUS_prohibition
+	EUS_national_crisis
+EUS_national_crisis
 }
 
 set_politics = {

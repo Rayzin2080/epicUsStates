@@ -12,6 +12,7 @@ add_ideas = {
 	EUS_dust_bowl
 	EUS_power_vacuum
 	EUS_prohibition
+	EUS_national_crisis
 }
 
 set_politics = {

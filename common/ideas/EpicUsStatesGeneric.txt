@@ -208,8 +208,8 @@ ideas = {
 				
 			}
 		}
-		EUS_isolationism = {
-			picture = EUS_isolationism.dds
+		EUS_national_crisis = {
+			picture = EUS_national_crisis.dds
 			
 			allowed = {
 				always = no
@@ -221,12 +221,6 @@ ideas = {
 				set_rule = {
 					can_join_factions = no
 					can_send_volunteers = no
-					all_country = {
-						if = {
-							limit = { is_major = yes }
-							add_opinion_modifier = { target = @PREV modifier = large_decrease }
-						}
-					}
 				}
 			}
 		}
