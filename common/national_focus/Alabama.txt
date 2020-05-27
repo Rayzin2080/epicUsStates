@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 20
 			tag = ALA
 		}
 	}
@@ -51,20 +51,41 @@ focus_tree = {
 	
 	#Prepare for war
 	focus = {
-		id = ALA_prepare_for_war
+		id = ALA_prepare_for_war_1
 		icon = NYS_fascist
 		x = 6
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_government = fascism
+		}
 		prerequisite = { focus = ALA_confed_simp }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
-			add_political_power= 120
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 400
+			producer = MSP
+			}
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 320
+			producer = TEN
+			}
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 350
+			producer = GRG
+			}
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 200
+			producer = FLO
+			}
 		}
 	}
 	
@@ -88,6 +109,59 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = fascism
+			}
+		}
+	}
+	
+	#
+	focus = {
+		id = 	ALA_prepare_for_war_2
+		icon = NYS_fascist
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_prepare_for_war_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	#Border War for Pensacola
+	focus = {
+		id = 	ALA_seize_pensacola
+		icon = NYS_fascist
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ALA_prepare_for_war_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			start_border_war = {
+			change_state_after_war = no
+			attacker = {
+			state = 836
+			num_provinces = 3
+			on_win = pensacola_border_war.1
+			on_lose = pensacola_border_war.2
+			on_cancel = pensacola_border_war.3
+			}
+				
+			defender = {
+			state = 838
+			num_provinces = 2
+			on_win = pensacola_border_war.4
+			on_lose = pensacola_border_war.5
+			on_cancel = pensacola_border_war.6
+			}
 			}
 		}
 	}

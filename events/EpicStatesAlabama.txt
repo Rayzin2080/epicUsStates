@@ -1,0 +1,93 @@
+add_namespace = pensacola_border_war
+
+
+#Alabama wins
+country_event = {
+	id = pensacola_border_war.1
+	title = pensacola_border_war.1.t
+	desc = pensacola_border_war.1.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.1.a
+		ALA = { set_state_owner = 838 }
+	}
+}
+
+#Alabama loses
+country_event  = {
+	id = pensacola_border_war.2
+	title = pensacola_border_war.2.t
+	desc = pensacola_border_war.2.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.2.a
+	}
+}
+
+#Alabama cancels
+country_event  = {
+	id = pensacola_border_war.3
+	title = pensacola_border_war.3.t
+	desc = pensacola_border_war.3.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.3.a
+	}
+}
+
+#Florida wins
+country_event  = {
+	id = pensacola_border_war.4
+	title = pensacola_border_war.4.t
+	desc = pensacola_border_war.4.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.4.a
+	}
+}
+
+#Florida loses
+country_event  = {
+	id = pensacola_border_war.5
+	title = pensacola_border_war.5.t
+	desc = pensacola_border_war.5.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.5.a
+	}
+}
+
+#Florida Cancels
+country_event  = {
+	id = pensacola_border_war.6
+	title = pensacola_border_war.6.t
+	desc = pensacola_border_war.6.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = pensacola_border_war.6.a
+	}
+}
