@@ -218,9 +218,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				set_rule = {
-					can_join_factions = no
-					can_send_volunteers = no
+				join_faction_tension = 1.0
+				hidden_modifier = {
+					ai_get_ally_desire_factor = -1000
 				}
 			}
 		}

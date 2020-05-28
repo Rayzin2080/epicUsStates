@@ -267,7 +267,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			IF = {
@@ -299,7 +299,7 @@ focus_tree = {
 		prerequisite = { focus = NYS_grand_new_deal }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -318,7 +318,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -439,7 +439,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_timed_idea = { idea = NYS_bank_bailouts  days = 1 }
@@ -459,7 +459,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			IF = {
@@ -490,7 +490,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			create_faction = "New York Economic Protection Sphere"
@@ -646,7 +646,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			OHO = { country_event = { id = newYork.0 } }
@@ -736,7 +736,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			IND = { country_event = { id = newYork.0 } }
@@ -767,7 +767,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			country_event = { id = newYork.3 }
