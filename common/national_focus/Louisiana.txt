@@ -661,9 +661,27 @@ target = WIS
 			create_wargoal= { 
 type = puppet_wargoal_focus 
 target = MEX
-}
 		}
 	}
+}
+	#Focus for Voyageurs
+	focus = {
+		id = LOU_voyageurs
+		icon = GFX_focus_generic_military_mission
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_new_france }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_technology = { voyageurs = 1 }
+		load_oob = LOU_Voyageurs
+}
+}		
+	
 
 #End of focuses 
  }
