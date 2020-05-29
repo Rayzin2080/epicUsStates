@@ -45,6 +45,14 @@ country_event = { # Accept Invitation
 	
 	option = {
 		name = newYork.1.a
+		IF = {
+			limit = { NOT = { ROOT = { has_government = democratic } } }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = ROOT
+				size = 0.8
+			}
+		}
 	}
 }
 country_event = { # Decline Invitation to New York Economic Protection Sphere
@@ -71,6 +79,9 @@ country_event = {
 	
 	option = {
 		name =newYork.3.a  #Full integration
+		ai_chance = {		
+			base = 20
+		}
 		NYS = {
 			if = {
 				limit = { MIG = { is_in_faction_with = NYS AND = { country_exists = MIG } } }
@@ -124,6 +135,9 @@ country_event = {
 	}
 	option = {
 		name =newYork.3.b  #Partial integration
+		ai_chance = {		
+			base = 10
+		}
 		NYS = {
 			if = {
 				limit = { MIG = { is_in_faction_with = NYS AND = { is_puppet = MIG } } }
@@ -173,6 +187,9 @@ country_event = {
 	}
 	option = {
 		name =newYork.3.c  #Do nothing
+		ai_chance = {		
+			base = 1
+		}
 		#BRUH
 	}
 }

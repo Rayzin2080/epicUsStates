@@ -1,0 +1,41 @@
+NYS_keep_to_yourself_nosy_asshole = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = "GER"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ITA"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "JAP"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "ENG"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "FRA"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SOV"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CHI"			
+		value = 5000
+	}
+}

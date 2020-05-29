@@ -27,6 +27,8 @@ set_popularities = {
 	neutrality  = 5 
 }
 
+set_rule = { can_lower_tension = no }
+
 create_country_leader = {
 	name = "Herbert Lehman"
 	desc = "POLITICS_HERBERT_LEHMAN_DESC"

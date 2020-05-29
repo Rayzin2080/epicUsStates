@@ -218,9 +218,27 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				join_faction_tension = 1.0
+				custom_modifier_tooltip = "Prevents AI from interfering in European affairs"
 				hidden_modifier = {
-					ai_get_ally_desire_factor = -1000
+					join_faction_tension = 1.0
+					ai_get_ally_desire_factor = -5000
+					guarantee_cost = 10000
+				}
+			}
+		}
+		EUS_national_crisis_player = {
+			picture = EUS_national_crisis.dds
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = "Prevents player from interfering in European affairs"
+				hidden_modifier = {
+					join_faction_tension = 1.0
 				}
 			}
 		}
