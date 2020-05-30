@@ -1,0 +1,628 @@
+# try ignore claims
+LOU_mess_up_texas_next = {
+	
+	enable = {
+		ARK = { country_exists = no }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = declare_war
+		id = "TEX"
+		value = 1000
+	}
+}
+LOU_stop_going_so_beast_mode = {
+	
+	enable = {
+		has_war = yes
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = declare_war
+		id = "MTA"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "NDK"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "SDK"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "NEB"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "MIS"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "KAN"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "IOW"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "CRD"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "NMX"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TEX"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "OKL"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "WMG"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "ARK"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "ILI"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "MNS"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "MEX"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "FRA"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "PEI"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "NVS"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "DOM"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "HAI"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "NBW"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "MNE"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "IND"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TEN"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "KNT"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "WVA"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "OHO"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "MIG"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "WIS"			
+		value = -2000
+	}
+}
+LOU_montana_war = {
+
+	enable = {
+		has_war_with = MTA
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 388
+		state = 823
+		
+		value = 1000
+	}
+}
+LOU_north_dakota_war = {
+
+	enable = {
+		has_war_with = NDK
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 811
+		state = 389
+		
+		value = 1000
+	}
+}
+LOU_south_dakota_war = {
+
+	enable = {
+		has_war_with = SDK
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 390
+		state = 812
+		
+		value = 1000
+	}
+}
+LOU_nebraska_war = {
+
+	enable = {
+		has_war_with = NEB
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 384
+		state = 813
+		
+		value = 1000
+	}
+}
+LOU_missouri_war = {
+
+	enable = {
+		has_war_with = MIS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 833
+		state = 373
+		
+		value = 1000
+	}
+}
+LOU_kansas_war = {
+
+	enable = {
+		has_war_with = KAN
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 814
+		state = 383
+		
+		value = 1000
+	}
+}
+LOU_iowa_war = {
+
+	enable = {
+		has_war_with = IOW
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 826
+		state = 392
+		
+		value = 1000
+	}
+}
+LOU_colorado_war = {
+
+	enable = {
+		has_war_with = CRD
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 382
+		state = 868
+		state = 817
+		
+		value = 1000
+	}
+}
+LOU_new_mexico_war = {
+
+	enable = {
+		has_war_with = NMX
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 816
+		state = 376
+		
+		value = 1000
+	}
+}
+LOU_texas_war = {
+
+	enable = {
+		has_war_with = TEX
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 807
+		state = 375
+		state = 808
+		
+		value = 1000
+	}
+}
+LOU_oklahoma_war = {
+
+	enable = {
+		has_war_with = OKL
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 374
+		state = 815
+		state = 851
+		
+		value = 1000
+	}
+}
+LOU_wyoming_war = {
+
+	enable = {
+		has_war_with = WMG
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 821
+		state = 850
+		state = 381
+		
+		value = 1000
+	}
+}
+LOU_arkansas_war = {
+
+	enable = {
+		has_war_with = ARK
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 834
+		state = 372
+		
+		value = 1000 
+	}
+}
+LOU_illinois_war = {
+
+	enable = {
+		has_war_with = ILI
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 395
+		state = 840
+		
+		value = 1000
+	}
+}
+LOU_minnesota_war = {
+
+	enable = {
+		has_war_with = MNS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 810
+		state = 391
+		
+		value = 1000
+	}
+}
+LOU_prince_edward_island_war = {
+
+	enable = {
+		has_war_with = PEI
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 828
+		
+		value = 1000
+	}
+}
+LOU_nova_scotia_war = {
+
+	enable = {
+		has_war_with = NVS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 464
+		
+		value = 1000
+	}
+}
+LOU_new_brunswick_war = {
+
+	enable = {
+		has_war_with = NBW
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 465
+		
+		value = 1000
+	}
+}
+LOU_maine_war = {
+
+	enable = {
+		has_war_with = MNE
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 357
+		
+		value = 1000
+	}
+}
+LOU_indiana_war = {
+
+	enable = {
+		has_war_with = IND
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 841
+		state = 396
+		
+		value = 1000
+	}
+}
+LOU_tennessee_war = {
+
+	enable = {
+		has_war_with = TEN
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 368
+		state = 844
+		
+		value = 1000
+	}
+}
+LOU_kentucky_war = {
+
+	enable = {
+		has_war_with = KNT
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 369
+		state = 843
+		
+		value = 1000
+	}
+}
+LOU_west_virginia_war = {
+
+	enable = {
+		has_war_with = WVA
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+		
+		state = 797
+		
+		value = 1000
+	}
+}
+LOU_ohio_war = {
+
+	enable = {
+		has_war_with = OHO
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 261
+		state = 842
+		
+		value = 1000
+	}
+}
+LOU_michigan_war = {
+
+	enable = {
+		has_war_with = MIG
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 393
+		state = 832
+		state = 831
+		
+		value = 1000
+	}
+}
+LOU_wisconsin_war = {
+
+	enable = {
+		has_war_with = WIS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+	
+		state = 394
+		state = 825
+		
+		value = 1000
+	}
+}
+#ai_strategy = { Example
+#		type = front_control
+#	
+#		state = 28 # close up maginot line
+#		
+#		ratio = 0.6
+#		
+#		priority = 100
+#		ordertype = front
+#		execution_type = rush
+#		execute_order = yes
+#	}
