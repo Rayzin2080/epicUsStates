@@ -9,9 +9,6 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = NCA
-		victory_points = {
-		
-		}
 	}
 	provinces={
 		9967 7643 10495 10468 10096 7138

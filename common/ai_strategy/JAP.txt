@@ -1168,7 +1168,8 @@ JAP_we_will_mostly_fight_on_subjects = {
 		type = produce_unit_for_subject_supply_chunks
 		value = 50
 	}
-ENG_stay_the_hell_out_of_america = {
+}
+JAP_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

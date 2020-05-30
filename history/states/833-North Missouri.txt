@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = MIS
 		victory_points = {
-		
+			10391 5
 		}
 	}
 	provinces={

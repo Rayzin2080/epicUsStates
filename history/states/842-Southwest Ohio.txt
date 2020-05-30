@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = OHO
 		victory_points = {
-		
+			4601 5
 		}
 	}
 	provinces={

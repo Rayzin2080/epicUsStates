@@ -1,4 +1,4 @@
-capital = 369
+capital = 843
 
 oob = "KNT_1936"
 

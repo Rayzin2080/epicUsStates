@@ -458,7 +458,8 @@ FRA_GER_will_probably_join_ITA = {
 		id = GER
 		value = 100
 	}
-ENG_stay_the_hell_out_of_america = {
+}
+FRA_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

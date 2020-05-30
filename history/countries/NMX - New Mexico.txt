@@ -1,4 +1,4 @@
-capital = 376
+capital = 816
 
 oob = "NMX_1936"
 

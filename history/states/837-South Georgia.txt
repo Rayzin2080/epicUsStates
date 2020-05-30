@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = GRG
 		victory_points = {
-		
+			1480 2
 		}
 	}
 	provinces={

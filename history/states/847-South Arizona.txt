@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = ARI
 		victory_points = {
-		
+			3834 10
 		}
 	}
 	provinces={

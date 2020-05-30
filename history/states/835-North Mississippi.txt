@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = MSP
 		victory_points = {
-		
+			11717 5
 		}
 	}
 	provinces={

@@ -44,7 +44,6 @@ focus_tree = {
 		#Add nation spirit Birthplace of America (Stability bonus, ideology change resistance, daily democratic points)
 		add_ideas = EUS_birthplace_of_america
 		}
-	
 	}
 	#New England Confederation
 	focus = {
@@ -135,7 +134,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = MAS_forge_new_path }
-		mutually_exclusive { focus = MAS_birthplace }
+		mutually_exclusive { focus = MAS_workers_rise }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -192,6 +191,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = no
 		prerequisite = { focus = MAS_forge_new_path }
+		mutually_exclusive = { focus = MAS_fascist_coup }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1

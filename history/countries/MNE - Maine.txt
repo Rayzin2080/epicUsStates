@@ -1,4 +1,4 @@
-capital = 802
+capital = 357
 
 oob = "MNE_1936"
 

@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = KNT
 		victory_points = {
-		
+			6696 10
 		}
 	}
 	provinces={

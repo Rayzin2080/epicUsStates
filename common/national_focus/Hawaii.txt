@@ -99,14 +99,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = communism
-popularity = 0.5
-}
-set_politics= {
- ruling_party = communism
-elections_allowed = no 
-}
+			add_popularity = { 
+				ideology = communism
+				popularity = 0.5
+			}
+		}
+		set_politics= {
+			ruling_party = communism
+			elections_allowed = no 
 		}
 	}
 
@@ -129,14 +129,14 @@ elections_allowed = no
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = democratic
-popularity = 0.5
-}
-set_politics= {
- ruling_party = democratic
-elections_allowed = yes
-}
+			add_popularity = { 
+				ideology = democratic
+				popularity = 0.5
+			}
+		}
+		set_politics= {
+			ruling_party = democratic
+			elections_allowed = yes
 		}
 	}
 
@@ -157,14 +157,14 @@ elections_allowed = yes
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = fascism 
-popularity = 0.5
-}
-set_politics= {
- ruling_party = fascism 
-elections_allowed = no 
-}
+			add_popularity = { 
+				ideology = fascism 
+				popularity = 0.5
+			}
+		}
+		set_politics= {
+			ruling_party = fascism 
+			elections_allowed = no 
 		}
 	}
 
@@ -258,7 +258,6 @@ elections_allowed = no
 			JAP = { country_event = { id = hawaii.0 } }
 		}
 	}
-
 
 	#Focus for Foreign Policy
 	focus = {

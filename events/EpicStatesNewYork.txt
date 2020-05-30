@@ -11,24 +11,37 @@ country_event = {
 	
 	option = {
 		name = newYork.0.a
+		ai_chance = {
+			base = 10
+		}
 		add_opinion_modifier = { target = NYS modifier = large_increase }
+		add_timed_idea = { idea = EUS_democratic_influence  days = 320 }
+		IF = {
+			limit = { NOT = { ROOT = { has_government = democratic } } }
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_popularities = {
+				democratic = 70
+				neutrality = 10
+				fascism = 10
+				communism = 10
+			}
+		}
 		NYS = {
 			add_to_faction = ROOT
 			country_event = { id = newYork.1 } }
 		}
-		ai_chance = {
-			base = 10
-		}
 	}
 	option = {
 		name = newYork.0.b
+		ai_chance = {		
+			base = 0
+		}
 		add_opinion_modifier = { target = NYS modifier = medium_decrease }
 		NYS = {
 			create_wargoal = { type = puppet_wargoal_focus target = ROOT } 
 			country_event = { id = newYork.2 } }
-			}
-		ai_chance = {		
-			base = 0
 		}
 	}
 }
@@ -45,14 +58,6 @@ country_event = { # Accept Invitation
 	
 	option = {
 		name = newYork.1.a
-		IF = {
-			limit = { NOT = { ROOT = { has_government = democratic } } }
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = ROOT
-				size = 0.8
-			}
-		}
 	}
 }
 country_event = { # Decline Invitation to New York Economic Protection Sphere

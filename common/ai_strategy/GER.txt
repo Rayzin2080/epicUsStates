@@ -2002,7 +2002,8 @@ ITA_dont_invade_NOR_until_FRA_falls = {
 
 		value = -100
 	}
-ENG_stay_the_hell_out_of_america = {
+}
+GER_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

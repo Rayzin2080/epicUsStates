@@ -1,7 +1,7 @@
 division_template = {
-	name = "Militia Men"
+	name = "Militia Mens"
 	
-	division_names_group = EUS_INF_01
+	division_names_group = USA_INF_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,7 +11,7 @@ division_template = {
 division_template = {
 	name = "National Guard"
 	
-	division_names_group = EUS_INF_02
+	division_names_group = USA_INF_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -34,13 +34,13 @@ units = {
 	division = {
 		name = "Wyoming Second Infantry"
 		location = 4610
-		division_template = "Militia Men"		
+		division_template = "Militia Mens"		
 		start_equipment_factor = 0.7
 	}
 	division = {
 		name = "Wyoming Third Infantry"
 		location = 4820
-		division_template = "Militia Men"		
+		division_template = "Militia Mens"		
 		start_equipment_factor = 0.7
 	}
 }

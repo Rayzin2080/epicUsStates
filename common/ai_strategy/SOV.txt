@@ -777,7 +777,8 @@ SOV_dont_mess_with_volunteers_for_european_democratic_nations = { # Reverse stra
 		id = "SOV"
 		value = -500
 	}
-ENG_stay_the_hell_out_of_america = {
+}
+SOV_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

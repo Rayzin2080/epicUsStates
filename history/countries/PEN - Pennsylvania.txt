@@ -1,4 +1,4 @@
-capital = 460
+capital = 360
 
 oob = "PEN_1936"
 

@@ -365,7 +365,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = { idea = NYS_academic_fund days = 1 }
+			add_timed_idea = { idea = NYS_academic_fund days = 60 }
 		}
 	}
 	focus = {
@@ -442,7 +442,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_timed_idea = { idea = NYS_bank_bailouts  days = 1 }
+			add_timed_idea = { idea = NYS_bank_bailouts  days = 130 }
 		}
 	}
 	focus = {
@@ -478,7 +478,7 @@ focus_tree = {
 		relative_position_id = NYS_establish_fdic
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_establish_fdic }
 		prerequisite = { focus = NYS_public_works_administration }
@@ -504,7 +504,7 @@ focus_tree = {
 		relative_position_id = NYS_new_york_economic_protection_sphere
 		x = 1
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = no
 		available = {
 			OR = { PEN = { is_in_faction_with = NYS } controls_state = 360 }
@@ -532,7 +532,7 @@ focus_tree = {
 		relative_position_id = NYS_northumberland_coal_mines
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = no
 		available = {
 			OR = { PEN = { is_in_faction_with = NYS } controls_state = 805 }
@@ -567,7 +567,7 @@ focus_tree = {
 		relative_position_id = NYS_new_york_economic_protection_sphere
 		x = 3
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 			OR = { NWJ = { is_in_faction_with = NYS } controls_state = 359 }
@@ -602,7 +602,7 @@ focus_tree = {
 		relative_position_id = NYS_new_jersey_dockyards
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 			OR = { NWJ = { is_in_faction_with = NYS } controls_state = 359 }
@@ -634,7 +634,7 @@ focus_tree = {
 		relative_position_id = NYS_new_york_economic_protection_sphere
 		x = 0
 		y = 3
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
 		bypass = {
@@ -660,7 +660,7 @@ focus_tree = {
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 1
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 			OR = { OHO = { is_in_faction_with = NYS } controls_state = 261 }
@@ -681,7 +681,7 @@ focus_tree = {
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 2
 		y = 2
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 			OR = { OTR = { is_in_faction_with = NYS } controls_state = 827 }
@@ -702,7 +702,7 @@ focus_tree = {
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 3
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 			OR = { MIG = { is_in_faction_with = NYS } controls_state = 393 }
@@ -723,7 +723,7 @@ focus_tree = {
 		relative_position_id = NYS_assist_the_hearts_of_industry
 		x = 0
 		y = 2
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
 		bypass = {
@@ -751,7 +751,7 @@ focus_tree = {
 		relative_position_id = NYS_incorporate_great_lakes
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_incorporate_great_lakes }
 		bypass = {

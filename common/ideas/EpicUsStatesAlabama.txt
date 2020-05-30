@@ -6,7 +6,7 @@ ideas = {
 			#todo add icon
 			modifier = {
 				army_morale_factor = 0.20
-				war_suppoer_weekly = 0.05
+				war_support_weekly = 0.05
 				weekly_manpower = 4000
 			}
 		}

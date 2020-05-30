@@ -665,7 +665,8 @@ ITA_please_help_me_buget_this_my_country_is_dieing = {
 		id = artillery
 		value = 2
 	}
-ENG_stay_the_hell_out_of_america = {
+}
+ITA_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

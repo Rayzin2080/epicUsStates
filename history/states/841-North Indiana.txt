@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = IND
 		victory_points = {
-		
+			870 5
 		}
 	}
 	provinces={

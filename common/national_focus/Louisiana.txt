@@ -81,7 +81,7 @@ focus_tree = {
 		prerequisite = { focus = LOU_aftermath }
 		mutually_exclusive = { focus = LOU_every_man_a_king }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 		remove_ideas = EUS_power_vacuum
@@ -351,10 +351,10 @@ unlock_national_focus = FRA_the_legitimate_heir
 			factor = 1
 		}
 		available = {
-			owns_state= 318
-			owns_state= 373
-			owns_state= 468
-			owns_state= 465
+			controls_state= 318
+			controls_state= 373
+			controls_state= 468
+			controls_state= 465
 		}
 		completion_reward = {
 			set_cosmetic_tag = LOU_America
@@ -388,7 +388,7 @@ add_state_claim = 319
 		}
 	}
 
-	#Focus for New France
+	#Focus for New France 
 	focus = {
 		id = LOU_new_france
 		icon = GFX_goal_tfv_can_compromise_with_quebec
@@ -398,7 +398,7 @@ add_state_claim = 319
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_cajun_heritage }
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			QBC = { country_event = {id = LOU.0}}
@@ -613,7 +613,7 @@ target = MNE
 			factor = 1
 		}
 		available{
-		owns_state= 373}
+		controls_state= 373}
 		completion_reward = {
 			create_wargoal= { 
 type = annex_everything 
@@ -674,7 +674,7 @@ target = MEX
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_new_france }
 		ai_will_do = {
-			factor = 1
+			factor = 10s
 		}
 		completion_reward = {
 		set_technology = { voyageurs = 1 }

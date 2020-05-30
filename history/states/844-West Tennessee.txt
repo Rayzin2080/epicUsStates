@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = TEN
 		victory_points = {
-		
+			12501 10
 		}
 	}
 	provinces={

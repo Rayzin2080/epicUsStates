@@ -260,7 +260,8 @@ CHI_you_should_be_prepared_for_war = {
         type = force_build_armies
         value = 100
     }
-	ENG_stay_the_hell_out_of_america = {
+}
+CHI_stay_the_hell_out_of_america = {
 	enable = {
 		always = yes
 	}

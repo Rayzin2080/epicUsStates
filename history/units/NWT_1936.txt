@@ -1,0 +1,40 @@
+division_template = {
+	name = "Slush Infantry"
+	
+	division_names_group = NWT_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Huskey Infantry"
+	
+	division_names_group = NWT_INF_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+
+units = {
+	division = {
+		name = "Northwest Territories Defense Infantry"
+		location = 2947
+		division_template = "Slush Infantry"		
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Huskey Infantry"
+		location = 7891
+		division_template = "Huskey Infantry"		
+		start_equipment_factor = 0.6
+	}
+}

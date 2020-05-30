@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = ALA
 		victory_points = {
-		
+			860 3
 		}
 	}
 	provinces={

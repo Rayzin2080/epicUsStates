@@ -1,4 +1,4 @@
-capital = 377
+capital = 847
 
 oob = "ARI_1936"
 
