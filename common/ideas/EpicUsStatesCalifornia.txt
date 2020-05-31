@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = CLF_hollywood_influence_icon
+			
+			modifier = {
+				democratic_drift = 1.0
+			}
+		}
+	}
+}

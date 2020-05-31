@@ -77,6 +77,7 @@
  WSH_democratic:0 "Washington"
  ORG_democratic:0 "Oregon"
  CLF_democratic:0 "California"
+ CLF_neutrality:0 "California"
  NVD_democratic:0 "Nevada"
  RHI_democratic:0 "Rhode Island"
  RHI_neutrality:0 "Rhode Island"

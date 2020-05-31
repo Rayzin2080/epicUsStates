@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = CLF_aftermath
 		icon = EUS_split
-		x = 11
+		x = 5
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -29,7 +29,7 @@ focus_tree = {
 	focus = {
 		id = CLF_matter_of_cap
 		icon = CLF_capital_pick
-		x = 7
+		x = 2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = CLF_pick_north
 		icon = CLF_pick_north_cap
-		x = 4
+		x = 1
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = {
 		id = CLF_prepare_north_war
 		icon = CLF_prepare_war
-		x = 4
+		x = 2
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
 		id = CLF_pick_south
 		icon = CLF_pick_south_cap
-		x = 9
+		x = 5
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -96,4 +96,43 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = CLF_disneys_plan
+		icon = CLF_disneys_plan
+		x = 12
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_government = neutrality
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = CLF_use_holywood
+		icon = CLF_hollywood
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CLF_disneys_plan }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			NVD = { add_timed_idea = { idea = CLF_hollywood_influence days = 80 } }
+			ORG = { add_timed_idea = { idea = CLF_hollywood_influence days = 80 } }
+			WSH = { add_timed_idea = { idea = CLF_hollywood_influence days = 80 } }
+			ARI = { add_timed_idea = { idea = CLF_hollywood_influence days = 80 } }
+			IDH = { add_timed_idea = { idea = CLF_hollywood_influence days = 80 } }
+		}
+	}
 }

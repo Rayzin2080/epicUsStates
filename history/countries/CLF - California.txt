@@ -15,24 +15,24 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 80
-	communism = 7
-	fascism = 8
-	neutrality  = 5 
+	democratic = 18
+	communism = 8
+	fascism = 4
+	neutrality  = 70
 }
 
 create_country_leader = {
-	name = "Bruh Bruhman"
-	desc = "POLITICS_BRUH_DESC"
-	picture = "gfx/leaders/statesLeaders/bruh.tga"
-	expire = "1940.11.3"
-	ideology = liberalism
+	name = "Walt Disney"	
+	desc = "POLITICS_WALT_DISNEY_DESC"
+	picture = "gfx/leaders/statesLeaders/portrait_walt_disney.tga"
+	expire = "1944.7.3"
+	ideology = neutrality
 	traits = {
 		#
 	}
