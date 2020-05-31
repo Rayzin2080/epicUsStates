@@ -19,3 +19,14 @@ LOU_foreign = {
 	}
 
 }
+LOU_expansion = {
+
+	priority = 6
+
+	icon = generic_industry
+	
+	visible = {
+		has_completed_focus = LOU_louisiana_purchase_reconquest
+	}
+
+}

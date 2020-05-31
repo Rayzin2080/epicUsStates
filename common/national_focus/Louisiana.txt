@@ -21,18 +21,17 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		FRA ={has_completed_focus=FRA_the_legitimate_heir }
+			FRA ={has_completed_focus=FRA_the_legitimate_heir }
 		}
 		completion_reward = {
 			FRA ={
-	set_autonomy = {
-		target = LOU
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-}
- }
-		
+				set_autonomy = {
+				target = LOU
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.4
+				}
+			}
+		}
 	}
 
 	#Focus for Royal Commision on Technology
@@ -48,8 +47,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_to_tech_sharing_group = FRA_legitimist_tech_sharing
-		FRA = { add_to_tech_sharing_group = FRA_legitimist_tech_sharing }
+			add_to_tech_sharing_group = FRA_legitimist_tech_sharing
+			FRA = { add_to_tech_sharing_group = FRA_legitimist_tech_sharing }
 		}
 	}
 
@@ -118,13 +117,12 @@ focus_tree = {
 				name = FRA_legitimist_party
 			}
 			set_politics = { ruling_party = neutrality }
-					add_popularity = {
-    				ideology = neutrality
-    				popularity = 0.5
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
 			}
-			}
-
 		}
+	}
 
 	#Focus for Every man a King
 	focus = {
@@ -161,112 +159,37 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-add_state_claim = 372                        
-add_state_claim = 834
-add_state_claim = 375
-add_state_claim = 373
-add_state_claim = 833
-add_state_claim = 392
-add_state_claim = 826
-add_state_claim = 810
-add_state_claim = 391
-add_state_claim = 808
-add_state_claim = 815
-add_state_claim = 374
-add_state_claim = 816
-add_state_claim = 814
-add_state_claim = 383
-add_state_claim = 817
-add_state_claim = 821
-add_state_claim = 388
-add_state_claim = 389
-add_state_claim = 811
-add_state_claim = 812
-add_state_claim = 390
-add_state_claim = 813
-add_state_claim = 384
-add_state_claim = 848
-add_state_claim = 849
-add_state_claim = 851
-add_state_claim = 850
-add_state_claim = 395
-add_state_claim = 840
-			create_wargoal= { 
-type = annex_everything 
-target = MTA
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = NDK
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = SDK
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = NEB
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = MIS
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = KAN
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = IOA
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = CRD
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = NMX
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = TEX
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = OKL
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = WMG
-}
-
-create_wargoal= { 
-type = annex_everything 
-target = KAN
-}
-create_wargoal= { 
-type = annex_everything 
-target = ARK
-}
-create_wargoal= { 
-type = annex_everything 
-target = ILI
-}
-create_wargoal= { 
-type = annex_everything 
-target = MNS
-}
+			add_state_claim = 372                        
+			add_state_claim = 834
+			add_state_claim = 375
+			add_state_claim = 373
+			add_state_claim = 833
+			add_state_claim = 392
+			add_state_claim = 826
+			add_state_claim = 810
+			add_state_claim = 391
+			add_state_claim = 808
+			add_state_claim = 815
+			add_state_claim = 374
+			add_state_claim = 816
+			add_state_claim = 814
+			add_state_claim = 383
+			add_state_claim = 817
+			add_state_claim = 821
+			add_state_claim = 388
+			add_state_claim = 389
+			add_state_claim = 811
+			add_state_claim = 812
+			add_state_claim = 390
+			add_state_claim = 813
+			add_state_claim = 384
+			add_state_claim = 848
+			add_state_claim = 849
+			add_state_claim = 851
+			add_state_claim = 850
+			add_state_claim = 395
+			add_state_claim = 840
+			
 		}
 	}
 
@@ -274,7 +197,7 @@ target = MNS
 	focus = {
 		id = LOU_the_old_homeland
 		icon = GFX_focus_attack_france
-		available ={ NOT={FRA ={has_completed_focus=FRA_the_legitimate_heir }}}
+		available = { NOT = { FRA ={has_completed_focus=FRA_the_legitimate_heir } } }
 		x = 12
 		y = 6
 		cost = 10
@@ -286,9 +209,9 @@ target = MNS
 		}
 		completion_reward = {
 			create_wargoal= { 
-type = annex_everything 
-target = FRA
-}
+			type = annex_everything 
+			target = FRA
+			}
 		}
 	}
 
@@ -309,21 +232,18 @@ target = FRA
 		}
 		completion_reward = {
 			every_state = {
-			limit = {
-				is_core_of = FRA
-			}
+			limit = { is_core_of = FRA }
 			add_core_of = LOU
-		}
+			}
 
-set_cosmetic_tag = FRA
-load_focus_tree = french_focus
-unlock_national_focus = FRA_revive_the_national_bloc
-unlock_national_focus = FRA_utilize_the_leagues
-unlock_national_focus = FRA_the_council_of_rambouillet
-unlock_national_focus = FRA_revise_the_constitution
-unlock_national_focus = FRA_repeal_the_law_of_exile
-unlock_national_focus = FRA_the_legitimate_heir
-
+			set_cosmetic_tag = FRA
+			load_focus_tree = french_focus
+			unlock_national_focus = FRA_revive_the_national_bloc
+			unlock_national_focus = FRA_utilize_the_leagues
+			unlock_national_focus = FRA_the_council_of_rambouillet
+			unlock_national_focus = FRA_revise_the_constitution
+			unlock_national_focus = FRA_repeal_the_law_of_exile
+			unlock_national_focus = FRA_the_legitimate_heir
 		}
 	}
 
@@ -370,21 +290,21 @@ unlock_national_focus = FRA_the_legitimate_heir
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = LOU_a_fleet_worthy_of_a_king }
+		prerequisite = { focus = LOU_portugese_purchase }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			create_wargoal= { 
-type = annex_everything 
-target = HAI
-}
-create_wargoal= { 
-type = annex_everything 
-target = DOM
-}
-add_state_claim = 318
-add_state_claim = 319
+				type = annex_everything 
+				target = HAI
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = DOM
+			}
+			add_state_claim = 318
+			add_state_claim = 319
 		}
 	}
 
@@ -421,26 +341,10 @@ add_state_claim = 319
 			owns_state = 468
 		}
 		completion_reward = {
-465 ={add_core_of=LOU}
-add_state_claim = 357
-add_state_claim = 464
-add_state_claim = 828
-create_wargoal= { 
-type = annex_everything 
-target = PEI
-}
-create_wargoal= { 
-type = annex_everything 
-target = NVS
-}
-create_wargoal= { 
-type = annex_everything 
-target = NBW
-}
-create_wargoal= { 
-type = annex_everything 
-target = MNE
-}
+			465 ={add_core_of=LOU}
+			add_state_claim = 357
+			add_state_claim = 464
+			add_state_claim = 828
 		}
 	}
 
@@ -449,7 +353,7 @@ target = MNE
 		id = LOU_a_fleet_worthy_of_a_king
 		icon = GFX_goal_generic_navy_battleship
 		x = 13
-		y = 3
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = LOU_cajun_heritage }
@@ -460,23 +364,38 @@ target = MNE
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
 			random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
 					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
+	}
+	focus = {
+		id = LOU_portugese_purchase
+		icon = GFX_goal_generic_navy_battleship
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LOU_a_fleet_worthy_of_a_king }
+		ai_will_do = {
+			factor = 0
 		}
+		completion_reward = {
+			
 		}
+	}
 
 	#Focus for Reintegration
 	focus = {
@@ -616,33 +535,37 @@ target = MNE
 		controls_state= 373}
 		completion_reward = {
 			create_wargoal= { 
-type = annex_everything 
-target = IND
-}
-create_wargoal= { 
-type = annex_everything 
-target = TEN
-}
-create_wargoal= { 
-type = annex_everything 
-target = KNT
-}
-create_wargoal= { 
-type = annex_everything 
-target = WVA
-}
-create_wargoal= { 
-type = annex_everything 
-target = OHO
-}
-create_wargoal= { 
-type = annex_everything 
-target = MIG
-}
-create_wargoal= { 
-type = annex_everything 
-target = WIS
-}
+				type = annex_everything 
+				target = IND
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = ILI
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = TEN
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = KNT
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = WVA
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = OHO
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = MIG
+			}
+			create_wargoal= { 
+				type = annex_everything 
+				target = WIS
+			}
 		}
 	}
 	#Focus for Secure Mexico
