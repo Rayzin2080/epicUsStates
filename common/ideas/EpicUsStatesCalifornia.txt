@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+		CLF_hollywood_influence = {
 			
 			allowed = {
 				always = no
