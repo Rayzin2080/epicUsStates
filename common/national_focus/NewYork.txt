@@ -667,7 +667,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
 	
-		search_filters = { FOCUS_FILTER_POLITICAL } 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 1
 		}

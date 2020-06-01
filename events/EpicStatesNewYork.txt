@@ -90,12 +90,13 @@ country_event = {
 		NYS = {
 			if = {
 				limit = { MIG = { is_in_faction_with = NYS AND = { country_exists = MIG } } }
+				
 				MIG = { country_event = { id = newYork.4 } }
 			}
 		
 			if = {
 				limit = { PEN = { is_in_faction_with = NYS AND = { country_exists = PEN } } }
-			
+				
 				PEN = { country_event = { id = newYork.4 } }
 			}
 		
@@ -210,6 +211,65 @@ country_event = {		#Integration option sent
 	option = {
 		name = newYork.4.a
 		add_opinion_modifier = { target = NYS modifier = large_increase }
+		if = {
+			limit = { tag = MIG }
+			832 = { add_core_of = NYS }
+			393 = { add_core_of = NYS }
+			831 = { add_core_of = NYS }
+		}
+		
+		if = {
+			limit = { tag = PEN }
+			
+			360 = { add_core_of = NYS }
+			805 = { add_core_of = NYS }
+		}
+	
+		if = {
+			limit = { tag = NWJ }
+
+			359 = { add_core_of = NYS }
+		}
+			
+		if = {
+			limit = { tag = OHO }
+
+			261 = { add_core_of = NYS }
+			842 = { add_core_of = NYS }
+		}
+		
+		if = {
+			limit = { tag = OTR }
+
+			827 = { add_core_of = NYS }
+			276 = { add_core_of = NYS }
+			682 = { add_core_of = NYS }
+			683 = { add_core_of = NYS }
+		}
+		if = {
+			limit = { tag = IND }
+
+			396 = { add_core_of = NYS }
+			841 = { add_core_of = NYS }
+		}
+		if = {
+			limit = { tag = ILI }
+
+			395 = { add_core_of = NYS }
+			840 = { add_core_of = NYS }
+		}
+		if = {
+			limit = { tag = WIS }
+
+			825 = { add_core_of = NYS }
+			394 = { add_core_of = NYS }
+		}
+		if = {
+			limit = { tag = MNS }
+
+			391 = { add_core_of = NYS }
+			810 = { add_core_of = NYS }
+		}
 		NYS = {
 			country_event = { id = newYork.6 }
 			annex_country = {
