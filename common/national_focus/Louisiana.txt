@@ -62,7 +62,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_political_power = 150
@@ -156,7 +156,7 @@ focus_tree = {
 			focus = LOU_cajun_heritage 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 		completion_reward = {
 			add_state_claim = 372                        
@@ -582,11 +582,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_wargoal= { 
-type = puppet_wargoal_focus 
-target = MEX
+			type = puppet_wargoal_focus 
+			target = MEX
+			}
 		}
 	}
-}
 	#Focus for Voyageurs
 	focus = {
 		id = LOU_voyageurs
@@ -602,9 +602,100 @@ target = MEX
 		completion_reward = {
 		set_technology = { voyageurs = 1 }
 		load_oob = LOU_Voyageurs
-}
-}		
+		}
+	}		
 	
+	focus = {
+		id = LOU_dealing_with_the_great_depression
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			IF = {
+				limit = { has_idea = EUS_great_depression_2}
+				remove_ideas = EUS_great_depression_2
+			}
+			IF = {
+				limit = { has_idea = EUS_great_depression}
+				swap_ideas = {
+					remove_idea = EUS_great_depression
+					add_idea = EUS_great_depression_2
+				}
+			}
+			IF = {
+				limit = { NOT = { has_idea = EUS_great_depression AND = { has_idea = EUS_great_depression_2 } } }
+				add_political_power = 150
+			}
+		}
+	}
+	focus = {
+		id = LOU_filler_1
+		icon = GFX_goal_tfv_generic_tech_sharing
+		relative_position_id = LOU_dealing_with_the_great_depression
+		prerequisite = { focus = LOU_dealing_with_the_great_depression }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LOU_filler_2
+		icon = GFX_goal_tfv_generic_tech_sharing
+		relative_position_id = LOU_dealing_with_the_great_depression
+		prerequisite = { focus = LOU_dealing_with_the_great_depression }
+		x = -2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = LOU_sweeping_reform
+		icon = GFX_goal_tfv_generic_tech_sharing
+		relative_position_id = LOU_filler_1
+		prerequisite = { focus = LOU_filler_1 }
+		prerequisite = { focus = LOU_filler_2 }
+		x = -1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			IF = {
+				limit = { has_idea = EUS_great_depression_2}
+				remove_ideas = EUS_great_depression_2
+			}
+			IF = {
+				limit = { has_idea = EUS_great_depression}
+				swap_ideas = {
+					remove_idea = EUS_great_depression
+					add_idea = EUS_great_depression_2
+				}
+			}
+			IF = {
+				limit = { NOT = { has_idea = EUS_great_depression AND = { has_idea = EUS_great_depression_2 } } }
+				add_political_power = 150
+			}
+		}
+	}
 
 #End of focuses 
- }
+}

@@ -9,7 +9,7 @@ LOU_French =  {
 
 		available = {
 			FROM = {
-				compliance > 60
+				compliance > 30
 			}
 			has_stability > 0.5
 		}
@@ -65,7 +65,7 @@ LOU_French =  {
 			factor = 10
 		}
 	}
-	}
+}
 LOU_foreign = {
 	LOU_mexico = {
 	allowed={
@@ -215,7 +215,7 @@ LOU_expansion = {
 			}
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 	}
 	LOU_kansas_wargoal = {
@@ -695,6 +695,262 @@ LOU_expansion = {
 		}
 		ai_will_do = {
 			factor = 0
+		}
+	}
+	LOU_indiana_wargoal = {
+		available = {
+			is_neighbor_of = IND
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = IND
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = IND } AND = { country_exists = IND } }
+				declare_war_on = {
+					target = IND
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_illinois_wargoal = {
+		available = {
+			is_neighbor_of = ILI
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = ILI
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = ILI } AND = { country_exists = ILI } }
+				declare_war_on = {
+					target = ILI
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_tennessee_wargoal = {
+		available = {
+			is_neighbor_of = TEN
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = TEN
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = TEN } AND = { country_exists = TEN } }
+				declare_war_on = {
+					target = TEN
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_kentucky_wargoal = {
+		available = {
+			is_neighbor_of = KEN
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = KEN
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = KEN } AND = { country_exists = KEN } }
+				declare_war_on = {
+					target = KEN
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_west_virginia_wargoal = {
+		available = {
+			is_neighbor_of = WVA
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = WVA
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = WVA } AND = { country_exists = WVA } }
+				declare_war_on = {
+					target = WVA
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_ohio_wargoal = {
+		available = {
+			is_neighbor_of = OHO
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = OHO
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = OHO } AND = { country_exists = OHO } }
+				declare_war_on = {
+					target = OHO
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_michigan_wargoal = {
+		available = {
+			is_neighbor_of = MIG
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = MIG
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = MIG } AND = { country_exists = MIG } }
+				declare_war_on = {
+					target = MIG
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	LOU_wisconsin_wargoal = {
+		available = {
+			is_neighbor_of = WIS
+			has_war = no
+			NOT = { has_country_flag = LOU_justifying }
+		}
+		visible = {
+			has_completed_focus = LOU_ohio_valley
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = LOU_justifying
+			create_wargoal= { 
+				type = annex_everything 
+				target = WIS
+			}
+		}
+		days_remove = 70
+        remove_effect = {
+			clr_country_flag = LOU_justifying
+			IF = {
+				limit = { NOT = { has_war_with = WIS } AND = { country_exists = WIS } }
+				declare_war_on = {
+					target = WIS
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
 		}
 	}
 }
