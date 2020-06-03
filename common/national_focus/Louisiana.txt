@@ -534,38 +534,7 @@ focus_tree = {
 		available{
 		controls_state= 373}
 		completion_reward = {
-			create_wargoal= { 
-				type = annex_everything 
-				target = IND
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = ILI
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = TEN
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = KNT
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = WVA
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = OHO
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = MIG
-			}
-			create_wargoal= { 
-				type = annex_everything 
-				target = WIS
-			}
+			
 		}
 	}
 	#Focus for Secure Mexico

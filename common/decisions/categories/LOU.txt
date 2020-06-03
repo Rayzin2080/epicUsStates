@@ -30,3 +30,13 @@ LOU_expansion = {
 	}
 
 }
+LOU_test = {
+
+	priority = 7
+
+	icon = generic_industry
+	
+	visible = {
+		has_completed_focus = LOU_louisiana_purchase_reconquest
+	}
+}
