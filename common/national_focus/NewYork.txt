@@ -30,11 +30,12 @@ focus_tree = {
 	focus = {
 		id = NYS_invite_fdr
 		icon = NYS_democratic
-		x = 5
+		x = -5
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
+		relative_position_id = NYS_new_governor
 		mutually_exclusive { focus = NYS_empower_the_workers OR = NYS_call_upon_the_aristocrats OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -62,10 +63,11 @@ focus_tree = {
 	focus = {
 		id = NYS_call_upon_the_aristocrats
 		icon = NYS_non_aligned
-		x = 8
+		x = -2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		relative_position_id = NYS_new_governor
 		prerequisite = { focus = NYS_new_governor }
 		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_empower_the_workers OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -86,11 +88,12 @@ focus_tree = {
 	focus = {
 		id = NYS_empower_the_workers
 		icon = NYS_communist
-		x = 12
+		x = 2
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
+		relative_position_id = NYS_new_governor
 		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_turn_to_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -125,11 +128,12 @@ focus_tree = {
 	focus = {
 		id = NYS_turn_to_fascism
 		icon = NYS_fascist
-		x = 15
+		x = 5
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_governor }
+		relative_position_id = NYS_new_governor
 		mutually_exclusive { focus = NYS_invite_fdr OR = NYS_call_upon_the_aristocrats OR = NYS_empower_the_workers }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -182,12 +186,10 @@ focus_tree = {
 					size = 0.5
 				}
 				set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
+					ruling_party = fascism
+					elections_allowed = no
 				}
 			}
-			
-			
 		}
 	}
 
@@ -195,11 +197,12 @@ focus_tree = {
 	focus = {
 		id = NYS_fascist_arms_investment
 		icon = NYS_bruh_icon
-		x = 27
+		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_the_empire_state }
+		relative_position_id = NYS_the_empire_state
 		available = {
 			has_government = fascism
 		}
@@ -216,14 +219,15 @@ focus_tree = {
 	focus = {
 		id = NYS_fascism3
 		icon = NYS_fascist
-		x = 27
-		y = 3
+		x = 0
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
 		available = {
 			has_government = fascism
 		}
 		prerequisite = { focus = NYS_fascist_arms_investment }
+		relative_position_id = NYS_fascist_arms_investment
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -236,14 +240,35 @@ focus_tree = {
 	focus = {
 		id = NYS_fascism4
 		icon = NYS_fascist
-		x = 29
-		y = 3
+		x = 2
+		y = 2
 		cost = 10
 		available_if_capitulated = yes
+		relative_position_id = NYS_fascist_arms_investment
 		available = {
 			has_government = fascism
 		}
 		prerequisite = { focus = NYS_fascist_arms_investment }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NYS_strengthen_economic_ties
+		icon = NYS_fascist
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NYS_fascism3
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_fascism3 }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
@@ -439,7 +464,7 @@ focus_tree = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		completion_reward = {
 			add_timed_idea = { idea = NYS_bank_bailouts  days = 130 }
@@ -483,9 +508,15 @@ focus_tree = {
 		prerequisite = { focus = NYS_establish_fdic }
 		prerequisite = { focus = NYS_public_works_administration }
 		bypass = {
-			AND = {
-				is_in_faction_with = PEN
-				is_in_faction_with = NWJ
+			OR = {
+				AND = {
+					is_in_faction_with = PEN
+					is_in_faction_with = NWJ
+				}
+				AND = {
+					NOT = { country_exists = PEN }
+					NOT = { country_exists = NWJ }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -494,8 +525,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = "New York Economic Protection Sphere"
-			PEN = { country_event = { id = newYork.0 } }
-			NWJ = { country_event = { id = newYork.0 } }
+			#PEN = { country_event = { id = newYork.0 } }
+			#NWJ = { country_event = { id = newYork.0 } }
 		}
 	}
 	focus = {
@@ -638,10 +669,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_new_york_economic_protection_sphere }
 		bypass = {
-			AND = {
-				is_in_faction_with = OHO
-				is_in_faction_with = MIG
-				is_in_faction_with = OTR
+			OR = {
+				AND = {
+					is_in_faction_with = OHO
+					is_in_faction_with = MIG
+					is_in_faction_with = OTR
+				}
+				AND = {
+					NOT = { country_exists = OHO }
+					NOT = { country_exists = MIG }
+					NOT = { country_exists = OTR }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -649,9 +687,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			OHO = { country_event = { id = newYork.0 } }
-			MIG = { country_event = { id = newYork.0 } }
-			OTR = { country_event = { id = newYork.0 } }
+			#OHO = { country_event = { id = newYork.0 } }
+			#MIG = { country_event = { id = newYork.0 } }
+			#OTR = { country_event = { id = newYork.0 } }
 		}
 	}
 	focus = {
@@ -727,11 +765,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = NYS_assist_the_hearts_of_industry }
 		bypass = {
-			AND = {
-				is_in_faction_with = IND
-				is_in_faction_with = ILI
-				is_in_faction_with = WIS
-				is_in_faction_with = MNS
+			OR = {
+				AND = {
+					is_in_faction_with = ILI
+					is_in_faction_with = IND
+					is_in_faction_with = WIS
+					is_in_faction_with = MNS
+				}
+				AND = {
+					NOT = { country_exists = ILI }
+					NOT = { country_exists = IND }
+					NOT = { country_exists = WIS }
+					NOT = { country_exists = MNS }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -739,10 +785,10 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			IND = { country_event = { id = newYork.0 } }
-			ILI = { country_event = { id = newYork.0 } }
-			MNS = { country_event = { id = newYork.0 } }
-			WIS = { country_event = { id = newYork.0 } }
+			#IND = { country_event = { id = newYork.0 } }
+			#ILI = { country_event = { id = newYork.0 } }
+			#MNS = { country_event = { id = newYork.0 } }
+			#WIS = { country_event = { id = newYork.0 } }
 		}
 	}
 	focus = {

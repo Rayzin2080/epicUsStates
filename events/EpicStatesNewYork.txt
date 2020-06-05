@@ -88,55 +88,7 @@ country_event = {
 			base = 20
 		}
 		NYS = {
-			if = {
-				limit = { MIG = { is_in_faction_with = NYS AND = { country_exists = MIG } } }
-				
-				MIG = { country_event = { id = newYork.4 } }
-			}
-		
-			if = {
-				limit = { PEN = { is_in_faction_with = NYS AND = { country_exists = PEN } } }
-				
-				PEN = { country_event = { id = newYork.4 } }
-			}
-		
-			if = {
-				limit = { NWJ = { is_in_faction_with = NYS AND = { country_exists = NWJ } } }
-
-				NWJ = { country_event = { id = newYork.4 } }
-			}
-				
-			if = {
-				limit = { OHO = { is_in_faction_with = NYS AND = { country_exists = OHO } } }
-
-				OHO = { country_event = { id = newYork.4 } }
-			}
-		
-			if = {
-				limit = { OTR = { is_in_faction_with = NYS AND = { country_exists = OTR } } }
-
-				OTR = { country_event = { id = newYork.4 } }
-			}
-			if = {
-				limit = { IND = { is_in_faction_with = NYS AND = { country_exists = IND } } }
-
-				IND = { country_event = { id = newYork.4 } }
-			}
-			if = {
-				limit = { ILI = { is_in_faction_with = NYS AND = { country_exists = ILI } } }
-
-				ILI = { country_event = { id = newYork.4 } }
-			}
-			if = {
-				limit = { WIS = { is_in_faction_with = NYS AND = { country_exists = WIS } } }
-
-				WIS = { country_event = { id = newYork.4 } }
-			}
-			if = {
-				limit = { MNS = { is_in_faction_with = NYS AND = { country_exists = MNS } } }
-
-				MNS = { country_event = { id = newYork.4 } }
-			}
+			set_country_flag = NYS_total_integration
 		}
 	}
 	option = {
@@ -145,50 +97,7 @@ country_event = {
 			base = 10
 		}
 		NYS = {
-			if = {
-				limit = { MIG = { is_in_faction_with = NYS AND = { is_puppet = MIG } } }
-				MIG = { country_event = { id = newYork.5 } }
-			}
-		
-			if = {
-				limit = { PEN = { is_in_faction_with = NYS AND = { is_puppet = PEN } } }
-				PEN = { country_event = { id = newYork.5 } }
-			}
-		
-			if = {
-				limit = { NWJ = { is_in_faction_with = NYS AND = { is_puppet = NWJ } } }
-				NWJ = { country_event = { id = newYork.5 } }
-			}
-			
-			if = {
-				limit = { OHO = { is_in_faction_with = NYS AND = { is_puppet = OHO } } }
-				OHO = { country_event = { id = newYork.5 } }
-			}
-		
-			if = {
-				limit = { OTR = { is_in_faction_with = NYS AND = { is_puppet = OTR } } }
-				OTR = { country_event = { id = newYork.5 } }
-			}
-			if = {
-				limit = { IND = { is_in_faction_with = NYS AND = { is_puppet = IND } } }
-
-				IND = { country_event = { id = newYork.5 } }
-			}
-			if = {
-				limit = { ILI = { is_in_faction_with = NYS AND = { is_puppet = ILI } } }
-
-				ILI = { country_event = { id = newYork.5 } }
-			}
-			if = {
-				limit = { WIS = { is_in_faction_with = NYS AND = { is_puppet = WIS } } }
-
-				WIS = { country_event = { id = newYork.5 } }
-			}
-			if = {
-				limit = { MNS = { is_in_faction_with = NYS AND = { is_puppet = MNS } } }
-
-				MNS = { country_event = { id = newYork.5 } }
-			}
+			set_country_flag = NYS_half_integration
 		}
 	}
 	option = {

@@ -1,0 +1,317 @@
+NYS_integration =  {
+	NYS_economic_integration = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			FROM = {
+				compliance > 30
+			}
+		}
+
+		state_target = yes
+
+		targets = { 359 360 805 798 829 801 800 357 }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_strengthen_economic_ties
+			}
+			FROM = {
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cost = 60
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		ai_will_do = {
+			base = 200
+		}
+
+		modifier = {
+			weekly_manpower = -1400
+		}
+
+		visible = {
+			has_completed_focus = NYS_strengthen_economic_ties
+		}
+
+		complete_effect = {
+			consumer_goods_factor = 0.05
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	NYS_full_integration = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			has_completed_focus = NYS_strengthen_ties
+			NYS = {
+				has_country_flag = NYS_total_integration
+			}
+			FROM = {
+				is_in_faction_with = NYS
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		state_target = no
+
+		targets = { NWJ PEN OHO IND ILI WIS MNS OTR MIG }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_strengthen_ties
+			}
+		}
+
+		fire_only_once = yes
+		
+		cost = 150
+
+		visible = {
+			has_completed_focus = NYS_strengthen_ties
+			NYS = {
+				has_country_flag = NYS_total_integration
+			}
+			FROM = {
+				is_in_faction_with = NYS
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = newYork.4 } }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	NYS_partial_integration = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			has_completed_focus = NYS_strengthen_ties
+			NYS = {
+				has_country_flag = NYS_half_integration
+			}
+			FROM = {
+				is_in_faction_with = NYS
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		state_target = no
+
+		targets = { NWJ PEN OHO IND ILI WIS MNS OTR MIG }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_strengthen_ties
+			}
+		}
+
+		fire_only_once = yes
+		
+		cost = 150
+
+		visible = {
+			has_completed_focus = NYS_strengthen_ties
+			NYS = {
+				has_country_flag = NYS_half_integration
+			}
+			FROM = {
+				is_in_faction_with = NYS
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = newYork.5 } }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+NYS_faction = {
+	NYS_economic_protection_sphere = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			has_completed_focus = NYS_new_york_economic_protection_sphere
+			FROM = {
+				NOT = { is_in_faction_with = NYS }
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		state_target = no
+
+		targets = { NWJ PEN }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_new_york_economic_protection_sphere
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 60
+		
+		visible = {
+			has_completed_focus = NYS_new_york_economic_protection_sphere
+			FROM = {
+				NOT = { is_in_faction_with = NYS }
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = newYork.0 } }
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	NYS_hearts_of_industry = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			has_completed_focus = NYS_assist_the_hearts_of_industry
+			FROM = {
+				NOT = { is_in_faction_with = NYS }
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		state_target = no
+
+		targets = { OHO OTR MIG }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_assist_the_hearts_of_industry
+			}
+		}
+
+		fire_only_once = yes
+		
+		cost = 60
+
+		visible = {
+			has_completed_focus = NYS_assist_the_hearts_of_industry
+			FROM = {
+				NOT = { is_in_faction_with = NYS }
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = newYork.0 } }
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	NYS_great_lakes = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+
+		available = {
+			has_completed_focus = NYS_incorporate_great_lakes
+		}
+
+		state_target = no
+
+		targets = { IND ILI MNS WIS }
+
+		target_trigger = {
+			OR = {
+				has_completed_focus = NYS_incorporate_great_lakes
+			}
+		}
+
+		fire_only_once = yes
+		
+		cost = 60
+
+		visible = {
+			has_completed_focus = NYS_incorporate_great_lakes
+			FROM = {
+				NOT = { is_in_faction_with = NYS }
+				is_puppet = no
+				any_state = { is_controlled_by = FROM }
+			}
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = newYork.0 } }
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+}
