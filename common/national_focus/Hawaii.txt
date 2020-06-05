@@ -202,7 +202,6 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = HAW_britain 
 			focus = HAW_coprosperity_sphere 
-			focus = HAW_ 
 		}
 		ai_will_do = {
 			factor = 1
