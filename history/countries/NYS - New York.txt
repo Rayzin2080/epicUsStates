@@ -39,3 +39,13 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "Fritz Julius Kuhn"
+	desc = "POLITICS_FRITZ_KUHN_DESC"
+	picture = "gfx/leaders/statesLeaders/portrait_fritz_kuhn.tga"
+	expire = "1951.12.14"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

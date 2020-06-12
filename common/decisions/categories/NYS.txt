@@ -18,3 +18,23 @@ NYS_faction = {
 		original_tag = NYS
 	}
 }
+NYS_expand_the_empire = {
+	
+	priority = 6
+
+	icon = generic_industry
+	
+	allowed = {
+		original_tag = NYS
+	}
+}
+NYS_cosmetic_decisions = {
+	
+	priority = 1 
+
+	icon = generic_industry
+	
+	allowed = {
+		original_tag = NYS
+	}
+}

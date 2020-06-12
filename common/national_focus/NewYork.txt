@@ -193,9 +193,9 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Invest in Arms industries
+	#Focus for Ithica Gun Company
 	focus = {
-		id = NYS_fascist_arms_investment
+		id = NYS_ithica_gun_company
 		icon = NYS_bruh_icon
 		x = 0
 		y = 1
@@ -212,76 +212,169 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			802 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = NYS_fascism3
+		id = NYS_rightful_freedoms
 		icon = NYS_fascist
-		x = 0
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		available = {
 			has_government = fascism
 		}
-		prerequisite = { focus = NYS_fascist_arms_investment }
-		relative_position_id = NYS_fascist_arms_investment
+		prerequisite = { focus = NYS_the_empire_state }
+		relative_position_id = NYS_the_empire_state
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			remove_ideas = EUS_prohibition
 		}
 	}
 	
 	focus = {
-		id = NYS_fascism4
-		icon = NYS_fascist
-		x = 2
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		relative_position_id = NYS_fascist_arms_investment
-		available = {
-			has_government = fascism
-		}
-		prerequisite = { focus = NYS_fascist_arms_investment }
-		search_filters = { FOCUS_FILTER_POLITICAL } 
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = NYS_strengthen_economic_ties
+		id = NYS_prepare_the_legions
 		icon = NYS_fascist
 		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		relative_position_id = NYS_fascism3
 		available = {
 			has_government = fascism
 		}
-		prerequisite = { focus = NYS_fascism3 }
+		prerequisite = { focus = NYS_ithica_gun_company }
+		relative_position_id = NYS_ithica_gun_company
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+	
+	focus = {
+		id = NYS_centralize_the_army
+		icon = NYS_fascist
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NYS_ithica_gun_company
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_ithica_gun_company }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			
+		}
+	}
+	
+	focus = {
+		id = NYS_freedom_under_empire
+		icon = NYS_fascist
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_prepare_the_legions }
+		prerequisite = { focus = NYS_centralize_the_army }
+		relative_position_id = NYS_prepare_the_legions
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = NYS_unify_new_england
+		icon = NYS_fascist
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NYS_freedom_under_empire
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_freedom_under_empire }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks decisions to integrate conquered states"
+		}
+	}
+	
+	focus = {
+		id = NYS_the_mighty_13
+		icon = NYS_fascist
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NYS_unify_new_england
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_unify_new_england }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks decisions to integrate conquered states"
+		}
+	}
+	
+	focus = {
+		id = NYS_strengthen_economic_ties
+		icon = NYS_fascist
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = NYS_freedom_under_empire
+		available = {
+			has_government = fascism
+		}
+		prerequisite = { focus = NYS_freedom_under_empire }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks decisions to integrate conquered states"
 		}
 	}
 ###########################Democratic Tree###################################
 	#Focus for FDR's Grand New Deal
 	focus = {
 		id = NYS_grand_new_deal
-		icon = NYS_fascist
+		icon = GFX_focus_generic_self_management
 		x = 36
 		y = 0
 		cost = 10
@@ -525,8 +618,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = "New York Economic Protection Sphere"
-			#PEN = { country_event = { id = newYork.0 } }
-			#NWJ = { country_event = { id = newYork.0 } }
+			custom_effect_tooltip = "Unlocks decisions to invite Pennsylvania and New Jersey to the faction"
 		}
 	}
 	focus = {
@@ -687,9 +779,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			#OHO = { country_event = { id = newYork.0 } }
-			#MIG = { country_event = { id = newYork.0 } }
-			#OTR = { country_event = { id = newYork.0 } }
+			custom_effect_tooltip = "Unlocks decisions to invite Ohio, Michigan, and Ontario to the faction"
 		}
 	}
 	focus = {
@@ -785,10 +875,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			#IND = { country_event = { id = newYork.0 } }
-			#ILI = { country_event = { id = newYork.0 } }
-			#MNS = { country_event = { id = newYork.0 } }
-			#WIS = { country_event = { id = newYork.0 } }
+			custom_effect_tooltip = "Unlocks decisions to invite Illinois, Indiana, Wisconsin, and Minnesota to the faction"
 		}
 	}
 	focus = {
@@ -1057,7 +1144,7 @@ focus_tree = {
 
 #Focus for improve Civilian industries
 
-focus = {
+	focus = {
 		id = NYS_economic_development
 		icon = NYS_fascist
 		x = 50
