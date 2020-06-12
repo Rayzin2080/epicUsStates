@@ -1,0 +1,38 @@
+capital = 463
+
+oob = "AKA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	EUS_great_depression
+	EUS_power_vacuum
+	EUS_prohibition
+	EUS_national_crisis
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.4.5"
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	communism = 2
+	fascism = 63
+	neutrality  = 10 
+}
+
+create_country_leader = {
+	name = "Bruh Bruhman"
+	desc = "POLITICS_BRUH_DESC"
+	picture = "gfx/leaders/statesLeaders/bruh.tga"
+	ideology = fascist_ideology
+	traits = {
+		the_gentleman_president
+		conservative_nationalist
+	}
+}
