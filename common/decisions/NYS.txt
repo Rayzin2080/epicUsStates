@@ -491,6 +491,61 @@ NYS_faction = {
 	}
 }
 NYS_cosmetic_decisions = {
+	NYS_mighty_13 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = NYS
+		}
+		available = {
+			controls_state= 804
+			controls_state= 802
+			controls_state= 803
+			controls_state= 358
+			controls_state= 798
+			controls_state= 829
+			controls_state= 799
+			controls_state= 801
+			controls_state= 800
+			controls_state= 357
+			controls_state= 805
+			controls_state= 360
+			controls_state= 359
+			controls_state= 361
+			controls_state= 853
+			controls_state= 830
+			controls_state= 852
+			controls_state= 806
+			controls_state= 362
+			controls_state= 797
+			controls_state= 363
+			controls_state= 845
+			controls_state= 364
+			controls_state= 365
+			controls_state= 837
+		}
+		
+		fire_only_once = yes
+		
+		cost = 60
+
+		visible = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		
+		complete_effect = {
+			set_cosmetic_tag = NYS_Thirteen
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	NYS_fritz_the_bird = {
 
 		icon = generic_civil_support
@@ -516,7 +571,7 @@ NYS_cosmetic_decisions = {
 			create_country_leader = {
 				name = "Fritz the Bird"
 				desc = "NYS_FRITZ_BIRD_DESC"
-				picture = "gfx/leaders/USA/portrait_fritz_the_bird.tga"
+				picture = "gfx/leaders/statesLeaders/portrait_fritz_the_bird.tga"
 				expire = "1965.1.1"
 				ideology = fascism_ideology
 				traits = {
