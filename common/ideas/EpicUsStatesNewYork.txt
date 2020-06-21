@@ -48,4 +48,36 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		NYS_public_works_administration_spirit = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = NYS_bailouts
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+	}
+	country = {
+		NYS_economic_stimulation_spirit = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = NYS_bailouts
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
 }

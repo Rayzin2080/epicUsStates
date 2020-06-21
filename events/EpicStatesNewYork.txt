@@ -288,3 +288,17 @@ country_event = {		#NY Puppet Decline
 		#Does nothing
 	}
 }
+country_event = {		#Democratic Alliance Member development
+	id = newYork.10
+	title = newYork.10.t
+	desc = newYork.10.d
+	
+	is_triggered_only = yes
+	
+	hidden = no
+	
+	option = {
+		name = newYork.10.a
+		#Does nothing
+	}
+}

@@ -256,5 +256,18 @@ ideas = {
 				war_support_factor = -0.2
 			}
 		}
+		EUS_economic_recovery = {
+			picture = EUS_economic_recovery.dds
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
 	}
 }

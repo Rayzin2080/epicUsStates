@@ -1,0 +1,9 @@
+
+LOU_America = {
+	color = rgb { 30 25 133 }
+	color_ui = rgb { 30 25 133 }
+}
+NYS_Thirteen = {
+	color = rgb { 72 88 210 }
+	color_ui = rgb { 72 88 210 }
+}

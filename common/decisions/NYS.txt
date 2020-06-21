@@ -223,7 +223,6 @@ NYS_integration =  {
 		}
 
 		complete_effect = {
-			consumer_goods_factor = 0.05
 		}
 
 		remove_effect = {
